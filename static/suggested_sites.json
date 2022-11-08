@@ -1,0 +1,42 @@
+[
+  {
+    "large_icon_url": "https://vm.webdino.org/apple-touch-icon-192.png",
+    "title": "Web VideoMark",
+    "url": "https://vm.webdino.org/"
+  },
+  {
+    "large_icon_url": "https://m.youtube.com/yts/mobile/img/apple-touch-icon-144x144-precomposed-vflopw1IA.png",
+    "title": "YouTube",
+    "url": "https://m.youtube.com/"
+  },
+  {
+    "large_icon_url": "https://tver.jp/apple-touch-icon-precomposed.png",
+    "title": "民放公式テレビポータル「TVer (ティーバー)」",
+    "url": "https://tver.jp/"
+  },
+  {
+    "large_icon_url": "https://www.paravi.jp/apple-touch-icon.png",
+    "title": "Paravi (パラビ) - 人気番組が楽しめる動画配信サービス",
+    "url": "https://www.paravi.jp/"
+  },
+  {
+    "large_icon_url": "https://nicovideo.cdn.nimg.jp/web/images/favicon/144.png",
+    "title": "ニコニコ動画",
+    "url": "https://www.nicovideo.jp/video_top"
+  },
+  {
+    "large_icon_url": "https://hayabusa.io/abema/assets/img_icon.w180.h180.v1f486dd.png",
+    "title": "AbemaTV｜国内最大の無料インターネットテレビ局",
+    "url": "https://abema.tv/"
+  },
+  {
+    "large_icon_url": "https://www.amazon.co.jp/favicon.ico",
+    "title": "Amazon.co.jp: プライム・ビデオ: Prime Video",
+    "url": "https://www.amazon.co.jp/PrimeVideo"
+  },
+  {
+    "large_icon_url": "https://video.dmkt-sp.jp/favicon.ico",
+    "title": "動画を見るならdTV -公式サイト",
+    "url": "https://pc.video.dmkt-sp.jp/"
+  }
+]

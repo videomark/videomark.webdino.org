@@ -1,0 +1,32 @@
+# software download
+/chromeextension   https://chrome.google.com/webstore/detail/web-videomark/lapldfdplijeiifekbgipcfjnklaahbd
+/firefoxextension  https://addons.mozilla.org/firefox/addon/videomark/
+/androidnightly    https://addons.mozilla.org/firefox/collections/16375456/vm/
+/androidbrowser    https://play.google.com/store/apps/details?id=org.webdino.videomarkbrowser
+
+# update news
+/whatsnew/extension/* /whatsnew/extension#v:splat
+/whatsnew/android/* /whatsnew/android#v:splat
+
+# locale prefix
+/ /ja
+/about /ja/about
+/contact /ja/contact
+/faq /ja/faq
+/help /ja/help
+/help/android /ja/help/android
+/help/extension /ja/help/extension
+/notice /ja/notice
+/opendata /ja/opendata
+/privacy /ja/privacy
+/spec /ja/spec
+/stats /ja/stats
+/stats/qoe /ja/stats/qoe
+/stats/resolutions /ja/stats/resolutions
+/stats/speeds /ja/stats/speeds
+/stats/tokyo2020 /ja/stats/tokyo2020
+/stats/views /ja/stats/views
+/terms /ja/terms
+/whatsnew /ja/whatsnew
+/whatsnew/android /ja/whatsnew/android
+/whatsnew/extension /ja/whatsnew/extension

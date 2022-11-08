@@ -1,0 +1,41 @@
+ja:
+  meta:
+    siteTitle: Web VideoMark
+    siteDescription: 動画配信サービスを実際に利用して視聴した際の品質データを分析・公開し、ネットワーク資源の有効活用と品質向上に役立てる調査研究プロジェクトです。
+    copyright: <a href="/ja/notice">Copyright © {year}</a> <a
+      href="https://www.webdino.org/">WebDINO Japan</a>. <span>All rights
+      reserved.</span>
+  header:
+    links:
+      - text: トップ
+        href: /ja
+      - text: プロジェクトについて
+        href: /ja/about
+      - href: /ja/help
+        text: 使い方
+      - text: 統計情報
+        href: /ja/stats
+      - text: よくある質問
+        href: /ja/faq
+      - href: /ja/contact
+        text: お問い合わせ
+    menu:
+      open: メニューを開く
+      close: メニューを閉じる
+  footer:
+    links:
+      - text: 利用規約
+        href: /ja/terms
+      - text: プライバシーポリシー
+        href: /ja/privacy
+  products:
+    firefox_extension: Firefox 用拡張機能
+    chrome_extension: Chrome/Edge 用拡張機能
+    android_browser: Android 用ブラウザー
+en:
+  meta:
+    siteTitle: Web VideoMark
+    siteDescription: ""
+    copyright: <a href="/ja/notice">Copyright © {year}</a> <a
+      href="https://www.webdino.org/">WebDINO Japan</a>. <span>All rights
+      reserved.</span>

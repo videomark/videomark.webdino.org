@@ -1,0 +1,102 @@
+{
+  "default": [
+    [
+      {
+        "begin": "16:30",
+        "end": "20:59",
+        "bitrate": 2400000,
+        "resolution": 720
+      },
+      {
+        "begin": "21:00",
+        "end": "23:59",
+        "bitrate": 1200000,
+        "resolution": 480
+      }
+    ],
+    [
+      {
+        "begin": "16:30",
+        "end": "20:59",
+        "bitrate": 2400000,
+        "resolution": 720
+      },
+      {
+        "begin": "21:00",
+        "end": "23:59",
+        "bitrate": 1200000,
+        "resolution": 480
+      }
+    ],
+    [
+      {
+        "begin": "16:30",
+        "end": "20:59",
+        "bitrate": 2400000,
+        "resolution": 720
+      },
+      {
+        "begin": "21:00",
+        "end": "23:59",
+        "bitrate": 1200000,
+        "resolution": 480
+      }
+    ],
+    [
+      {
+        "begin": "16:30",
+        "end": "20:59",
+        "bitrate": 2400000,
+        "resolution": 720
+      },
+      {
+        "begin": "21:00",
+        "end": "23:59",
+        "bitrate": 1200000,
+        "resolution": 480
+      }
+    ],
+    [
+      {
+        "begin": "16:30",
+        "end": "20:59",
+        "bitrate": 2400000,
+        "resolution": 720
+      },
+      {
+        "begin": "21:00",
+        "end": "23:59",
+        "bitrate": 1200000,
+        "resolution": 480
+      }
+    ],
+    [
+      {
+        "begin": "16:30",
+        "end": "20:59",
+        "bitrate": 2400000,
+        "resolution": 720
+      },
+      {
+        "begin": "21:00",
+        "end": "23:59",
+        "bitrate": 1200000,
+        "resolution": 480
+      }
+    ],
+    [
+      {
+        "begin": "16:30",
+        "end": "20:59",
+        "bitrate": 2400000,
+        "resolution": 720
+      },
+      {
+        "begin": "21:00",
+        "end": "23:59",
+        "bitrate": 1200000,
+        "resolution": 480
+      }
+    ]
+  ]
+}

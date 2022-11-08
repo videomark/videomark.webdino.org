@@ -1,0 +1,29 @@
+ja:
+  meta:
+    pageTitle: Web VideoMark — ネットワークは実サービス利用時の品質で評価する時代へ
+    pageDescription: 動画配信サービスを実際に利用して視聴した際の品質データを分析・公開し、ネットワーク資源の有効活用と品質向上に役立てる調査研究プロジェクトです。
+  hero:
+    heading: ネットワークは実サービス利用時の品質で評価する時代へ
+  intro:
+    heading: Web VideoMark について
+    body: >-
+      Web VideoMark では YouTube などの動画配信サービスの視聴時に体感品質を計測可能にする [Chrome/Edge
+      ブラウザー用の拡張機能](/chromeextension)、[Firefox ブラウザー用の拡張機能](/firefoxextension) と
+      [Android 用のブラウザー](/androidbrowser) を提供しています。
+
+
+      インストールしたら、あとはいつも通り動画を見るだけです。ビットレートや解像度、途切れなく滑らかに再生されるかなどを自動計測し、その結果を体感品質値として表示します。
+
+
+      ご利用のキャリアやプロバイダーは実際の動画サービスを快適・高品質に視聴できるネットワーク環境を提供しているか、自分で確認してみませんか？
+    image:
+      src: https://res.cloudinary.com/videomark/c_scale,w_800/pc/logview-03.jpg
+      alt: Web VideoMark 計測結果画面
+    more: もっと見る →
+en:
+  meta:
+    pageImage: null
+    pageDescription: ""
+  intro:
+    image:
+      src: https://res.cloudinary.com/videomark/c_scale,w_800/pc/logview-03.jpg

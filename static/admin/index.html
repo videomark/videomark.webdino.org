@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netlify CMS</title>
+  </head>
+  <body>
+    <script src="https://identity.netlify.com/v1/netlify-identity.js"></script>
+    <script src="https://unpkg.com/netlify-cms/dist/netlify-cms.js"></script>
+    <script src="https://unpkg.com/netlify-cms-locales/dist/netlify-cms-locales.js"></script>
+    <script>
+      CMS.registerLocale('ja', CMS.getLocale('ja'));
+
+      CMS.registerWidget(
+        'random-slug',
+        createClass({
+          componentDidMount: function () {
+            const { locale, config, value } = this.props;
+
+            if (locale === config.i18n.default_locale && !value) {
+              this.props.value = window.crypto.randomUUID().split('-').pop();
+              this.props.onChange(this.props.value);
+            }
+          },
+          render: function () {
+            return h('input', {
+              id: this.props.forID,
+              className: this.props.classNameWrapper,
+              type: 'text',
+              value: this.props.value,
+              readOnly: true,
+            });
+          },
+        }),
+      );
+    </script>
+  </body>
+</html>

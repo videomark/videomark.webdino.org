@@ -1,0 +1,15 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="900" height="1600">
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+    ]]></style>
+  </defs>
+  <rect width="100%" height="100%" fill="white" />
+  <text y="5" dominant-baseline="text-before-edge" text-anchor="middle" font-size="50" font-family="Noto Sans JP" fill="dimgray">
+    <tspan x="50%" dy="0.6em">他のユーザーとの比較が可能</tspan>
+  </text>
+  <svg y="145" width="100%" height="1455" preserveAspectRatio="xMidYMid" viewBox="0 0 1858 3456">
+    <image width="100%" height="100%" href="https://res.cloudinary.com/videomark/sp/android-smartphone-framed-02.png" />
+    <image x="203" y="518" width="1440" height="2411" preserveAspectRatio="xMidYMin slice" href="https://res.cloudinary.com/videomark/sp/history-detail-01.png" />
+  </svg>
+</svg>

@@ -1,0 +1,79 @@
+ja:
+  meta:
+    pageTitle: パソコンでの使い方
+  install:
+    heading: インストール
+    body: パソコンで動画再生時の品質を計測・確認するには Chrome、Edge、Firefox
+      またはその互換ブラウザーに拡張機能をインストールしてください。プライバシーポリシーと利用規約の確認画面が表示され、それに確認・同意いただけると計測可能になります。
+  player_qoe:
+    heading: 動画視聴中に体感品質値を確認
+    body: >-
+      インストールしたら Paravi、TVer または YouTube
+      を開いて動画を再生してください。動画視聴中に自動的に再生品質やネットワーク品質などの視聴情報を記録します。
+
+
+      再生中の動画にマウスオーバーなどすると、動画のコントローラーと共に計測情報が左上にオーバーレイ表示されます。
+
+
+      視聴開始後 20 秒程度すると、直近の動画再生品質を体感品質スコアを表示します。十分なビットレートで Full HD、30 fps の動画を途切れること無く再生すると QoE 値は最高 5 となり、解像度の低下や再生の一時停止などがあると下がります。
+
+
+      <!-- プレイヤーの実装依存で計測が出来ない動画の場合はオーバーレイ表示されません。今後の対応にご期待ください。 -->
+    image:
+      alt: YouTube 計測画面
+      src: https://res.cloudinary.com/videomark/c_crop,g_north_west,h_600,w_900,x_5,y_5/w_800/pc/youtube-04.jpg
+  player_details:
+    heading: 動画視聴中に詳細を確認
+    body: >-
+      動画視聴中に体感品質値がオーバーレイ表示される箇所をクリックすると、オーバーレイ表示領域が拡大し、計測中のデータの一部要約を追加で表示します。
+
+
+      計測サイトや動画によって異なりますが、再生中の動画のフレームレート、再生中の動画のフレームドロップ率 (コマ落ちしたフレーム数 / 再生した総フレーム数)、直近 15 秒程度の再生に関する体感品質スコアを確認できます。
+    image:
+      alt: YouTube 計測画面 (詳細)
+      src: https://res.cloudinary.com/videomark/c_crop,g_north_west,h_500,w_900,x_5,y_80/w_800/pc/youtube-05.jpg
+  result_list:
+    heading: 計測結果を一覧で確認
+    body: >-
+      動画再生中には直近の動画再生品質を表示しますが、動画再生完了後にはその視聴全体に対する体感品質値を計算した結果を確認できます。ブラウザーのツールバーに追加されている
+      Web VideoMark のアイコン (動画再生マークの入った虫眼鏡) をクリックすると、計測結果一覧画面を開きます。
+
+
+      自分で視聴したときの体感品質値のほかに、地域や時間帯などが同じ条件で視聴した利用者の平均的な体感品質値も同時に表示されるので、他の計測結果と見比べていただけます。
+
+
+      左上の年月が書かれた左右の矢印ボタンでは、表示する月を変更できます。右上の「動画配信サービス」ドロップダウンメニューでは動画配信サービスごとに絞り込みできます。
+    image:
+      alt: 計測結果の一覧表示
+      src: https://res.cloudinary.com/videomark/c_scale,w_800/pc/logview-03.jpg
+  result_details:
+    heading: 計測結果の詳細
+    body: >-
+      計測結果一覧画面に表示されている計測結果のいずれかをクリックすると、拡大表示してその計測結果の追加情報が表示されます。動画のメタデータや視聴全体のフレームドロップ率などを確認できます。
+
+
+      計測結果のより詳細を確認したり比較したりしやすいよう改善していく予定です。今後のバージョンアップにご期待下さい。
+
+
+      その計測結果を一覧から削除したい場合には「この計測結果を削除する」をクリックしてください。次回のページ読み込み時にブラウザーとサーバーの双方からデータが削除されます。
+    image:
+      alt: 計測結果の詳細表示
+      src: https://res.cloudinary.com/videomark/c_crop,g_center,h_700,w_600,y_40/pc/logview-modal-04.jpg
+en:
+  meta:
+    pageImage:
+  player_qoe:
+    image:
+      src: https://res.cloudinary.com/videomark/c_crop,g_north_west,h_600,w_900,x_5,y_5/w_800/pc/youtube-04.jpg
+  player_details:
+    image:
+      src: https://res.cloudinary.com/videomark/c_crop,g_north_west,h_500,w_900,x_5,y_80/w_800/pc/youtube-05.jpg
+  result_list:
+    image:
+      src: https://res.cloudinary.com/videomark/c_scale,w_800/pc/logview-03.jpg
+  result_details:
+    image:
+      src: https://res.cloudinary.com/videomark/c_crop,g_center,h_700,w_600,y_40/pc/logview-modal-04.jpg
+  install:
+    link:
+      label: ""

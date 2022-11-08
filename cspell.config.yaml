@@ -1,0 +1,43 @@
+version: "0.2"
+language: en
+enableFiletypes:
+  - jsonc
+  - svelte
+dictionaries:
+  - css
+  - html
+  - typescript
+ignorePaths:
+  - pnpm-lock.yaml
+  - build
+words:
+  - Abema
+  - Asahi
+  - Biglobe
+  - Cloudinary
+  - noninteractive
+  - Paravi
+  - unspaced
+  - VITE
+ignoreWords:
+  - androidbrowser
+  - androidnightly
+  - chromeextension
+  - dbaeumer
+  - dompurify
+  - esbenp
+  - firefoxextension
+  - gorin
+  - opendata
+  - postcss
+  - pnpm
+  - singleline
+  - stylelint
+  - sveltejs
+  - sveltekit
+  - topo
+  - topojson
+  - videomark
+  - webdino
+  - webm
+  - whatsnew

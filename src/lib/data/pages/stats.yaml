@@ -1,0 +1,40 @@
+ja:
+  meta:
+    pageTitle: 統計情報
+  body: >
+    ここでは Web VideoMark
+    プロジェクトの計測によって得られる、動画再生時の体感品質値の平均などの統計情報を公開しています。体感品質値の要因となるビットレート・解像度・リバッファリングによる一時停止やネットワーク環境などに関しては、十分なサンプル数のデータが集まり次第、順次公開します。
+  hourly_qoe:
+    heading: 体感品質値の時間帯別平均
+  daily_qoe:
+    heading: 体感品質値の曜日別平均
+  map:
+    heading: 体感品質値の都道府県別ヒートマップ
+    note: |-
+      国土地理院「地球地図日本」データを基に作成<br>
+      計測サンプル数が少なく結果に偏りのある地域があります
+  opendata:
+    heading: オープンデータ
+    body: >
+      このページの統計の元となる計測結果ログは [オープンデータ](/ja/opendata)
+      として公開しています。詳細の確認や独自の分析などにご利用ください。
+  nav:
+    links:
+      - text: 統計情報
+        href: /ja/stats
+      - text: Tokyo 2020
+        href: /ja/stats/tokyo2020
+      - text: 動画視聴数
+        href: /ja/stats/views
+      - text: 応答時間・通信速度
+        href: /ja/stats/speeds
+      - text: 体感品質 (QoE)
+        href: /ja/stats/qoe
+      - href: /ja/stats/resolutions
+        text: YouTube 解像度
+  intro:
+    heading: 統計情報
+en:
+  meta:
+    pageImage: null
+    pageTitle: ""

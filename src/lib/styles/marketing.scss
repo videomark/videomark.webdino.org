@@ -1,0 +1,133 @@
+body {
+  position: relative;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+ol,
+p,
+ul {
+  line-height: 1.7;
+}
+
+p {
+  margin: 1.2rem 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a,
+p a code {
+  color: #d86449;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 auto 2rem;
+  color: #555;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 1px solid #c7c7c7;
+  padding: 0 0 1rem;
+  width: fit-content;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  box-shadow: none;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  display: block;
+  overflow-x: auto;
+}
+
+tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+td,
+th {
+  border: 1px solid #dfe2e5;
+  padding: 0.6em 1em;
+}
+
+pre {
+  overflow-x: auto;
+  border-radius: 8px;
+  padding: 16px;
+  color: #fff;
+  background-color: #282c34;
+}
+
+.outer {
+  overflow: hidden;
+}
+
+.inner {
+  margin: 5.2rem auto;
+  padding: 0 32px;
+  max-width: 60rem;
+
+  @media screen and (max-width: 767px) {
+    margin: 48px auto;
+  }
+}

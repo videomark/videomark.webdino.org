@@ -1,0 +1,280 @@
+ja:
+  meta:
+    pageTitle: オープンデータ
+  download:
+    heading: ダウンロード
+    body: >-
+      Web VideoMark
+      で収集された計測ログは、プライバシーなどに考慮した処理をした上で月ごとに分けたアーカイブファイルと、そのログデータを計測単位で整理し MongoDB
+      での分析用コレクションとして整理したデータを公開しています。有志のインターネット計測ボランティアによって集められた調査ログを分析・活用されたい方は次の
+      URL からダウンロードしてください。
+
+
+      - [https://opendata.webdino.org/](https://opendata.webdino.org/)
+  sample:
+    heading: データサンプル
+    body: >-
+      クライアントから送信されるデータのログファイルでは各行に、時刻、エンドポイントラベル (`sodium` など)、JSON
+      形式のログデータが含まれる。JSON 形式のデータは [sodium.js
+      ライブラリ](https://github.com/videomark/videomark/tree/master/packages/sodium)
+      を用いて送信されたものに、末尾オクテットを削除した送信元の IP アドレスから MaxMind GeoIP DB を用いて推定した
+      `country`, `subdivision`, `isp` を追加したものです。
+
+
+      sodium.js が送信するデータの定義や取得方法について、詳しくは [GitHub リポジトリの sodium パッケージの説明](https://github.com/videomark/videomark/tree/master/packages/sodium) をご覧ください。
+
+
+
+      <!-- cSpell:disable -->
+
+      ```
+
+      2019-06-11T06:35:25+00:00	sodium	{"version":"1.1.0","date":"2019-06-11T06:35:24.534Z","startTime":74996612.9999999,"endTime":75002062.5,"session":"2dc96733-7247-4c61-a418-9bd42d9cdc60","userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Safari/537.36","appVersion":"5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Safari/537.36","sequence":13160,"video":[{"property":{"uuid":"695b5215-661f-4238-9064-c95563cc455b","id":"","viewCount":27211,"class":["video-stream","html5-main-video"],"src":"blob:https://www.a.com/b303f5d6-f3fd-4bb7-b719-e834844b225d","domainName":"r6---sn-cpbavcx-ioq6.a.com","width":0,"height":0,"videoWidth":854,"videoHeight":480,"mediaSize":6421.801,"defaultPlaybackRate":1,"playbackRate":1,"playStartTime":1560229336901.0,"playEndTime":-1,"currentPlayPos":5586.514125,"currentPlayTime":5587.481},"playback_quality":[{"totalVideoFrames":133837,"droppedVideoFrames":60,"creationTime":74997334.19999993,"deltaTotalVideoFrames":24,"deltaDroppedVideoFrames":0,"deltaTime":996.5999999642372,"bitrate":944465,"receiveBuffer":5626.954,"framerate":24,"speed":1},{"totalVideoFrames":133861,"droppedVideoFrames":60,"creationTime":74998334.99999997,"deltaTotalVideoFrames":24,"deltaDroppedVideoFrames":0,"deltaTime":1000.8000000417233,"bitrate":944465,"receiveBuffer":5626.954,"framerate":24,"speed":1},{"totalVideoFrames":133885,"droppedVideoFrames":60,"creationTime":74999335.50000004,"deltaTotalVideoFrames":24,"deltaDroppedVideoFrames":0,"deltaTime":1000.5000000745058,"bitrate":944465,"receiveBuffer":5632.293,"framerate":24,"speed":1},{"totalVideoFrames":133909,"droppedVideoFrames":60,"creationTime":75000335.90000007,"deltaTotalVideoFrames":24,"deltaDroppedVideoFrames":0,"deltaTime":1000.4000000208616,"bitrate":944465,"receiveBuffer":5632.293,"framerate":24,"speed":1},{"totalVideoFrames":133933,"droppedVideoFrames":60,"creationTime":75001335.8,"deltaTotalVideoFrames":24,"deltaDroppedVideoFrames":0,"deltaTime":999.8999999314547,"bitrate":944465,"receiveBuffer":5632.293,"framerate":24,"speed":1}],"event_play":[],"event_play_delta":[],"event_pause":[],"event_pause_delta":[],"event_seeking":[],"event_seeking_delta":[],"event_seeked":[],"event_seeked_delta":[],"event_ended":[],"event_ended_delta":[],"event_stalled":[],"event_stalled_delta":[],"event_progress":[{"time":74998562.60000007,"dateTime":1560234921034.0,"playPos":5583.152676,"playTime":5584.133}],"event_progress_delta":[{"delta":3849.900000035763,"dateTime":1560234921034.0,"playPos":5583.152676,"playTime":5584.133}],"event_waiting":[],"event_waiting_delta":[],"event_canplay":[],"event_canplay_delta":[]}],"resource_timing":[],"country":"JP","subdivision":"14","isp":"Biglobe"}
+
+      2019-06-11T06:35:26+00:00	sodium	{"version":"1.1.0","date":"2019-06-11T06:35:26.637Z","startTime":3885044.7200001217,"endTime":3890060.4599998333,"session":"35810d2b-0b8c-4488-a935-7bdbddce3640","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","appVersion":"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","sequence":768,"video":[{"property":{"uuid":"efb884a3-1dfd-4a2e-96bd-c40d7034eeb9","id":"","viewCount":258603,"class":["video-stream","html5-main-video"],"src":"blob:https://www.a.com/26a03cd2-0e1c-4cac-9ce1-7bb7ed891556","domainName":"r4---sn-oguelner.a.com","width":0,"height":0,"videoWidth":854,"videoHeight":480,"mediaSize":3537.261,"defaultPlaybackRate":1,"playbackRate":1,"playStartTime":1560234627342.0,"playEndTime":-1,"currentPlayPos":272.441231,"currentPlayTime":299.079},"playback_quality":[],"event_play":[],"event_play_delta":[],"event_pause":[],"event_pause_delta":[],"event_seeking":[],"event_seeking_delta":[],"event_seeked":[],"event_seeked_delta":[],"event_ended":[],"event_ended_delta":[],"event_stalled":[],"event_stalled_delta":[],"event_progress":[{"time":3887592.2249997966,"dateTime":1560234924168.0,"playPos":270.188207,"playTime":296.826},{"time":3888641.520000063,"dateTime":1560234925218.0,"playPos":271.237592,"playTime":297.876}],"event_progress_delta":[{"delta":4548.004999756813,"dateTime":1560234924168.0,"playPos":270.188207,"playTime":296.826},{"delta":1049.2950002662838,"dateTime":1560234925218.0,"playPos":271.237592,"playTime":297.876}],"event_waiting":[],"event_waiting_delta":[],"event_canplay":[],"event_canplay_delta":[]}],"resource_timing":[],"country":"JP","subdivision":"14","isp":"Nippon Telegraph and Telephone Corporation"}
+
+      2019-06-11T06:35:26+00:00	sodium	{"version":"1.1.0","date":"2019-06-11T06:35:24.254Z","startTime":331995470.40000004,"endTime":332000752.7,"session":"9b474ccf-94df-466d-b845-83dd63637117","userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Safari/537.36","appVersion":"5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Safari/537.36","sequence":61483,"video":[{"property":{"uuid":"39cfb96c-2dfb-4eee-adbe-0daa0ae4bacd","id":"","viewCount":13091,"class":["video-stream","html5-main-video"],"src":"blob:https://www.a.com/f884dcb4-0837-4216-8ad1-eb7747b06bbe","domainName":"r5---sn-5n5ip-ioqe.a.com","width":0,"height":0,"videoWidth":2560,"videoHeight":1440,"mediaSize":207.601,"defaultPlaybackRate":1,"playbackRate":1,"playStartTime":1560234812108.0,"playEndTime":-1,"currentPlayPos":112.109441,"currentPlayTime":111.965},"playback_quality":[{"totalVideoFrames":3230,"droppedVideoFrames":0,"creationTime":331996136.90000004,"deltaTotalVideoFrames":29,"deltaDroppedVideoFrames":0,"deltaTime":997,"bitrate":12341775,"receiveBuffer":132.866,"framerate":30,"speed":1},{"totalVideoFrames":3260,"droppedVideoFrames":0,"creationTime":331997139.3,"deltaTotalVideoFrames":30,"deltaDroppedVideoFrames":0,"deltaTime":1002.3999999761581,"bitrate":12341775,"receiveBuffer":132.866,"framerate":30,"speed":1},{"totalVideoFrames":3291,"droppedVideoFrames":0,"creationTime":331998143.1,"deltaTotalVideoFrames":31,"deltaDroppedVideoFrames":0,"deltaTime":1003.8000000119209,"bitrate":12341775,"receiveBuffer":133.899,"framerate":30,"speed":1},{"totalVideoFrames":3321,"droppedVideoFrames":0,"creationTime":331999142.00000006,"deltaTotalVideoFrames":30,"deltaDroppedVideoFrames":0,"deltaTime":998.9000000357628,"bitrate":12341775,"receiveBuffer":135.301,"framerate":30,"speed":1},{"totalVideoFrames":3350,"droppedVideoFrames":0,"creationTime":332000140.6,"deltaTotalVideoFrames":29,"deltaDroppedVideoFrames":0,"deltaTime":998.5999999642372,"bitrate":12341775,"receiveBuffer":135.301,"framerate":30,"speed":1}],"event_play":[],"event_play_delta":[],"event_pause":[],"event_pause_delta":[],"event_seeking":[],"event_seeking_delta":[],"event_seeked":[],"event_seeked_delta":[],"event_ended":[],"event_ended_delta":[],"event_stalled":[],"event_stalled_delta":[],"event_progress":[{"time":331997598.90000004,"dateTime":1560234921101.0,"playPos":109.141806,"playTime":108.992},{"time":331998298.20000005,"dateTime":1560234921799.0,"playPos":109.841579,"playTime":109.691}],"event_progress_delta":[{"delta":2452.800000011921,"dateTime":1560234921101.0,"playPos":109.141806,"playTime":108.992},{"delta":699.3000000119209,"dateTime":1560234921799.0,"playPos":109.841579,"playTime":109.691}],"event_waiting":[],"event_waiting_delta":[],"event_canplay":[],"event_canplay_delta":[]}],"resource_timing":[],"country":"JP","subdivision":"13","isp":"Asahi Net"}
+
+      2019-06-11T06:35:30+00:00	sodium	{"version":"1.1.0","date":"2019-06-11T06:35:29.117Z","startTime":13410699.89999989,"endTime":13415920.799999963,"session":"1b60997c-3fc3-4a11-b82d-c18a7bbbfe70","userAgent":"Mozilla/5.0 (Linux; Android 9;XXX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Mobile Safari/537.36","appVersion":"5.0 (Linux; Android 9;XXX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Mobile Safari/537.36","sequence":2584,"video":[{"property":{"uuid":"65cde00c-af3a-460d-a27f-dcb2dad74f52","id":"","viewCount":-1,"class":["video-stream","html5-main-video"],"src":"blob:https://m.a.com/0aaca25a-b29e-4831-aae6-5c5774d5c85e","domainName":null,"width":0,"height":0,"videoWidth":640,"videoHeight":360,"mediaSize":119.961,"defaultPlaybackRate":1,"playbackRate":1,"playStartTime":1560234860102.0,"playEndTime":-1,"currentPlayPos":69.147735,"currentPlayTime":69.001},"playback_quality":[{"totalVideoFrames":1950,"droppedVideoFrames":0,"creationTime":13411683.900000062,"deltaTotalVideoFrames":29,"deltaDroppedVideoFrames":0,"deltaTime":1000,"bitrate":1000000,"receiveBuffer":119.961,"framerate":30,"speed":1},{"totalVideoFrames":1980,"droppedVideoFrames":0,"creationTime":13412683.699999936,"deltaTotalVideoFrames":30,"deltaDroppedVideoFrames":0,"deltaTime":999.7999998740852,"bitrate":1000000,"receiveBuffer":119.961,"framerate":30,"speed":1},{"totalVideoFrames":2010,"droppedVideoFrames":0,"creationTime":13413683.699999936,"deltaTotalVideoFrames":30,"deltaDroppedVideoFrames":0,"deltaTime":1000,"bitrate":1000000,"receiveBuffer":119.961,"framerate":30,"speed":1},{"totalVideoFrames":2040,"droppedVideoFrames":0,"creationTime":13414685.499999905,"deltaTotalVideoFrames":30,"deltaDroppedVideoFrames":0,"deltaTime":1001.7999999690801,"bitrate":1000000,"receiveBuffer":119.961,"framerate":30,"speed":1},{"totalVideoFrames":2070,"droppedVideoFrames":0,"creationTime":13415683.799999999,"deltaTotalVideoFrames":30,"deltaDroppedVideoFrames":0,"deltaTime":998.3000000938773,"bitrate":1000000,"receiveBuffer":119.961,"framerate":30,"speed":1}],"event_play":[],"event_play_delta":[],"event_pause":[],"event_pause_delta":[],"event_seeking":[],"event_seeking_delta":[],"event_seeked":[],"event_seeked_delta":[],"event_ended":[],"event_ended_delta":[],"event_stalled":[],"event_stalled_delta":[],"event_progress":[],"event_progress_delta":[],"event_waiting":[],"event_waiting_delta":[],"event_canplay":[],"event_canplay_delta":[]}],"resource_timing":[],"country":"JP","subdivision":"12","isp":"Open Computer Network"}
+
+      2019-06-11T06:35:30+00:00	sodium	{"version":"1.1.0","date":"2019-06-11T06:35:29.961Z","startTime":75002062.5,"endTime":75007489.89999993,"session":"2dc96733-7247-4c61-a418-9bd42d9cdc60","userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Safari/537.36","appVersion":"5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Safari/537.36","sequence":13161,"video":[{"property":{"uuid":"695b5215-661f-4238-9064-c95563cc455b","id":"","viewCount":27211,"class":["video-stream","html5-main-video"],"src":"blob:https://www.a.com/b303f5d6-f3fd-4bb7-b719-e834844b225d","domainName":"r6---sn-cpbavcx-ioq6.a.com","width":0,"height":0,"videoWidth":854,"videoHeight":480,"mediaSize":6421.801,"defaultPlaybackRate":1,"playbackRate":1,"playStartTime":1560229336901.0,"playEndTime":-1,"currentPlayPos":5592.013007,"currentPlayTime":5592.981},"playback_quality":[{"totalVideoFrames":133957,"droppedVideoFrames":60,"creationTime":75002333.09999993,"deltaTotalVideoFrames":24,"deltaDroppedVideoFrames":0,"deltaTime":997.2999999374151,"bitrate":944465,"receiveBuffer":5637.631,"framerate":24,"speed":1},{"totalVideoFrames":133981,"droppedVideoFrames":60,"creationTime":75003334.80000007,"deltaTotalVideoFrames":24,"deltaDroppedVideoFrames":0,"deltaTime":1001.7000001370907,"bitrate":944465,"receiveBuffer":5637.631,"framerate":24,"speed":1},{"totalVideoFrames":134006,"droppedVideoFrames":60,"creationTime":75004401.49999993,"deltaTotalVideoFrames":25,"deltaDroppedVideoFrames":0,"deltaTime":1066.6999998539686,"bitrate":944465,"receiveBuffer":5637.631,"framerate":24,"speed":1},{"totalVideoFrames":134032,"droppedVideoFrames":60,"creationTime":75005471.39999992,"deltaTotalVideoFrames":26,"deltaDroppedVideoFrames":0,"deltaTime":1069.8999999910593,"bitrate":944465,"receiveBuffer":5637.631,"framerate":24,"speed":1},{"totalVideoFrames":134053,"droppedVideoFrames":60,"creationTime":75006338.80000003,"deltaTotalVideoFrames":21,"deltaDroppedVideoFrames":0,"deltaTime":867.4000001102686,"bitrate":944465,"receiveBuffer":5637.631,"framerate":24,"speed":1},{"totalVideoFrames":134077,"droppedVideoFrames":60,"creationTime":75007344.59999995,"deltaTotalVideoFrames":24,"deltaDroppedVideoFrames":0,"deltaTime":1005.799999922514,"bitrate":944465,"receiveBuffer":5642.97,"framerate":24,"speed":1}],"event_play":[],"event_play_delta":[],"event_pause":[],"event_pause_delta":[],"event_seeking":[],"event_seeking_delta":[],"event_seeked":[],"event_seeked_delta":[],"event_ended":[],"event_ended_delta":[],"event_stalled":[],"event_stalled_delta":[],"event_progress":[{"time":75002419.19999988,"dateTime":1560234924890.0,"playPos":5587.019338,"playTime":5587.989},{"time":75006637.70000008,"dateTime":1560234929109.0,"playPos":5591.239266,"playTime":5592.208}],"event_progress_delta":[{"delta":3856.5999998152256,"dateTime":1560234924890.0,"playPos":5587.019338,"playTime":5587.989},{"delta":4218.500000193715,"dateTime":1560234929109.0,"playPos":5591.239266,"playTime":5592.208}],"event_waiting":[],"event_waiting_delta":[],"event_canplay":[],"event_canplay_delta":[]}],"resource_timing":[],"country":"JP","subdivision":"14","isp":"Biglobe"}
+
+      2019-06-11T06:35:31+00:00	sodium	{"version":"1.1.0","date":"2019-06-11T06:35:31.651Z","startTime":3890060.4599998333,"endTime":3895074.475000147,"session":"35810d2b-0b8c-4488-a935-7bdbddce3640","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","appVersion":"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","sequence":769,"video":[{"property":{"uuid":"efb884a3-1dfd-4a2e-96bd-c40d7034eeb9","id":"","viewCount":258603,"class":["video-stream","html5-main-video"],"src":"blob:https://www.a.com/26a03cd2-0e1c-4cac-9ce1-7bb7ed891556","domainName":"r4---sn-oguelner.a.com","width":0,"height":0,"videoWidth":854,"videoHeight":480,"mediaSize":3537.261,"defaultPlaybackRate":1,"playbackRate":1,"playStartTime":1560234627342.0,"playEndTime":-1,"currentPlayPos":277.442056,"currentPlayTime":304.08},"playback_quality":[],"event_play":[],"event_play_delta":[],"event_pause":[],"event_pause_delta":[],"event_seeking":[],"event_seeking_delta":[],"event_seeked":[],"event_seeked_delta":[],"event_ended":[],"event_ended_delta":[],"event_stalled":[],"event_stalled_delta":[],"event_progress":[{"time":3892142.0450001024,"dateTime":1560234928718.0,"playPos":274.738007,"playTime":301.376}],"event_progress_delta":[{"delta":3500.525000039488,"dateTime":1560234928718.0,"playPos":274.738007,"playTime":301.376}],"event_waiting":[],"event_waiting_delta":[],"event_canplay":[],"event_canplay_delta":[]}],"resource_timing":[],"country":"JP","subdivision":"14","isp":"Nippon Telegraph and Telephone Corporation"}
+
+      2019-06-11T06:35:32+00:00	sodium	{"version":"1.1.0","date":"2019-06-11T06:35:29.550Z","startTime":332000752.7,"endTime":332006048.50000006,"session":"9b474ccf-94df-466d-b845-83dd63637117","userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Safari/537.36","appVersion":"5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Safari/537.36","sequence":61484,"video":[{"property":{"uuid":"39cfb96c-2dfb-4eee-adbe-0daa0ae4bacd","id":"","viewCount":13091,"class":["video-stream","html5-main-video"],"src":"blob:https://www.a.com/f884dcb4-0837-4216-8ad1-eb7747b06bbe","domainName":"r5---sn-5n5ip-ioqe.a.com","width":0,"height":0,"videoWidth":2560,"videoHeight":1440,"mediaSize":207.601,"defaultPlaybackRate":1,"playbackRate":1,"playStartTime":1560234812108.0,"playEndTime":-1,"currentPlayPos":117.365157,"currentPlayTime":117.214},"playback_quality":[{"totalVideoFrames":3381,"droppedVideoFrames":0,"creationTime":332001136.8,"deltaTotalVideoFrames":31,"deltaDroppedVideoFrames":0,"deltaTime":996.1999999880791,"bitrate":12341775,"receiveBuffer":138.804,"framerate":30,"speed":1},{"totalVideoFrames":3411,"droppedVideoFrames":0,"creationTime":332002140.20000005,"deltaTotalVideoFrames":30,"deltaDroppedVideoFrames":0,"deltaTime":1003.4000000357628,"bitrate":12341775,"receiveBuffer":138.804,"framerate":30,"speed":1},{"totalVideoFrames":3441,"droppedVideoFrames":0,"creationTime":332003141.00000006,"deltaTotalVideoFrames":30,"deltaDroppedVideoFrames":0,"deltaTime":1000.8000000119209,"bitrate":12341775,"receiveBuffer":138.804,"framerate":30,"speed":1},{"totalVideoFrames":3471,"droppedVideoFrames":0,"creationTime":332004139.70000005,"deltaTotalVideoFrames":30,"deltaDroppedVideoFrames":0,"deltaTime":998.6999999880791,"bitrate":12341775,"receiveBuffer":142.041,"framerate":30,"speed":1},{"totalVideoFrames":3500,"droppedVideoFrames":0,"creationTime":332005138.50000006,"deltaTotalVideoFrames":29,"deltaDroppedVideoFrames":0,"deltaTime":998.8000000119209,"bitrate":12341775,"receiveBuffer":142.041,"framerate":30,"speed":1}],"event_play":[],"event_play_delta":[],"event_pause":[],"event_pause_delta":[],"event_seeking":[],"event_seeking_delta":[],"event_seeked":[],"event_seeked_delta":[],"event_ended":[],"event_ended_delta":[],"event_stalled":[],"event_stalled_delta":[],"event_progress":[{"time":332001096.1,"dateTime":1560234924598.0,"playPos":112.636205,"playTime":112.49},{"time":332003553.1,"dateTime":1560234927055.0,"playPos":115.086584,"playTime":114.947}],"event_progress_delta":[{"delta":2797.899999976158,"dateTime":1560234924598.0,"playPos":112.636205,"playTime":112.49},{"delta":2457,"dateTime":1560234927055.0,"playPos":115.086584,"playTime":114.947}],"event_waiting":[],"event_waiting_delta":[],"event_canplay":[],"event_canplay_delta":[]}],"resource_timing":[],"country":"JP","subdivision":"13","isp":"Asahi Net"}
+
+      2019-06-11T06:35:32+00:00	sodium	{"version":"1.1.0","date":"2019-06-11T06:35:32.483Z","startTime":438603911.3699999,"endTime":438611906.645,"session":"4a62f7d1-6668-4e43-9454-29feae370dea","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","appVersion":"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","sequence":58233,"video":[{"property":{"uuid":"f0883c87-747d-4793-a192-00dd01aff3b9","id":"","viewCount":3046125,"class":["video-stream","html5-main-video"],"src":"blob:https://www.a.com/2f2dd071-e7ce-4638-a3b2-5cd8bfcfc3a0","domainName":"r5---sn-ogul7n7d.a.com","width":0,"height":0,"videoWidth":640,"videoHeight":360,"mediaSize":3630.601,"defaultPlaybackRate":1,"playbackRate":1,"playStartTime":1560167039377.0,"playEndTime":-1,"currentPlayPos":10.400465,"currentPlayTime":9.457},"playback_quality":[],"event_play":[],"event_play_delta":[],"event_pause":[],"event_pause_delta":[],"event_seeking":[],"event_seeking_delta":[],"event_seeked":[],"event_seeked_delta":[],"event_ended":[],"event_ended_delta":[],"event_stalled":[],"event_stalled_delta":[],"event_progress":[],"event_progress_delta":[],"event_waiting":[],"event_waiting_delta":[],"event_canplay":[],"event_canplay_delta":[]}],"resource_timing":[],"country":"JP","subdivision":"14","isp":"Nippon Telegraph and Telephone Corporation"}
+
+      2019-06-11T06:35:33+00:00	sodium	{"version":"1.1.0","date":"2019-06-11T06:35:33.137Z","startTime":71780733.81,"endTime":71788731.72500001,"session":"86298107-67af-4252-89f6-2a2f1eb5522d","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","appVersion":"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36","sequence":547,"video":[{"property":{"uuid":"caef5e55-57b5-4472-ba73-faa599d98c75","id":"tbsPlayer_html5_api","viewCount":-1,"class":["vjs-tech"],"src":"blob:https://c.com/7ba27c90-ca06-4ba5-8a69-dad260301c86","domainName":"tbs-video-cdn.c.com","width":0,"height":0,"videoWidth":1280,"videoHeight":720,"mediaSize":2180.979000000001,"defaultPlaybackRate":1,"playbackRate":1,"playStartTime":1560163152542.0,"playEndTime":-1,"currentPlayPos":1646.689117,"currentPlayTime":68634.356},"playback_quality":[],"event_play":[],"event_play_delta":[],"event_pause":[],"event_pause_delta":[],"event_seeking":[],"event_seeking_delta":[],"event_seeked":[],"event_seeked_delta":[],"event_ended":[],"event_ended_delta":[],"event_stalled":[],"event_stalled_delta":[],"event_progress":[],"event_progress_delta":[],"event_waiting":[],"event_waiting_delta":[],"event_canplay":[],"event_canplay_delta":[]}],"resource_timing":[],"country":"JP","subdivision":"14","isp":"Keio University"}
+
+      2019-06-11T06:35:35+00:00	sodium	{"version":"1.1.0","date":"2019-06-11T06:35:34.353Z","startTime":13415920.799999963,"endTime":13421156.799999997,"session":"1b60997c-3fc3-4a11-b82d-c18a7bbbfe70","userAgent":"Mozilla/5.0 (Linux; Android 9;XXX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Mobile Safari/537.36","appVersion":"5.0 (Linux; Android 9;XXX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Mobile Safari/537.36","sequence":2585,"video":[{"property":{"uuid":"65cde00c-af3a-460d-a27f-dcb2dad74f52","id":"","viewCount":-1,"class":["video-stream","html5-main-video"],"src":"blob:https://m.a.com/0aaca25a-b29e-4831-aae6-5c5774d5c85e","domainName":null,"width":0,"height":0,"videoWidth":640,"videoHeight":360,"mediaSize":119.961,"defaultPlaybackRate":1,"playbackRate":1,"playStartTime":1560234860102.0,"playEndTime":-1,"currentPlayPos":74.430544,"currentPlayTime":74.249},"playback_quality":[{"totalVideoFrames":2100,"droppedVideoFrames":0,"creationTime":13416684.699999867,"deltaTotalVideoFrames":30,"deltaDroppedVideoFrames":0,"deltaTime":1000.8999998681247,"bitrate":1000000,"receiveBuffer":119.961,"framerate":30,"speed":1},{"totalVideoFrames":2130,"droppedVideoFrames":0,"creationTime":13417684.099999955,"deltaTotalVideoFrames":30,"deltaDroppedVideoFrames":0,"deltaTime":999.4000000879169,"bitrate":1000000,"receiveBuffer":119.961,"framerate":30,"speed":1},{"totalVideoFrames":2161,"droppedVideoFrames":0,"creationTime":13418683.500000043,"deltaTotalVideoFrames":31,"deltaDroppedVideoFrames":0,"deltaTime":999.4000000879169,"bitrate":1000000,"receiveBuffer":119.961,"framerate":30,"speed":1},{"totalVideoFrames":2191,"droppedVideoFrames":0,"creationTime":13419684.499999974,"deltaTotalVideoFrames":30,"deltaDroppedVideoFrames":0,"deltaTime":1000.9999999310821,"bitrate":1000000,"receiveBuffer":119.961,"framerate":30,"speed":1},{"totalVideoFrames":2220,"droppedVideoFrames":0,"creationTime":13420683.900000062,"deltaTotalVideoFrames":29,"deltaDroppedVideoFrames":0,"deltaTime":999.4000000879169,"bitrate":1000000,"receiveBuffer":119.961,"framerate":30,"speed":1}],"event_play":[],"event_play_delta":[],"event_pause":[],"event_pause_delta":[],"event_seeking":[],"event_seeking_delta":[],"event_seeked":[],"event_seeked_delta":[],"event_ended":[],"event_ended_delta":[],"event_stalled":[],"event_stalled_delta":[],"event_progress":[],"event_progress_delta":[],"event_waiting":[],"event_waiting_delta":[],"event_canplay":[],"event_canplay_delta":[]}],"resource_timing":[],"country":"JP","subdivision":"12","isp":"Open Computer Network"}
+
+      ```
+
+      <!-- cSpell:enable -->
+
+
+      こちらのログデータを個別動画の計測セッションごとに整理した JSON にして、MongoDB に格納・分析できるように変換処理したものは次のようになります。ログデータからの変換処理内容や、出力データの形式について、詳しくは [sodium-transformer の Github リポジトリ](https://github.com/videomark/sodium-transformer) をご覧ください。
+
+
+      <!-- cSpell:disable -->
+
+      ```json
+
+      {
+        "_id": "5f4d9911f2da56876418ce70",
+        "id": "d6ce1a19-9f8a-473e-8633-59806e168baf",
+        "connection": {
+          "type": null,
+          "effectiveType": "4g",
+          "downlink": 10,
+          "downlinkMax": null,
+          "rtt": 50,
+          "apn": null,
+          "plmn": null,
+          "sim": null
+        },
+        "network": {
+          "serverHost": "4eae35f1b35977a0.14dd5266",
+          "clientLocation": { "country": "JP", "subdivision": "13" },
+          "isp": "Kddi Corporation"
+        },
+        "session": {
+          "sodiumSessionId": "25458182-f9a4-4ff6-a6de-5bedbc7971bb",
+          "sodiumVideoId": "d6ce1a19-9f8a-473e-8633-59806e168baf",
+          "userAgent": {
+            "os": "Windows10",
+            "browser": "Chrome85.0.4183.83",
+            "original": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+          },
+          "qoe": 4.2
+        },
+        "video": {
+          "videoId": "VBqHGicKPwY",
+          "duration": 1358.121,
+          "representations": [
+            {
+              "id": "137",
+              "resolution": { "height": 1080, "width": 1920 },
+              "container": "mp4",
+              "videoCodec": "avc1.640028",
+              "audioCodec": "",
+              "videoTargetBitrate": 2071984,
+              "audioTargetBitrate": -1
+            },
+            {
+              "id": "248",
+              "resolution": { "height": 1080, "width": 1920 },
+              "container": "webm",
+              "videoCodec": "vp9",
+              "audioCodec": "",
+              "videoTargetBitrate": 2585562,
+              "audioTargetBitrate": -1
+            },
+            {
+              "id": "136",
+              "resolution": { "height": 720, "width": 1280 },
+              "container": "mp4",
+              "videoCodec": "avc1.4d401f",
+              "audioCodec": "",
+              "videoTargetBitrate": 464134,
+              "audioTargetBitrate": -1
+            },
+            {
+              "id": "247",
+              "resolution": { "height": 720, "width": 1280 },
+              "container": "webm",
+              "videoCodec": "vp9",
+              "audioCodec": "",
+              "videoTargetBitrate": 1417635,
+              "audioTargetBitrate": -1
+            },
+            {
+              "id": "135",
+              "resolution": { "height": 480, "width": 854 },
+              "container": "mp4",
+              "videoCodec": "avc1.4d401f",
+              "audioCodec": "",
+              "videoTargetBitrate": 310466,
+              "audioTargetBitrate": -1
+            },
+            {
+              "id": "244",
+              "resolution": { "height": 480, "width": 854 },
+              "container": "webm",
+              "videoCodec": "vp9",
+              "audioCodec": "",
+              "videoTargetBitrate": 719344,
+              "audioTargetBitrate": -1
+            },
+            {
+              "id": "134",
+              "resolution": { "height": 360, "width": 640 },
+              "container": "mp4",
+              "videoCodec": "avc1.4d401e",
+              "audioCodec": "",
+              "videoTargetBitrate": 201411,
+              "audioTargetBitrate": -1
+            },
+            {
+              "id": "243",
+              "resolution": { "height": 360, "width": 640 },
+              "container": "webm",
+              "videoCodec": "vp9",
+              "audioCodec": "",
+              "videoTargetBitrate": 392073,
+              "audioTargetBitrate": -1
+            },
+            {
+              "id": "133",
+              "resolution": { "height": 240, "width": 426 },
+              "container": "mp4",
+              "videoCodec": "avc1.4d4015",
+              "audioCodec": "",
+              "videoTargetBitrate": 108095,
+              "audioTargetBitrate": -1
+            },
+            {
+              "id": "242",
+              "resolution": { "height": 240, "width": 426 },
+              "container": "webm",
+              "videoCodec": "vp9",
+              "audioCodec": "",
+              "videoTargetBitrate": 179560,
+              "audioTargetBitrate": -1
+            },
+            {
+              "id": "160",
+              "resolution": { "height": 144, "width": 256 },
+              "container": "mp4",
+              "videoCodec": "avc1.4d400c",
+              "audioCodec": "",
+              "videoTargetBitrate": 50915,
+              "audioTargetBitrate": -1
+            },
+            {
+              "id": "278",
+              "resolution": { "height": 144, "width": 256 },
+              "container": "webm",
+              "videoCodec": "vp9",
+              "audioCodec": "",
+              "videoTargetBitrate": 95300,
+              "audioTargetBitrate": -1
+            },
+            {
+              "id": "140",
+              "resolution": { "height": -1, "width": -1 },
+              "container": "mp4",
+              "videoCodec": "",
+              "audioCodec": "mp4a.40.2",
+              "videoTargetBitrate": -1,
+              "audioTargetBitrate": 131983
+            },
+            {
+              "id": "249",
+              "resolution": { "height": -1, "width": -1 },
+              "container": "webm",
+              "videoCodec": "",
+              "audioCodec": "opus",
+              "videoTargetBitrate": -1,
+              "audioTargetBitrate": 51175
+            },
+            {
+              "id": "250",
+              "resolution": { "height": -1, "width": -1 },
+              "container": "webm",
+              "videoCodec": "",
+              "audioCodec": "opus",
+              "videoTargetBitrate": -1,
+              "audioTargetBitrate": 57993
+            },
+            {
+              "id": "251",
+              "resolution": { "height": -1, "width": -1 },
+              "container": "webm",
+              "videoCodec": "",
+              "audioCodec": "opus",
+              "videoTargetBitrate": -1,
+              "audioTargetBitrate": 105418
+            }
+          ],
+          "playHistory": {
+            "startTime": 1598918282599,
+            "holiday": false,
+            "endTime": -1,
+            "throughputHistory": [],
+            "eventHistory": [],
+            "representationHistory": [],
+            "frameDropHistory": []
+          },
+          "cmHistory": []
+        }
+      }
+
+      ```
+
+      <!-- cSpell:enable -->
+  filtering:
+    heading: フィルタ処理について
+    body: >-
+      Web VideoMark
+      のクライアントソフトウェアからサーバーに送信された計測結果は、オープンデータとして公開する前に次のような処理を行っています。
+
+
+      - IP アドレスは記録から削除
+
+      - 動画の URL は含めない
+
+      - video タグの src URL に含まれるドメイン名は匿名化する
+
+      - 一般的なブラウザーのものと異なるユーザーエージェントのデータは削除する
+
+      - ユーザーエージェントに含まれる機種名は削除する
+
+
+      この処理についてもログデータの変換処理ツールで行っており、実装の詳細は [sodium-transformer の Github リポジトリ](https://github.com/videomark/sodium-transformer) をご覧ください。
+  intro:
+    heading: オープンデータ
+en:
+  meta:
+    pageImage:

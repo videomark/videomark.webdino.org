@@ -1,0 +1,4 @@
+/*
+  Cache-Control: private, no-store, no-cache, must-revalidate
+/
+  Content-Security-Policy: default-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'
