@@ -33,34 +33,34 @@
     <form method="POST" on:submit|preventDefault={(event) => sendForm(event)}>
       <input type="hidden" name="form-name" value="contact" />
       <p class="input-item">
-        <label for="name">{$_('pages.contact.form.name')}</label>
+        <label for="input-name">{$_('pages.contact.form.name')}</label>
         <span class="req">{$_('pages.contact.form.required')}</span>
-        <input type="text" id="name" name="name" required />
+        <input type="text" id="input-name" name="name" required />
       </p>
       <p class="input-item">
-        <label for="company">{$_('pages.contact.form.company')}</label>
+        <label for="input-company">{$_('pages.contact.form.company')}</label>
         <span class="req" />
-        <input type="text" name="company" />
+        <input type="text" id="input-company" name="company" />
       </p>
       <p class="input-item">
-        <label for="e-mail">{$_('pages.contact.form.email')}</label>
+        <label for="input-email">{$_('pages.contact.form.email')}</label>
         <span class="req">{$_('pages.contact.form.required')}</span>
-        <input type="email" name="e-mail" required />
+        <input type="email" id="input-email" name="e-mail" required />
       </p>
       <p class="input-item" hidden>
-        <label for="tel">TEL</label>
+        <label for="input-tel">TEL</label>
         <span class="req" />
-        <input type="text" name="tel" />
+        <input type="text" id="input-tel" name="tel" />
       </p>
       <p class="input-item">
-        <label for="title">{$_('pages.contact.form.subject')}</label>
+        <label for="input-subject">{$_('pages.contact.form.subject')}</label>
         <span class="req">{$_('pages.contact.form.required')}</span>
-        <input type="text" name="title" required />
+        <input type="text" id="input-subject" name="title" required />
       </p>
       <p class="input-item">
-        <label for="message">{$_('pages.contact.form.message')}</label>
+        <label for="input-message">{$_('pages.contact.form.message')}</label>
         <span class="req">{$_('pages.contact.form.required')}</span>
-        <textarea name="message" required />
+        <textarea name="message" id="input-message" required />
       </p>
       <p class="centered">
         <Button type="submit">{$_('pages.contact.form.submit')}</Button>
