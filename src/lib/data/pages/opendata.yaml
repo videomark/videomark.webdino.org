@@ -3,14 +3,12 @@ ja:
     pageTitle: オープンデータ
   download:
     heading: ダウンロード
-    body: >-
-      Web VideoMark
+    body: Web VideoMark
       で収集された計測ログは、プライバシーなどに考慮した処理をした上で月ごとに分けたアーカイブファイルと、そのログデータを計測単位で整理し MongoDB
-      での分析用コレクションとして整理したデータを公開しています。有志のインターネット計測ボランティアによって集められた調査ログを分析・活用されたい方は次の
-      URL からダウンロードしてください。
-
-
-      - [https://opendata.webdino.org/](https://opendata.webdino.org/)
+      での分析用コレクションとして整理したデータを公開しています。有志のインターネット計測ボランティアによって集められた調査ログを分析・活用されたい方は
+      [Google
+      Drive](https://drive.google.com/drive/folders/1sx6TVH3QiFzUrzHf2HtgIWy16fmpNWXP)
+      からダウンロードしてください。
   sample:
     heading: データサンプル
     body: >-
