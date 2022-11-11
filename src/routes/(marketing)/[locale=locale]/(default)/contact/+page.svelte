@@ -47,6 +47,11 @@
         <span class="req">{$_('pages.contact.form.required')}</span>
         <input type="email" name="e-mail" required />
       </p>
+      <p class="input-item" hidden>
+        <label for="tel">TEL</label>
+        <span class="req" />
+        <input type="text" name="tel" />
+      </p>
       <p class="input-item">
         <label for="title">{$_('pages.contact.form.subject')}</label>
         <span class="req">{$_('pages.contact.form.required')}</span>
@@ -80,6 +85,10 @@
     align-items: center;
     gap: 8px;
     white-space: nowrap;
+
+    &[hidden] {
+      display: none;
+    }
 
     @media screen and (max-width: 767px) {
       flex-wrap: wrap;
