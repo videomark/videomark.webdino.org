@@ -27,6 +27,7 @@
     "@types/d3-scale": "^4.0.2",
     "@types/d3-selection": "^3.0.3",
     "@types/marked": "^4.0.7",
+    "@types/md5": "^2.3.2",
     "@types/topojson": "^3.2.3",
     "cspell": "^6.14.2",
     "eslint": "^8.27.0",
@@ -60,6 +61,7 @@
     "d3-geo": "^3.0.1",
     "d3-scale": "^4.0.2",
     "d3-selection": "^3.0.0",
+    "md5": "^2.3.0",
     "topojson": "^3.0.2"
   }
 }

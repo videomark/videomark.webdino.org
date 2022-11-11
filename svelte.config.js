@@ -9,8 +9,6 @@ const config = {
     prerender: {
       // Add some orphaned pages
       entries: ['*', '/ja/contact/thanks', '/ja/whatsnew'],
-      // Ignore errors on non-ASCII anchors
-      handleMissingId: 'ignore',
     },
     csp: {
       mode: 'hash',

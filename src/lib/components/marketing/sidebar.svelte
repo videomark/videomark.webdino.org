@@ -48,6 +48,7 @@
     border-right: 1px solid #eaecef;
     width: 20rem;
     background-color: #fff;
+    overscroll-behavior: contain;
 
     &.fixed {
       display: block;

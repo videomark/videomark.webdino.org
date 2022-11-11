@@ -1179,11 +1179,98 @@ collections:
                 label: 大見出し
                 widget: string
                 i18n: true
-          - name: body
-            label: 本文
-            widget: text
-            required: false
+          - name: general
+            label: 一般
+            widget: object
             i18n: true
+            fields:
+              - name: heading
+                label: 見出し
+                widget: string
+                i18n: true
+              - name: items
+                label: 項目
+                widget: list
+                summary: '{{fields.question}}'
+                i18n: true
+                fields:
+                  - name: question
+                    label: 質問
+                    widget: string
+                    i18n: true
+                  - name: answer
+                    label: 回答
+                    widget: text
+                    i18n: true
+          - name: qoe
+            label: QoE
+            widget: object
+            i18n: true
+            fields:
+              - name: heading
+                label: 見出し
+                widget: string
+                i18n: true
+              - name: items
+                label: 項目
+                widget: list
+                summary: '{{fields.question}}'
+                i18n: true
+                fields:
+                  - name: question
+                    label: 質問
+                    widget: string
+                    i18n: true
+                  - name: answer
+                    label: 回答
+                    widget: text
+                    i18n: true
+          - name: privacy
+            label: プライバシー
+            widget: object
+            i18n: true
+            fields:
+              - name: heading
+                label: 見出し
+                widget: string
+                i18n: true
+              - name: items
+                label: 項目
+                widget: list
+                summary: '{{fields.question}}'
+                i18n: true
+                fields:
+                  - name: question
+                    label: 質問
+                    widget: string
+                    i18n: true
+                  - name: answer
+                    label: 回答
+                    widget: text
+                    i18n: true
+          - name: limitations
+            label: 制限事項
+            widget: object
+            i18n: true
+            fields:
+              - name: heading
+                label: 見出し
+                widget: string
+                i18n: true
+              - name: items
+                label: 項目
+                widget: list
+                summary: '{{fields.question}}'
+                i18n: true
+                fields:
+                  - name: question
+                    label: 質問
+                    widget: string
+                    i18n: true
+                  - name: answer
+                    label: 回答
+                    widget: text
+                    i18n: true
       - name: contact
         label: お問い合わせ
         file: src/lib/data/pages/contact.yaml
