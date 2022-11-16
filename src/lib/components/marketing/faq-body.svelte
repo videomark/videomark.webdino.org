@@ -5,9 +5,8 @@
   import { parse } from '$lib/services/util/markdown';
   import { unique } from '$lib/services/util/array';
 
-  export let category = '';
+  export let categories = [];
 
-  const heading = $_(`pages.faq.${category}.heading`);
   let targetId = '';
 
   const getHash = () => {
@@ -26,15 +25,18 @@
   }}
 />
 
-<section id={md5(heading)} aria-current={targetId === md5(heading)}>
-  <h2>{heading}</h2>
-  {#each unique($json(`pages.faq.${category}.items`), 'question') as { question, answer } (question)}
-    <section id={md5(question)} aria-current={targetId === md5(question)}>
-      <h3>{question}</h3>
-      {@html parse(answer)}
-    </section>
-  {/each}
-</section>
+{#each categories as category}
+  {@const heading = $_(`pages.faq.${category}.heading`)}
+  <section id={md5(heading)} aria-current={targetId === md5(heading)}>
+    <h2>{heading}</h2>
+    {#each unique($json(`pages.faq.${category}.items`), 'question') as { question, answer } (question)}
+      <section id={md5(question)} aria-current={targetId === md5(question)}>
+        <h3>{question}</h3>
+        {@html parse(answer)}
+      </section>
+    {/each}
+  </section>
+{/each}
 
 <style lang="scss">
   section {
