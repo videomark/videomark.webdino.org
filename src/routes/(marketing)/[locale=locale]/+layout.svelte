@@ -3,7 +3,7 @@
   import { json, locale as currentLocale, _ } from 'svelte-i18n';
   import { prefetchRoutes } from '$app/navigation';
   import { page } from '$app/stores';
-  import SidebarButton from '$lib/components/marketing/SidebarButton.svelte';
+  import ToggleMenuButton from '$lib/components/marketing/toggle-menu-button.svelte';
   import { unique } from '$lib/services/util/array';
 
   onMount(() => {
@@ -12,7 +12,7 @@
 </script>
 
 <header>
-  <SidebarButton />
+  <ToggleMenuButton />
   <h1>
     <a href={`/${$currentLocale}`}>
       <img
