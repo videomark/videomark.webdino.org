@@ -1,29 +1,19 @@
 <script>
   import md5 from 'md5';
-  import { onMount } from 'svelte';
   import { json, _ } from 'svelte-i18n';
-  import { parse } from '$lib/services/util/markdown';
   import { unique } from '$lib/services/util/array';
+  import { parse } from '$lib/services/util/markdown';
 
+  /**
+   * All the FAQ categories.
+   */
   export let categories = [];
 
-  let targetId = '';
-
-  const getHash = () => {
-    targetId = window.location.hash.substring(1);
-  };
-
-  onMount(() => {
-    getHash();
-    document.getElementById(targetId)?.scrollIntoView();
-  });
+  /**
+   * Any element ID specified in the URL (`location.hash`).
+   */
+  export let targetId = '';
 </script>
-
-<svelte:window
-  on:hashchange={() => {
-    getHash();
-  }}
-/>
 
 {#each categories as category}
   {@const heading = $_(`pages.faq.${category}.heading`)}

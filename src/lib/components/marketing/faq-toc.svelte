@@ -1,27 +1,18 @@
 <script>
   import md5 from 'md5';
-  import { onMount } from 'svelte';
   import { json, _ } from 'svelte-i18n';
   import { unique } from '$lib/services/util/array';
 
+  /**
+   * All the FAQ categories.
+   */
   export let categories = [];
 
-  let targetId = '';
-
-  const getHash = () => {
-    targetId = window.location.hash.substring(1);
-  };
-
-  onMount(() => {
-    getHash();
-  });
+  /**
+   * Any element ID specified in the URL (`location.hash`).
+   */
+  export let targetId = '';
 </script>
-
-<svelte:window
-  on:hashchange={() => {
-    getHash();
-  }}
-/>
 
 <ul>
   {#each categories as category}
