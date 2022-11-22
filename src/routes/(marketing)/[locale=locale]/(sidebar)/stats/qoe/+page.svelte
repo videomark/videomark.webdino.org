@@ -2,7 +2,6 @@
   import { json, _ } from 'svelte-i18n';
   import Header from '$lib/components/marketing/header.svelte';
   import MetaTags from '$lib/components/marketing/meta-tags.svelte';
-  import MongoChartsRenderer from '$lib/components/marketing/mongo-charts-renderer.svelte';
   import Section from '$lib/components/marketing/section.svelte';
   import { parse } from '$lib/services/util/markdown';
 </script>
@@ -57,5 +56,3 @@
     <div data-chart-id={id} />
   {/each}
 </Section>
-
-<MongoChartsRenderer />

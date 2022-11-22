@@ -1,6 +1,7 @@
 <script>
   import { json } from 'svelte-i18n';
   import { page } from '$app/stores';
+  import MongoChartsRenderer from '$lib/components/marketing/mongo-charts-renderer.svelte';
   import Sidebar from '$lib/components/marketing/sidebar.svelte';
   import { unique } from '$lib/services/util/array';
 </script>
@@ -20,3 +21,5 @@
 <main>
   <slot />
 </main>
+
+<MongoChartsRenderer />
