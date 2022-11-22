@@ -1,13 +1,3 @@
-# software download
-/chromeextension   https://chrome.google.com/webstore/detail/web-videomark/lapldfdplijeiifekbgipcfjnklaahbd
-/firefoxextension  https://addons.mozilla.org/firefox/addon/videomark/
-/androidnightly    https://addons.mozilla.org/firefox/collections/16375456/vm/
-/androidbrowser    https://play.google.com/store/apps/details?id=org.webdino.videomarkbrowser
-
-# update news
-/whatsnew/extension/* /whatsnew/extension#v:splat
-/whatsnew/android/* /whatsnew/android#v:splat
-
 # locale prefix
 / /ja
 /about /ja/about
@@ -30,3 +20,13 @@
 /whatsnew /ja/whatsnew
 /whatsnew/android /ja/whatsnew/android
 /whatsnew/extension /ja/whatsnew/extension
+
+# software download
+/chromeextension   https://chrome.google.com/webstore/detail/web-videomark/lapldfdplijeiifekbgipcfjnklaahbd
+/firefoxextension  https://addons.mozilla.org/firefox/addon/videomark/
+/androidnightly    https://addons.mozilla.org/firefox/collections/16375456/vm/
+/androidbrowser    https://play.google.com/store/apps/details?id=org.webdino.videomarkbrowser
+
+# update news
+/whatsnew/extension/* /whatsnew/extension#v:splat
+/whatsnew/android/* /whatsnew/android#v:splat
