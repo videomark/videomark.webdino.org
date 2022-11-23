@@ -1,10 +1,11 @@
 ja:
   trends:
     heading: デフォルト解像度変更
-    chart_ids: |-
-      b5bb2654-6869-4ec7-8f19-9a89685b87ea
-      fab6e419-6ed9-42cc-95ae-019663405345
-      e3183c1c-3005-492b-b6e6-4deb6f7f9888
+    charts:
+      - id: b5bb2654-6869-4ec7-8f19-9a89685b87ea
+      - id: fab6e419-6ed9-42cc-95ae-019663405345
+        cache: -1
+      - id: e3183c1c-3005-492b-b6e6-4deb6f7f9888
   meta:
     pageTitle: 統計情報 — YouTube 解像度
   intro:

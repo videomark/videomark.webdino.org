@@ -4,10 +4,10 @@ ja:
   trends:
     heading: "動画視聴数: 視聴行動の変化"
     body: ""
-    chart_ids: |-
-      4b580aa1-6f3f-4036-92de-009102c34374
-      d09fa88b-409f-4f16-8105-f159e4a06783
-      5bacad00-61d0-48b3-9c95-416f45fe605a
+    charts:
+      - id: 4b580aa1-6f3f-4036-92de-009102c34374
+      - id: d09fa88b-409f-4f16-8105-f159e4a06783
+      - id: 5bacad00-61d0-48b3-9c95-416f45fe605a
   intro:
     heading: 動画視聴数
 en:

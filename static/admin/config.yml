@@ -830,10 +830,23 @@ collections:
                 widget: text
                 required: false
                 i18n: true
-              - name: chart_ids
-                label: MongoDB チャート ID (改行区切り)
-                widget: text
+              - name: charts
+                label: MongoDB チャート
+                label_singular: チャート
+                widget: list
+                summary: '{{fields.id}}'
                 i18n: true
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+                    i18n: true
+                  - name: cache
+                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    widget: number
+                    min: -1
+                    required: false
+                    i18n: true
           - name: qoe_trends
             label: QoE 推移
             widget: object
@@ -848,10 +861,23 @@ collections:
                 widget: text
                 required: false
                 i18n: true
-              - name: chart_ids
-                label: MongoDB チャート ID (改行区切り)
-                widget: text
+              - name: charts
+                label: MongoDB チャート
+                label_singular: チャート
+                widget: list
+                summary: '{{fields.id}}'
                 i18n: true
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+                    i18n: true
+                  - name: cache
+                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    widget: number
+                    min: -1
+                    required: false
+                    i18n: true
           - name: numbers
             label: 計測数
             widget: object
@@ -866,10 +892,23 @@ collections:
                 widget: text
                 required: false
                 i18n: true
-              - name: chart_ids
-                label: MongoDB チャート ID (改行区切り)
-                widget: text
+              - name: charts
+                label: MongoDB チャート
+                label_singular: チャート
+                widget: list
+                summary: '{{fields.id}}'
                 i18n: true
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+                    i18n: true
+                  - name: cache
+                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    widget: number
+                    min: -1
+                    required: false
+                    i18n: true
       - name: stats_views
         label: 統計情報 — 視聴数
         file: src/lib/data/pages/stats_views.yaml
@@ -918,10 +957,23 @@ collections:
                 widget: text
                 required: false
                 i18n: true
-              - name: chart_ids
-                label: MongoDB チャート ID (改行区切り)
-                widget: text
+              - name: charts
+                label: MongoDB チャート
+                label_singular: チャート
+                widget: list
+                summary: '{{fields.id}}'
                 i18n: true
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+                    i18n: true
+                  - name: cache
+                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    widget: number
+                    min: -1
+                    required: false
+                    i18n: true
       - name: stats_speeds
         label: 統計情報 — 速度
         file: src/lib/data/pages/stats_speeds.yaml
@@ -970,10 +1022,23 @@ collections:
                 widget: text
                 required: false
                 i18n: true
-              - name: chart_ids
-                label: MongoDB チャート ID (改行区切り)
-                widget: text
+              - name: charts
+                label: MongoDB チャート
+                label_singular: チャート
+                widget: list
+                summary: '{{fields.id}}'
                 i18n: true
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+                    i18n: true
+                  - name: cache
+                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    widget: number
+                    min: -1
+                    required: false
+                    i18n: true
           - name: response_times
             label: 応答時間
             widget: object
@@ -988,10 +1053,23 @@ collections:
                 widget: text
                 required: false
                 i18n: true
-              - name: chart_ids
-                label: MongoDB チャート ID (改行区切り)
-                widget: text
+              - name: charts
+                label: MongoDB チャート
+                label_singular: チャート
+                widget: list
+                summary: '{{fields.id}}'
                 i18n: true
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+                    i18n: true
+                  - name: cache
+                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    widget: number
+                    min: -1
+                    required: false
+                    i18n: true
       - name: stats_qoe
         label: 統計情報 — QoE
         file: src/lib/data/pages/stats_qoe.yaml
@@ -1040,10 +1118,23 @@ collections:
                 widget: text
                 required: false
                 i18n: true
-              - name: chart_ids
-                label: MongoDB チャート ID (改行区切り)
-                widget: text
+              - name: charts
+                label: MongoDB チャート
+                label_singular: チャート
+                widget: list
+                summary: '{{fields.id}}'
                 i18n: true
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+                    i18n: true
+                  - name: cache
+                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    widget: number
+                    min: -1
+                    required: false
+                    i18n: true
           - name: distribution
             label: 分布
             widget: object
@@ -1058,10 +1149,23 @@ collections:
                 widget: text
                 required: false
                 i18n: true
-              - name: chart_ids
-                label: MongoDB チャート ID (改行区切り)
-                widget: text
+              - name: charts
+                label: MongoDB チャート
+                label_singular: チャート
+                widget: list
+                summary: '{{fields.id}}'
                 i18n: true
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+                    i18n: true
+                  - name: cache
+                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    widget: number
+                    min: -1
+                    required: false
+                    i18n: true
           - name: hourly
             label: 時間帯別
             widget: object
@@ -1076,10 +1180,23 @@ collections:
                 widget: text
                 required: false
                 i18n: true
-              - name: chart_ids
-                label: MongoDB チャート ID (改行区切り)
-                widget: text
+              - name: charts
+                label: MongoDB チャート
+                label_singular: チャート
+                widget: list
+                summary: '{{fields.id}}'
                 i18n: true
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+                    i18n: true
+                  - name: cache
+                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    widget: number
+                    min: -1
+                    required: false
+                    i18n: true
           - name: weekly
             label: 週別
             widget: object
@@ -1094,10 +1211,23 @@ collections:
                 widget: text
                 required: false
                 i18n: true
-              - name: chart_ids
-                label: MongoDB チャート ID (改行区切り)
-                widget: text
+              - name: charts
+                label: MongoDB チャート
+                label_singular: チャート
+                widget: list
+                summary: '{{fields.id}}'
                 i18n: true
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+                    i18n: true
+                  - name: cache
+                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    widget: number
+                    min: -1
+                    required: false
+                    i18n: true
       - name: stats_resolutions
         label: 統計情報 — 解像度
         file: src/lib/data/pages/stats_resolutions.yaml
@@ -1146,10 +1276,23 @@ collections:
                 widget: text
                 required: false
                 i18n: true
-              - name: chart_ids
-                label: MongoDB チャート ID (改行区切り)
-                widget: text
+              - name: charts
+                label: MongoDB チャート
+                label_singular: チャート
+                widget: list
+                summary: '{{fields.id}}'
                 i18n: true
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+                    i18n: true
+                  - name: cache
+                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    widget: number
+                    min: -1
+                    required: false
+                    i18n: true
       - name: faq
         label: よくある質問
         file: src/lib/data/pages/faq.yaml

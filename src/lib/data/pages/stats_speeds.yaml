@@ -3,16 +3,16 @@ ja:
     pageTitle: 統計情報 — 応答時間・通信速度
   throughput:
     heading: 時間帯ごとの平均スループット
-    chart_ids: |-
-      9662db28-46ac-4dfe-bc22-c99fc9ec294b
-      d48e12b3-2bdc-4979-90f7-2dd82522e597
-      f09e09c8-73e6-4e2a-a8a8-55166b8d040e
+    charts:
+      - id: 9662db28-46ac-4dfe-bc22-c99fc9ec294b
+      - id: d48e12b3-2bdc-4979-90f7-2dd82522e597
+      - id: f09e09c8-73e6-4e2a-a8a8-55166b8d040e
   response_times:
     heading: 時間帯ごとの平均応答時間
-    chart_ids: |-
-      174fe5f0-1ffc-4676-8e7e-92932343d73a
-      5a6d3f77-0721-41d7-821e-42df977400ab
-      c74f35b6-369f-4665-af9e-f6706970e033
+    charts:
+      - id: 174fe5f0-1ffc-4676-8e7e-92932343d73a
+      - id: 5a6d3f77-0721-41d7-821e-42df977400ab
+      - id: c74f35b6-369f-4665-af9e-f6706970e033
   intro:
     heading: "応答時間・通信速度: ネットワーク混雑状況の変化"
 en:
