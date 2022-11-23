@@ -17,5 +17,5 @@
 <Section>
   <h2>{$_('pages.stats_resolutions.trends.heading')}</h2>
   {@html parse($_('pages.stats_resolutions.trends.body', { default: '' }))}
-  <MongoCharts charts={$_('pages.stats_resolutions.trends.charts')} />
+  <MongoCharts charts={$json('pages.stats_resolutions.trends.charts')} />
 </Section>
