@@ -1,21 +1,27 @@
 version: "0.2"
 language: en
-enableFiletypes:
-  - jsonc
-  - svelte
 dictionaries:
   - css
   - html
   - typescript
+enableFiletypes:
+  - ignore
+  - properties
+  - svelte
+  - xml
+files:
+  - "**/.*"
+  - "**/*.{css,js,json,jsonc,html,md,scss,svelte,svg,yaml,yml,xml}"
+useGitignore: true
 ignorePaths:
   - pnpm-lock.yaml
-  - build
 words:
   - Abema
   - Asahi
   - Biglobe
   - Cloudinary
   - noninteractive
+  - Noto
   - Paravi
   - unspaced
   - VITE

@@ -9,7 +9,7 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
     "format": "prettier --plugin-search-dir . --write .",
     "lint": "npm-run-all lint:*",
-    "lint:cspell": "cspell --gitignore '**/*.{css,scss,svelte,js,json,html,yaml}' --dot --no-progress",
+    "lint:cspell": "cspell --no-progress",
     "lint:prettier": "prettier --check --plugin-search-dir=. .",
     "lint:eslint": "eslint --ignore-path .gitignore .",
     "lint:stylelint": "stylelint '**/*.{css,scss,svelte}'",
