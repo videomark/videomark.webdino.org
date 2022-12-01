@@ -1,13 +1,13 @@
 <script>
   import { onMount } from 'svelte';
   import { json, locale as currentLocale, _ } from 'svelte-i18n';
-  import { prefetchRoutes } from '$app/navigation';
+  import { preloadCode } from '$app/navigation';
   import { page } from '$app/stores';
   import ToggleMenuButton from '$lib/components/marketing/toggle-menu-button.svelte';
   import { unique } from '$lib/services/util/array';
 
   onMount(() => {
-    prefetchRoutes(unique($json('pages._global.header.links'), 'href').map(({ href }) => href));
+    preloadCode(unique($json('pages._global.header.links'), 'href').map(({ href }) => href));
   });
 </script>
 
