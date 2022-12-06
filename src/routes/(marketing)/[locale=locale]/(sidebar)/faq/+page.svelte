@@ -16,7 +16,7 @@
 
   onMount(() => {
     getHash();
-    document.getElementById(targetId)?.scrollIntoView();
+    (targetId ? document.getElementById(targetId) : undefined)?.scrollIntoView();
   });
 </script>
 
