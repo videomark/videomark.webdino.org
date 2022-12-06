@@ -15,3 +15,4 @@
 
 /admin/*
   Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline' 'self'; font-src 'self'; img-src 'self' blob: data: https://avatars.githubusercontent.com; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://identity.netlify.com https://unpkg.com; connect-src 'self' blob: https://api.github.com https://www.githubstatus.com http://localhost:8081; frame-ancestors 'none'; base-uri 'none'; form-action 'none'
+  X-Robots-Tag: noindex
