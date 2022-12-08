@@ -146,6 +146,18 @@ ja:
         - ABEMA の放送視聴時の QoE 計測に対応しました
         - YouTube 視聴時のスループットの計算に Resource Timing API を使うように変更しました
       version: 1.10.0
+    - date: 2022-11-28
+      body: |-
+        - ABEMA FIFA ワールドカップ生中継視聴時の QoE 計測できない不具合を修正しました
+      version: 1.11.1
+    - date: 2022-11-28
+      body: |-
+        - ABEMA FIFA ワールドカップ生中継視聴時の QoE 計測に対応しました
+      version: 1.11.0
+    - date: 2022-12-08
+      body: |-
+        - ABEMA の放送視聴時のスループットの取得に対応しました
+      version: 1.12.0
   intro:
     heading: Web VideoMark の新機能とお知らせ
 en:
