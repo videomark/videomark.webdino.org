@@ -6,7 +6,7 @@
   export let releases = [];
 </script>
 
-{#each releases.sort((a, b) => new Date(b.date) - new Date(a.date)) as release (release.date)}
+{#each releases.reverse() as release (release.version)}
   {@const { version, date, body } = release}
   <Article>
     <h2>
