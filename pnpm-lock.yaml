@@ -23,6 +23,7 @@ specifiers:
   eslint: ^8.29.0
   eslint-config-airbnb-base: ^15.0.0
   eslint-config-prettier: ^8.5.0
+  eslint-plugin-import: ^2.26.0
   eslint-plugin-svelte3: ^4.0.0
   marked: ^4.2.4
   md5: ^2.3.0
@@ -72,6 +73,7 @@ devDependencies:
   eslint: 8.29.0
   eslint-config-airbnb-base: 15.0.0_lt3hqehuojhfcbzgzqfngbtmrq
   eslint-config-prettier: 8.5.0_eslint@8.29.0
+  eslint-plugin-import: 2.26.0_eslint@8.29.0
   eslint-plugin-svelte3: 4.0.0_2aagxyyd66x6iymg5nfckajqjq
   marked: 4.2.4
   netlify-cms-proxy-server: 1.3.24
@@ -3271,7 +3273,7 @@ packages:
     dependencies:
       '@colors/colors': 1.5.0
       fecha: 4.2.3
-      ms: 2.1.2
+      ms: 2.1.3
       safe-stable-stringify: 2.4.1
       triple-beam: 1.3.0
     dev: true

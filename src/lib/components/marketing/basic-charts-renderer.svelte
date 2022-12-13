@@ -28,11 +28,11 @@
     constructor() {
       this.width = document.querySelector('.regional-qoe-graph').clientWidth;
 
-      this.load_hourly_stats().then(() => this.render_hourly_stats());
-      this.load_daily_stats().then(() => this.render_daily_stats());
+      this.loadHourlyStats().then(() => this.renderHourlyStats());
+      this.loadDailyStats().then(() => this.renderDailyStats());
 
-      Promise.all([this.load_regional_stats(), this.load_map()]).then(() =>
-        this.render_regional_stats(),
+      Promise.all([this.loadRegionalStats(), this.loadMap()]).then(() =>
+        this.renderRegionalStats(),
       );
 
       window.addEventListener('resize', () => this.rerender());
@@ -52,12 +52,12 @@
 
       this.width = document.querySelector('.regional-qoe-graph').clientWidth;
 
-      this.render_hourly_stats();
-      this.render_daily_stats();
-      this.render_regional_stats();
+      this.renderHourlyStats();
+      this.renderDailyStats();
+      this.renderRegionalStats();
     }
 
-    async load_stats(method, options = {}) {
+    async loadStats(method, options = {}) {
       return fetch(`https://sodium.webdino.org:8443/${method}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -65,11 +65,11 @@
       }).then((response) => response.json());
     }
 
-    get_color(value) {
+    getColor(value) {
       return value ? `hsl(${parseInt((value - 2) * 40, 10)}, 100%, 45%)` : '#FFF';
     }
 
-    render_bar_chart(group, labels, stats) {
+    renderBarChart(group, labels, stats) {
       const data = [];
       const reducedTicks = this.width < 800 && labels.length > 10;
       const xTickValues = [];
@@ -80,7 +80,7 @@
         const key = labels[i] || i;
         const value = d ? parseInt(d.average * 100, 10) / 100 : 0;
 
-        data.push({ key, value, color: this.get_color(value) });
+        data.push({ key, value, color: this.getColor(value) });
 
         if (!reducedTicks || i % 2 === 0) {
           xTickValues.push(key);
@@ -148,57 +148,57 @@
       );
     }
 
-    async load_hourly_stats() {
-      this.hourly_stats = await this.load_stats('stats', {
+    async loadHourlyStats() {
+      this.hourlyStats = await this.loadStats('stats', {
         group: 'hour',
         limit: 24,
       });
     }
 
-    render_hourly_stats() {
-      this.render_bar_chart('hour', new Array(24), this.hourly_stats);
+    renderHourlyStats() {
+      this.renderBarChart('hour', new Array(24), this.hourlyStats);
     }
 
-    async load_daily_stats() {
-      this.daily_stats = await this.load_stats('stats', {
+    async loadDailyStats() {
+      this.dailyStats = await this.loadStats('stats', {
         group: 'day',
         limit: 7,
       });
     }
 
-    render_daily_stats() {
-      this.render_bar_chart(
+    renderDailyStats() {
+      this.renderBarChart(
         'day',
         locale === 'ja'
           ? ['日', '月', '火', '水', '木', '金', '土']
           : ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-        this.daily_stats,
+        this.dailyStats,
       );
     }
 
-    async load_regional_stats() {
-      this.regional_stats = await this.load_stats('stats/subdivision', {
+    async loadRegionalStats() {
+      this.regionalStats = await this.loadStats('stats/subdivision', {
         country: 'JP',
       });
     }
 
-    async load_map() {
+    async loadMap() {
       // https://github.com/dataofjapan/land/blob/master/japan.topojson
       this.map = await fetch('/scripts/japan.topojson').then((r) => r.json());
     }
 
-    render_regional_stats() {
+    renderRegionalStats() {
       const data = [];
       const getData = (pref) => data.find((d) => d.key === pref.properties.id);
 
       for (let key = 1; key <= 47; key += 1) {
-        const d = this.regional_stats.find(
+        const d = this.regionalStats.find(
           (_d) => _d.country === 'JP' && _d.subdivision === `${key < 10 ? '0' : ''}${key}`,
         );
 
         const value = d ? parseInt(d.data[0].average * 100, 10) / 100 : 0;
 
-        data.push({ key, value, color: this.get_color(value) });
+        data.push({ key, value, color: this.getColor(value) });
       }
 
       const { width } = this;
