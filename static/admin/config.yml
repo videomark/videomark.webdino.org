@@ -1228,6 +1228,133 @@ collections:
                     min: -1
                     required: false
                     i18n: true
+      - name: stats_ipv6
+        label: 統計情報 — IPv4/v6 比較
+        file: src/lib/data/pages/stats_ipv6.yaml
+        i18n: true
+        fields:
+          - name: meta
+            label: メタデータ
+            widget: object
+            i18n: true
+            summary: '{{fields.pageTitle}}'
+            fields:
+              - name: pageTitle
+                label: ページタイトル
+                widget: string
+                i18n: true
+              - name: pageDescription
+                label: ページ説明文
+                widget: text
+                required: false
+                i18n: true
+          - name: intro
+            label: イントロ
+            widget: object
+            i18n: true
+            fields:
+              - name: heading
+                label: 大見出し
+                widget: string
+                i18n: true
+              - name: body
+                label: 本文
+                widget: text
+                required: false
+                i18n: true
+          - name: throughput
+            label: スループット
+            widget: object
+            i18n: true
+            fields:
+              - name: heading
+                label: 見出し
+                widget: string
+                i18n: true
+              - name: body
+                label: 本文
+                widget: text
+                required: false
+                i18n: true
+              - name: charts
+                label: MongoDB チャート
+                label_singular: チャート
+                widget: list
+                summary: '{{fields.id}}'
+                i18n: true
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+                    i18n: true
+                  - name: cache
+                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    widget: number
+                    min: -1
+                    required: false
+                    i18n: true
+          - name: hourly_qoe
+            label: 時間帯別 QoE
+            widget: object
+            i18n: true
+            fields:
+              - name: heading
+                label: 見出し
+                widget: string
+                i18n: true
+              - name: body
+                label: 本文
+                widget: text
+                required: false
+                i18n: true
+              - name: charts
+                label: MongoDB チャート
+                label_singular: チャート
+                widget: list
+                summary: '{{fields.id}}'
+                i18n: true
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+                    i18n: true
+                  - name: cache
+                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    widget: number
+                    min: -1
+                    required: false
+                    i18n: true
+          - name: weekly_qoe
+            label: 週別 QoE
+            widget: object
+            i18n: true
+            fields:
+              - name: heading
+                label: 見出し
+                widget: string
+                i18n: true
+              - name: body
+                label: 本文
+                widget: text
+                required: false
+                i18n: true
+              - name: charts
+                label: MongoDB チャート
+                label_singular: チャート
+                widget: list
+                summary: '{{fields.id}}'
+                i18n: true
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+                    i18n: true
+                  - name: cache
+                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    widget: number
+                    min: -1
+                    required: false
+                    i18n: true
       - name: stats_resolutions
         label: 統計情報 — 解像度
         file: src/lib/data/pages/stats_resolutions.yaml

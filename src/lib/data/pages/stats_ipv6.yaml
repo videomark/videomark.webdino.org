@@ -1,0 +1,43 @@
+ja:
+  meta:
+    pageTitle: 統計情報 — IPv4/v6 比較
+  intro:
+    heading: IPv4/v6 比較
+    body: ユーザーのインターネット環境が通信速度や体感品質 (QoE) にどう影響するか、IPv4 と IPv6 に分けてチャートを作成しました。
+  hourly_qoe:
+    heading: 時間帯別平均 QoE
+    body: ""
+    charts:
+      - id: 3a9f4bb5-4945-47c1-b2ea-7e8d226b1d57
+      - id: 8c5791cb-e720-46c3-a460-9ab8619d66a4
+        cache: -1
+      - id: add1c50c-3a4b-484c-852f-69596a285281
+        cache: -1
+  weekly_qoe:
+    heading: 週別平均 QoE
+    body: ""
+    charts:
+      - id: ef708327-0721-4085-8e3e-7d8e5dcc346f
+      - id: 33f3a764-65e5-4683-9c95-bc59636624f4
+        cache: -1
+      - id: 3210832e-c60f-4981-bb79-214b454a8e31
+        cache: -1
+  throughput:
+    heading: 時間帯ごとの平均スループット
+    charts:
+      - id: 620f005e-7895-4a52-86a9-53b0ce969b7f
+      - id: 04cea6cf-755b-4a57-bf00-add2a76d6929
+        cache: -1
+      - id: f6c36421-88a1-4283-a323-d49869f9c595
+        cache: -1
+en:
+  meta:
+    pageTitle: ""
+  intro:
+    heading: ""
+  hourly_qoe:
+    heading: ""
+    body: ""
+  weekly_qoe:
+    heading: ""
+    body: ""

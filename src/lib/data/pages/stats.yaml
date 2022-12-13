@@ -22,16 +22,18 @@ ja:
     links:
       - text: 統計情報
         href: /ja/stats
-      - text: Tokyo 2020
-        href: /ja/stats/tokyo2020
       - text: 動画視聴数
         href: /ja/stats/views
       - text: 応答時間・通信速度
         href: /ja/stats/speeds
       - text: 体感品質 (QoE)
         href: /ja/stats/qoe
+      - text: IPv4/v6 比較
+        href: /ja/stats/ipv6
       - href: /ja/stats/resolutions
         text: YouTube 解像度
+      - text: Tokyo 2020
+        href: /ja/stats/tokyo2020
   intro:
     heading: 統計情報
 en:
