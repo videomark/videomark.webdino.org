@@ -11,11 +11,6 @@
 /privacy /ja/privacy
 /spec /ja/spec
 /stats /ja/stats
-/stats/qoe /ja/stats/qoe
-/stats/resolutions /ja/stats/resolutions
-/stats/speeds /ja/stats/speeds
-/stats/tokyo2020 /ja/stats/tokyo2020
-/stats/views /ja/stats/views
 /terms /ja/terms
 /whatsnew /ja/whatsnew
 /whatsnew/android /ja/whatsnew/android
@@ -26,6 +21,9 @@
 /firefoxextension  https://addons.mozilla.org/firefox/addon/videomark/
 /androidnightly    https://addons.mozilla.org/firefox/collections/16375456/vm/
 /androidbrowser    https://play.google.com/store/apps/details?id=org.webdino.videomarkbrowser
+
+# various stats pages
+/stats/* /ja/stats/:splat
 
 # update news
 /whatsnew/extension/* /whatsnew/extension#v:splat

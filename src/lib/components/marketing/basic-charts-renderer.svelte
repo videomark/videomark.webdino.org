@@ -108,7 +108,7 @@
         .range([margin, width - margin])
         .padding(0.1);
 
-      const yDomain = [3, 4];
+      const yDomain = [3, 4.5];
 
       const y = d3
         .scaleLinear()

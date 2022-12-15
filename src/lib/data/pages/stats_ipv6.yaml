@@ -8,27 +8,27 @@ ja:
     heading: 時間帯別平均 QoE
     body: ""
     charts:
-      - id: 3a9f4bb5-4945-47c1-b2ea-7e8d226b1d57
-      - id: 8c5791cb-e720-46c3-a460-9ab8619d66a4
+      - id: c573a784-d058-48d1-abcc-59e881dc0452
+      - id: 1c8bd543-5025-4a1c-a0c4-632794370647
         cache: -1
-      - id: add1c50c-3a4b-484c-852f-69596a285281
+      - id: 4f1a4d67-2dcd-48c7-a498-4c1377e95791
         cache: -1
   weekly_qoe:
     heading: 週別平均 QoE
     body: ""
     charts:
-      - id: ef708327-0721-4085-8e3e-7d8e5dcc346f
-      - id: 33f3a764-65e5-4683-9c95-bc59636624f4
+      - id: 67843807-1cfe-4e1b-bc82-cad9de90b1e0
+      - id: 7bb0bb7a-5a5d-4d81-8bd7-3185164f12c5
         cache: -1
-      - id: 3210832e-c60f-4981-bb79-214b454a8e31
+      - id: 8d424c94-7813-45e3-a09e-8a88548e1827
         cache: -1
   throughput:
     heading: 時間帯ごとの平均スループット
     charts:
-      - id: 620f005e-7895-4a52-86a9-53b0ce969b7f
-      - id: 04cea6cf-755b-4a57-bf00-add2a76d6929
+      - id: 3261177b-848d-4dd5-ba9b-e5aa8d5bd795
+      - id: 8b495778-f0e5-481f-a0aa-ef02499ccacb
         cache: -1
-      - id: f6c36421-88a1-4283-a323-d49869f9c595
+      - id: 335eafdf-d092-400a-9f28-ab6aef02e089
         cache: -1
 en:
   meta:
