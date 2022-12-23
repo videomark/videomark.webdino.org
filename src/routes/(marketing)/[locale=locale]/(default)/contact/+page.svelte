@@ -125,6 +125,7 @@
       border: 1px solid #ccc;
       border-radius: 4px;
       font-size: 16px;
+      appearance: none;
       -webkit-appearance: none;
       transition: all 0.3s;
 
