@@ -13,7 +13,7 @@ pnpm install
 ## ローカルサーバーの起動
 
 ```bash
-pnpm run dev
+pnpm dev
 ```
 
 ブラウザーで http://localhost:5173/ を開きます。
@@ -23,7 +23,7 @@ pnpm run dev
 ローカルサーバーを起動した後、新しいターミナルを開き、
 
 ```bash
-pnpm run cms
+pnpm cms
 ```
 
 ブラウザーで http://localhost:5173/admin/index.html を開いてログインします。変更点を保存したらコミットします。
