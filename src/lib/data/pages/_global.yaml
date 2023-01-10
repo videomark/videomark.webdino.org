@@ -32,6 +32,8 @@ ja:
     firefox_extension: Firefox 用拡張機能
     chrome_extension: Chrome/Edge 用拡張機能
     android_browser: Android 用ブラウザー
+  misc:
+    note_prefix: "注:"
 en:
   meta:
     siteTitle: Web VideoMark
@@ -39,3 +41,5 @@ en:
     copyright: <a href="/ja/notice">Copyright © {year}</a> <a
       href="https://www.webdino.org/">WebDINO Japan</a>. <span>All rights
       reserved.</span>
+  misc:
+    note_prefix: "Note:"

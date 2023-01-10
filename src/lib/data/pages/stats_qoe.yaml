@@ -28,6 +28,8 @@ ja:
     body: 24 時間帯の平均 QoE 変動の年間平均です。
     charts:
       - id: 69a35bda-4970-4306-8022-d271dde7dd54
+      - id: 1557429d-7dbb-4840-a378-605a613817d1
+        cache: -1
       - cache: -1
         id: 40067398-9350-410b-af99-b6f8b0627377
       - id: 68b0e072-bab5-4c6a-be21-f081b83de28a
@@ -39,6 +41,8 @@ ja:
     body: 週別平均 QoE の時系列推移です。
     charts:
       - id: e1a1de06-b2fe-4247-acc2-70515afd49e0
+      - id: a22c7f88-15c5-4e8e-a31d-53f93784250b
+        cache: -1
       - id: 6b38faac-7830-4fdc-afde-f59b1968ed33
         cache: -1
       - id: 26fd6720-c503-472c-984e-ad899696fb49

@@ -5,7 +5,9 @@ ja:
     heading: 時間帯ごとの平均スループット
     charts:
       - id: 9662db28-46ac-4dfe-bc22-c99fc9ec294b
+        note: 2022 年 10 月下旬に異常値を含む
       - id: d48e12b3-2bdc-4979-90f7-2dd82522e597
+        note: 2022 年 10 月下旬に異常値を含む
       - id: f09e09c8-73e6-4e2a-a8a8-55166b8d040e
   response_times:
     heading: 時間帯ごとの平均応答時間

@@ -847,6 +847,11 @@ collections:
                     min: -1
                     required: false
                     i18n: true
+                  - name: note
+                    label: 備考
+                    widget: string
+                    required: false
+                    i18n: true
           - name: qoe_trends
             label: QoE 推移
             widget: object
@@ -878,6 +883,11 @@ collections:
                     min: -1
                     required: false
                     i18n: true
+                  - name: note
+                    label: 備考
+                    widget: string
+                    required: false
+                    i18n: true
           - name: numbers
             label: 計測数
             widget: object
@@ -907,6 +917,11 @@ collections:
                     label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
                     widget: number
                     min: -1
+                    required: false
+                    i18n: true
+                  - name: note
+                    label: 備考
+                    widget: string
                     required: false
                     i18n: true
       - name: stats_views
@@ -974,6 +989,11 @@ collections:
                     min: -1
                     required: false
                     i18n: true
+                  - name: note
+                    label: 備考
+                    widget: string
+                    required: false
+                    i18n: true
       - name: stats_speeds
         label: 統計情報 — 速度
         file: src/lib/data/pages/stats_speeds.yaml
@@ -1039,6 +1059,11 @@ collections:
                     min: -1
                     required: false
                     i18n: true
+                  - name: note
+                    label: 備考
+                    widget: string
+                    required: false
+                    i18n: true
           - name: response_times
             label: 応答時間
             widget: object
@@ -1068,6 +1093,11 @@ collections:
                     label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
                     widget: number
                     min: -1
+                    required: false
+                    i18n: true
+                  - name: note
+                    label: 備考
+                    widget: string
                     required: false
                     i18n: true
       - name: stats_qoe
@@ -1135,6 +1165,11 @@ collections:
                     min: -1
                     required: false
                     i18n: true
+                  - name: note
+                    label: 備考
+                    widget: string
+                    required: false
+                    i18n: true
           - name: distribution
             label: 分布
             widget: object
@@ -1164,6 +1199,11 @@ collections:
                     label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
                     widget: number
                     min: -1
+                    required: false
+                    i18n: true
+                  - name: note
+                    label: 備考
+                    widget: string
                     required: false
                     i18n: true
           - name: hourly
@@ -1197,6 +1237,11 @@ collections:
                     min: -1
                     required: false
                     i18n: true
+                  - name: note
+                    label: 備考
+                    widget: string
+                    required: false
+                    i18n: true
           - name: weekly
             label: 週別
             widget: object
@@ -1226,6 +1271,11 @@ collections:
                     label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
                     widget: number
                     min: -1
+                    required: false
+                    i18n: true
+                  - name: note
+                    label: 備考
+                    widget: string
                     required: false
                     i18n: true
       - name: stats_ipv6
@@ -1293,6 +1343,11 @@ collections:
                     min: -1
                     required: false
                     i18n: true
+                  - name: note
+                    label: 備考
+                    widget: string
+                    required: false
+                    i18n: true
           - name: hourly_qoe
             label: 時間帯別 QoE
             widget: object
@@ -1324,6 +1379,11 @@ collections:
                     min: -1
                     required: false
                     i18n: true
+                  - name: note
+                    label: 備考
+                    widget: string
+                    required: false
+                    i18n: true
           - name: weekly_qoe
             label: 週別 QoE
             widget: object
@@ -1353,6 +1413,11 @@ collections:
                     label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
                     widget: number
                     min: -1
+                    required: false
+                    i18n: true
+                  - name: note
+                    label: 備考
+                    widget: string
                     required: false
                     i18n: true
       - name: stats_resolutions
@@ -1418,6 +1483,11 @@ collections:
                     label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
                     widget: number
                     min: -1
+                    required: false
+                    i18n: true
+                  - name: note
+                    label: 備考
+                    widget: string
                     required: false
                     i18n: true
       - name: faq
@@ -2155,5 +2225,14 @@ collections:
                 i18n: true
               - name: android_browser
                 label: Android 用ブラウザー
+                widget: string
+                i18n: true
+          - name: misc
+            label: その他
+            widget: object
+            i18n: true
+            fields:
+              - name: note_prefix
+                label: 注記プレフィックス
                 widget: string
                 i18n: true
