@@ -43,6 +43,11 @@ collections:
                 widget: text
                 required: false
                 i18n: true
+          - name: announcement
+            label: お知らせ
+            widget: string
+            required: false
+            i18n: true
           - name: hero
             label: ヒーロー
             widget: object

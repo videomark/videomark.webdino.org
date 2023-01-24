@@ -15,6 +15,12 @@
 
 <MetaTags meta={$json('pages.home.meta')} pageTitleWithSiteName={false} />
 
+{#if $_('pages.home.announcement')}
+  <div class="announcement">
+    {$_('pages.home.announcement')}
+  </div>
+{/if}
+
 <header>
   <hgroup aria-label="1">
     <h1>
@@ -45,6 +51,16 @@
 </Section>
 
 <style lang="scss">
+  .announcement {
+    padding: 0.8rem 1.6rem;
+    color: #fff;
+    background-color: #626262;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
   header {
     padding: 120px;
     color: #fff;
