@@ -15,7 +15,7 @@
 
 <MetaTags meta={$json('pages.home.meta')} pageTitleWithSiteName={false} />
 
-{#if $_('pages.home.announcement')}
+{#if $_('pages.home.announcement', { default: '' })}
   <div class="announcement">
     {$_('pages.home.announcement')}
   </div>

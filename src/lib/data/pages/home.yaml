@@ -20,7 +20,7 @@ ja:
       src: https://res.cloudinary.com/videomark/c_scale,w_800/pc/logview-03.jpg
       alt: Web VideoMark 計測結果画面
     more: もっと見る →
-  announcement: 現在、サーバーの不調により、体感品質値を算出できないことがあります。ご不便をお掛けしますが、復旧まで今しばらくお待ちください。
+  announcement: ""
 en:
   meta:
     pageImage: null
