@@ -5,7 +5,7 @@ specifiers:
   '@babel/eslint-parser': ^7.19.1
   '@mongodb-js/charts-embed-dom': ^2.3.1
   '@sveltejs/adapter-static': 2.0.1
-  '@sveltejs/kit': 1.5.6
+  '@sveltejs/kit': 1.7.2
   '@types/d3-array': ^3.0.4
   '@types/d3-axis': ^3.0.2
   '@types/d3-geo': ^3.0.3
@@ -14,7 +14,7 @@ specifiers:
   '@types/marked': ^4.0.8
   '@types/md5': ^2.3.2
   '@types/topojson': ^3.2.3
-  cspell: ^6.24.0
+  cspell: ^6.26.3
   d3-array: ^3.2.2
   d3-axis: ^3.0.0
   d3-geo: ^3.1.0
@@ -33,16 +33,16 @@ specifiers:
   postcss-html: ^1.5.0
   prettier: ^2.8.4
   prettier-plugin-svelte: ^2.9.0
-  sass: ^1.58.1
-  stylelint: ^15.1.0
-  stylelint-config-recommended-scss: ^9.0.0
+  sass: ^1.58.3
+  stylelint: ^15.2.0
+  stylelint-config-recommended-scss: ^9.0.1
   stylelint-scss: ^4.4.0
   svelte: ^3.55.1
   svelte-check: ^3.0.3
   svelte-i18n: ^3.6.0
   svelte-preprocess: ^5.0.1
   topojson: ^3.0.2
-  vite: ^4.1.1
+  vite: ^4.1.2
   yaml: ^2.2.1
 
 dependencies:
@@ -58,8 +58,8 @@ dependencies:
 devDependencies:
   '@babel/core': 7.20.12
   '@babel/eslint-parser': 7.19.1_ydmbqfus77qykiqxhcwsorsqbq
-  '@sveltejs/adapter-static': 2.0.1_@sveltejs+kit@1.5.6
-  '@sveltejs/kit': 1.5.6_svelte@3.55.1+vite@4.1.1
+  '@sveltejs/adapter-static': 2.0.1_@sveltejs+kit@1.7.2
+  '@sveltejs/kit': 1.7.2_svelte@3.55.1+vite@4.1.2
   '@types/d3-array': 3.0.4
   '@types/d3-axis': 3.0.2
   '@types/d3-geo': 3.0.3
@@ -68,7 +68,7 @@ devDependencies:
   '@types/marked': 4.0.8
   '@types/md5': 2.3.2
   '@types/topojson': 3.2.3
-  cspell: 6.24.0
+  cspell: 6.26.3
   eslint: 8.34.0
   eslint-config-airbnb-base: 15.0.0_mvgyw3chnqkp6sgfmmtihyjpnm
   eslint-config-prettier: 8.6.0_eslint@8.34.0
@@ -81,15 +81,15 @@ devDependencies:
   postcss-html: 1.5.0
   prettier: 2.8.4
   prettier-plugin-svelte: 2.9.0_jrsxveqmsx2uadbqiuq74wlc4u
-  sass: 1.58.1
-  stylelint: 15.1.0
-  stylelint-config-recommended-scss: 9.0.0_6kmz6pqyyc6yqevihcpt7hoegq
-  stylelint-scss: 4.4.0_stylelint@15.1.0
+  sass: 1.58.3
+  stylelint: 15.2.0
+  stylelint-config-recommended-scss: 9.0.1_xczz5gvex7qa2pnzrs7ducdpai
+  stylelint-scss: 4.4.0_stylelint@15.2.0
   svelte: 3.55.1
-  svelte-check: 3.0.3_sgour5et74aa4mldkpgsb4cole
+  svelte-check: 3.0.3_jatlebrdzjt6hu3wg5wyd6pz7q
   svelte-i18n: 3.6.0_svelte@3.55.1
-  svelte-preprocess: 5.0.1_sgour5et74aa4mldkpgsb4cole
-  vite: 4.1.1_sass@1.58.1
+  svelte-preprocess: 5.0.1_jatlebrdzjt6hu3wg5wyd6pz7q
+  vite: 4.1.2_sass@1.58.3
   yaml: 2.2.1
 
 packages:
@@ -322,23 +322,24 @@ packages:
     engines: {node: '>=0.1.90'}
     dev: true
 
-  /@cspell/cspell-bundled-dicts/6.24.0:
-    resolution: {integrity: sha512-IH7bOxSCN9VdtuOXuvwL+iORj6OCxi8bV/dpPrhwZ5Amg4f8jUxgVcImsUqvZnPjXjG5ng8Qw8FsjjDyOTaLdw==}
+  /@cspell/cspell-bundled-dicts/6.26.3:
+    resolution: {integrity: sha512-ZOQI5XSJiLJi9GEbdjKJvMDbgzevsmoQzvAHZ2ujwzoWfhxCeEET0+6fs88/5QvHgXwl0CDsFspXZr1OFfZLHA==}
     engines: {node: '>=14'}
     dependencies:
       '@cspell/dict-ada': 4.0.1
       '@cspell/dict-aws': 3.0.0
       '@cspell/dict-bash': 4.1.1
       '@cspell/dict-companies': 3.0.6
-      '@cspell/dict-cpp': 4.0.1
+      '@cspell/dict-cpp': 4.0.2
       '@cspell/dict-cryptocurrencies': 3.0.1
       '@cspell/dict-csharp': 4.0.2
-      '@cspell/dict-css': 4.0.2
+      '@cspell/dict-css': 4.0.3
       '@cspell/dict-dart': 2.0.1
       '@cspell/dict-django': 4.0.1
       '@cspell/dict-docker': 1.1.5
       '@cspell/dict-dotnet': 4.0.1
       '@cspell/dict-elixir': 4.0.1
+      '@cspell/dict-en-common-misspellings': 1.0.2
       '@cspell/dict-en-gb': 1.1.33
       '@cspell/dict-en_us': 4.2.2
       '@cspell/dict-filetypes': 3.0.0
@@ -365,7 +366,7 @@ packages:
       '@cspell/dict-ruby': 4.0.1
       '@cspell/dict-rust': 4.0.0
       '@cspell/dict-scala': 4.0.0
-      '@cspell/dict-software-terms': 3.1.2
+      '@cspell/dict-software-terms': 3.1.3
       '@cspell/dict-sql': 2.0.1
       '@cspell/dict-svelte': 1.0.2
       '@cspell/dict-swift': 2.0.1
@@ -373,18 +374,18 @@ packages:
       '@cspell/dict-vue': 3.0.0
     dev: true
 
-  /@cspell/cspell-pipe/6.24.0:
-    resolution: {integrity: sha512-vAzCo5WVp0oUWN5tcV3oFBBDfHSORENNnDzaW2G6DTllpjYHK71OuV5Zzz7jQhxVEWJrGbWg52gjGzWXLE+JJg==}
+  /@cspell/cspell-pipe/6.26.3:
+    resolution: {integrity: sha512-e4LKHgXnYj8lO2qFaPaGUjgS2Vps464sc8lRt65MJ3iHR3/AzQO1mB+MDLCqItaLmcyA/llrEY1D8m9dGiBFxA==}
     engines: {node: '>=14'}
     dev: true
 
-  /@cspell/cspell-service-bus/6.24.0:
-    resolution: {integrity: sha512-haZ03tCtGYtl3TYVx35RtT1kgou0sUfHLzwgLqMjWV3pG5kPslAHinL7P1sy3wJkl5r/SK5nSMlVv9yOS3zshA==}
+  /@cspell/cspell-service-bus/6.26.3:
+    resolution: {integrity: sha512-dbhsB8d4dEd8adyA+/KpNYERyOt8y3VSvOdgusjweEKjezCNxIwLR3GFQHi4QWCevDzrqS+mt9hAvO5RlYP7Bg==}
     engines: {node: '>=14'}
     dev: true
 
-  /@cspell/cspell-types/6.24.0:
-    resolution: {integrity: sha512-HeY+Z2fGxT4ZY271BmADWDI4diC5P2GugDlb3bePiAlj+wqvsXeTad59uDGIL0F2J0krJNhz++CXqlOFDAzHXQ==}
+  /@cspell/cspell-types/6.26.3:
+    resolution: {integrity: sha512-s5SjHbpCP/MBTCCwgADzmZvsxpygIiH/2JytVUBrk8TWr4U8/EE3gXPdJ8EUAW3Ndgls/OpGn9c31F6sFjsLjg==}
     engines: {node: '>=14'}
     dev: true
 
@@ -404,8 +405,8 @@ packages:
     resolution: {integrity: sha512-6rWuwZxPisn/MP41DzBtChVgbz9b6HSjBH3X0s3k7zlBaxrw6xFAZGKH9KGFSPTiV+WD9j+IIn2/ITXERGjNLA==}
     dev: true
 
-  /@cspell/dict-cpp/4.0.1:
-    resolution: {integrity: sha512-mD6mn0XFCqHCz2j6p/7OQm3yNFn1dlQq6vip1pLynvNWDRz5yKYDVRUQCTEORT7ThS0dLpI4BjCX84YUKNhibA==}
+  /@cspell/dict-cpp/4.0.2:
+    resolution: {integrity: sha512-Wi/ZUPoGaqvxeyaAdMtXFtfc3mZ4bw5nKYZrVHCsMzyGTC6IXL9Xp6KbwU0zEJXyNvvmRP5zd+Q4RnMf4abgCg==}
     dev: true
 
   /@cspell/dict-cryptocurrencies/3.0.1:
@@ -416,8 +417,8 @@ packages:
     resolution: {integrity: sha512-1JMofhLK+4p4KairF75D3A924m5ERMgd1GvzhwK2geuYgd2ZKuGW72gvXpIV7aGf52E3Uu1kDXxxGAiZ5uVG7g==}
     dev: true
 
-  /@cspell/dict-css/4.0.2:
-    resolution: {integrity: sha512-0NxBcB36b1Jy23Tf5YLrD8+PvBhE3FgBci3rwtw2DEqVigEX6uodecfoh9I4kcU8PZlVsDujrUfwgzYCWh/feQ==}
+  /@cspell/dict-css/4.0.3:
+    resolution: {integrity: sha512-sLhutH5hlhPGuOtObR3Q0qezywuwREIcyTeERQw14kizYA3jA/J8YxSPcX2r9TsNFPHY85NAMyrH6Q38iyBGbw==}
     dev: true
 
   /@cspell/dict-dart/2.0.1:
@@ -438,6 +439,10 @@ packages:
 
   /@cspell/dict-elixir/4.0.1:
     resolution: {integrity: sha512-IejBqiTTWSXpvBm6yg4qUfnJR0LwbUUCJcK5wXOMKEJitu3yDfrT9GPc6NQJXgokbg9nBjEyxVIzNcLgx2x3/Q==}
+    dev: true
+
+  /@cspell/dict-en-common-misspellings/1.0.2:
+    resolution: {integrity: sha512-jg7ZQZpZH7+aAxNBlcAG4tGhYF6Ksy+QS5Df73Oo+XyckBjC9QS+PrRwLTeYoFIgXy5j3ICParK5r3MSSoL4gw==}
     dev: true
 
   /@cspell/dict-en-gb/1.1.33:
@@ -544,8 +549,8 @@ packages:
     resolution: {integrity: sha512-ugdjt66/Ah34yF3u3DUNjCHXnBqIuxUUfdeBobbGxfm29CNgidrISV1NUh+xi8tPynMzSTpGbBiArFBH6on5XQ==}
     dev: true
 
-  /@cspell/dict-software-terms/3.1.2:
-    resolution: {integrity: sha512-p19elLnu61nl8WJ2IJHANtJqkt5y0dsBb3iApcd5Z+s4uadRBpi29vEeFU+NWoEU0F6vp1mYGCN3sOtC0g/hIA==}
+  /@cspell/dict-software-terms/3.1.3:
+    resolution: {integrity: sha512-gmVR+VgjLGPvUPaF4m1JEv9/mWvKE0bkj5w8nwtijZtAToZ6SKpWM/rkcZOsa691fMyhU6LbIfy4tAZbSSLVYA==}
     dev: true
 
   /@cspell/dict-sql/2.0.1:
@@ -568,15 +573,15 @@ packages:
     resolution: {integrity: sha512-niiEMPWPV9IeRBRzZ0TBZmNnkK3olkOPYxC1Ny2AX4TGlYRajcW0WUtoSHmvvjZNfWLSg2L6ruiBeuPSbjnG6A==}
     dev: true
 
-  /@cspell/dynamic-import/6.24.0:
-    resolution: {integrity: sha512-owm/PAgBLaC3cfHYCysWEDo6b3/EDN8/0b671TcqH5a1bpA09YvaKL30y7RILhA1tIHvTVyovsC89XqRkKo6OQ==}
+  /@cspell/dynamic-import/6.26.3:
+    resolution: {integrity: sha512-Ic5uNy49mDg/6Qtbuc51zq2sDd0lXiFVN2QKSueNjk5hA5Zh/ZLQhrB70q7qaQwQg7FTiRxvJjpRtNoVqbY/sg==}
     engines: {node: '>=14'}
     dependencies:
       import-meta-resolve: 2.2.1
     dev: true
 
-  /@cspell/strong-weak-map/6.24.0:
-    resolution: {integrity: sha512-R0F/nd5scB17A8T7ScBjhBZZ0F0xRFnP6i122dQxeTVOkJM/UAsHjTWT6Wb8M1ZLO6gRESfxx0vyL8+5RGzFCg==}
+  /@cspell/strong-weak-map/6.26.3:
+    resolution: {integrity: sha512-PC+I5obQY6f/l4/Z4TiE6HJhDiuR8wCPYqezPtBuD1Fw7Op0Nni77gUPKajTxhy1WHpks/PTTSjnV/cX9Mgt1Q==}
     engines: {node: '>=14.6'}
     dev: true
 
@@ -1035,16 +1040,16 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@sveltejs/adapter-static/2.0.1_@sveltejs+kit@1.5.6:
+  /@sveltejs/adapter-static/2.0.1_@sveltejs+kit@1.7.2:
     resolution: {integrity: sha512-o5/q3YwD/ErxYCFlK1v3ydvldyNKk1lh3oeyxn4mhz+Pkbx/uuxhzmbOpytTlp5aVqNHDVsb04xadUzOFCDDzw==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.5.6_svelte@3.55.1+vite@4.1.1
+      '@sveltejs/kit': 1.7.2_svelte@3.55.1+vite@4.1.2
     dev: true
 
-  /@sveltejs/kit/1.5.6_svelte@3.55.1+vite@4.1.1:
-    resolution: {integrity: sha512-CHVeQpbcwSIUekF6WwevmExKXyfHnzM5nlCEUv13lGgfJ0zKA0ny5YwIe40vccrm5w5Caec7jMTt9Ih3McJr5g==}
+  /@sveltejs/kit/1.7.2_svelte@3.55.1+vite@4.1.2:
+    resolution: {integrity: sha512-qU/kbupIhsA1JA0GIN4cGa6XrhzPc99Z4agsEDeGPMy7qQqYCuFcIL2MLEH+tfqPUCu4m3FQ6ULVSUIVCnHj+A==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -1052,26 +1057,26 @@ packages:
       svelte: ^3.54.0
       vite: ^4.0.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 2.0.1_svelte@3.55.1+vite@4.1.1
+      '@sveltejs/vite-plugin-svelte': 2.0.1_svelte@3.55.1+vite@4.1.2
       '@types/cookie': 0.5.1
       cookie: 0.5.0
       devalue: 4.2.3
       esm-env: 1.0.0
       kleur: 4.1.5
-      magic-string: 0.27.0
+      magic-string: 0.29.0
       mime: 3.0.0
       sade: 1.8.1
       set-cookie-parser: 2.5.1
       sirv: 2.0.2
       svelte: 3.55.1
       tiny-glob: 0.2.9
-      undici: 5.18.0
-      vite: 4.1.1_sass@1.58.1
+      undici: 5.19.1
+      vite: 4.1.2_sass@1.58.3
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/2.0.1_svelte@3.55.1+vite@4.1.1:
+  /@sveltejs/vite-plugin-svelte/2.0.1_svelte@3.55.1+vite@4.1.2:
     resolution: {integrity: sha512-NA0dPOmd/i8yb0xG4fWu++Y1NJR+j2pWFplQKDxTVEFZ8uipJpSsSX0ZwkkjwJQJ1jMyXgmxKKZJsCM7Chx/Yw==}
     engines: {node: ^14.18.0 || >= 16}
     peerDependencies:
@@ -1084,8 +1089,8 @@ packages:
       magic-string: 0.27.0
       svelte: 3.55.1
       svelte-hmr: 0.15.1_svelte@3.55.1
-      vite: 4.1.1_sass@1.58.1
-      vitefu: 0.2.3_vite@4.1.1
+      vite: 4.1.2_sass@1.58.3
+      vitefu: 0.2.3_vite@4.1.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1696,69 +1701,69 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /cspell-dictionary/6.24.0:
-    resolution: {integrity: sha512-bBuTlFxn9GpxRevGlaJMollxvabcTIpxAS5PdELs7kXYJEQt1zDqZuIPT+Xrn0mCGWkcJyEk48n50gwthRXtuA==}
+  /cspell-dictionary/6.26.3:
+    resolution: {integrity: sha512-wUiTHe7OWZuptEROJm3gzSk12ABAozArFnKVNfsfVR/tgBIjLTgX+9RIOuJL0g+vDxIsZu8dpOuty3MPmI3vBg==}
     engines: {node: '>=14'}
     dependencies:
-      '@cspell/cspell-pipe': 6.24.0
-      '@cspell/cspell-types': 6.24.0
-      cspell-trie-lib: 6.24.0
+      '@cspell/cspell-pipe': 6.26.3
+      '@cspell/cspell-types': 6.26.3
+      cspell-trie-lib: 6.26.3
       fast-equals: 4.0.3
       gensequence: 4.0.3
     dev: true
 
-  /cspell-gitignore/6.24.0:
-    resolution: {integrity: sha512-gx1ogZ0jeO5JFxxRkuS+ceun6htF/6991GI19JRpbDzHIb7IUp6WJW01sYScGJZQhbvPBmf1QE4JzlcuMfBfQw==}
+  /cspell-gitignore/6.26.3:
+    resolution: {integrity: sha512-K6Gl3I71UZOU9077xXhJmG2Bwzhj6ay64pnry6+KBHJDAxuSWnXaWg1/KpSf6ciwwvggyRxhKOSykzLI8Ivweg==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      cspell-glob: 6.24.0
+      cspell-glob: 6.26.3
       find-up: 5.0.0
     dev: true
 
-  /cspell-glob/6.24.0:
-    resolution: {integrity: sha512-iiUcKBiDanh4T9BMk6oNTiu1DWa/rc/+EXYj9txP31vEEoyz8PjQidueYc/A8ZvqXC8FUlu6WL76O8yY5ou1cQ==}
+  /cspell-glob/6.26.3:
+    resolution: {integrity: sha512-6f6waZGHZ1Vt9HVOqQrkYfq5EMJ+UvJGgiq1tVO8jDGdayupNIaivh9XT6ReWHJVLbKypJddQzrw7eMMEd0Mmg==}
     engines: {node: '>=14'}
     dependencies:
       micromatch: 4.0.5
     dev: true
 
-  /cspell-grammar/6.24.0:
-    resolution: {integrity: sha512-/gTzgrjF848u0D6zZAzlK37ZreiIjtevt2VqhF5XkmxmWhpYC38MqohmUmMp3Z0BClYSX7N3XViron3lfY1ihg==}
+  /cspell-grammar/6.26.3:
+    resolution: {integrity: sha512-eoqMETuGH6bjsSnK5UGtfLKLkW+VKOQBGRQBVBfI+2KKaZyfvm7/q8ScRYdAsoQg67Ws7/2Dplej7vRltyfCQQ==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      '@cspell/cspell-pipe': 6.24.0
-      '@cspell/cspell-types': 6.24.0
+      '@cspell/cspell-pipe': 6.26.3
+      '@cspell/cspell-types': 6.26.3
     dev: true
 
-  /cspell-io/6.24.0:
-    resolution: {integrity: sha512-QBxdY9RBEb50dvaqVuNKZ1FdcrbephNH0VgnfeFNiGd75SuNS7PMTizdiizmAgYqbwTQrzrNURTalHi86gzJNQ==}
+  /cspell-io/6.26.3:
+    resolution: {integrity: sha512-bUzsHM+A+jfMEYuwBnC/w2KIgf4TPEx3E5AIfg+qtRuP2paTYOFulNBWgxzWovSkXH08R4yNgDQIN1dO3Fhzjw==}
     engines: {node: '>=14'}
     dependencies:
-      '@cspell/cspell-service-bus': 6.24.0
+      '@cspell/cspell-service-bus': 6.26.3
       node-fetch: 2.6.9
     transitivePeerDependencies:
       - encoding
     dev: true
 
-  /cspell-lib/6.24.0:
-    resolution: {integrity: sha512-kw6wsTDgqtRziB0rfUwDCBY0w1P0Aj7kNDydx2x2IKORVIEYRluVB8uR7o0kuIZpckqNzQn44mEGTXLk6j8XiQ==}
+  /cspell-lib/6.26.3:
+    resolution: {integrity: sha512-UwtrGSHoZxQmTm78yB55KLIz46THG1neZ87mYHdoYgc5EOc2gKTWRPfYsioUs8fH31L+4CwHNbdxvTRg+Vpg/Q==}
     engines: {node: '>=14.6'}
     dependencies:
-      '@cspell/cspell-bundled-dicts': 6.24.0
-      '@cspell/cspell-pipe': 6.24.0
-      '@cspell/cspell-types': 6.24.0
-      '@cspell/strong-weak-map': 6.24.0
+      '@cspell/cspell-bundled-dicts': 6.26.3
+      '@cspell/cspell-pipe': 6.26.3
+      '@cspell/cspell-types': 6.26.3
+      '@cspell/strong-weak-map': 6.26.3
       clear-module: 4.1.2
       comment-json: 4.2.3
       configstore: 5.0.1
       cosmiconfig: 8.0.0
-      cspell-dictionary: 6.24.0
-      cspell-glob: 6.24.0
-      cspell-grammar: 6.24.0
-      cspell-io: 6.24.0
-      cspell-trie-lib: 6.24.0
+      cspell-dictionary: 6.26.3
+      cspell-glob: 6.26.3
+      cspell-grammar: 6.26.3
+      cspell-io: 6.26.3
+      cspell-trie-lib: 6.26.3
       fast-equals: 4.0.3
       find-up: 5.0.0
       gensequence: 4.0.3
@@ -1771,27 +1776,27 @@ packages:
       - encoding
     dev: true
 
-  /cspell-trie-lib/6.24.0:
-    resolution: {integrity: sha512-2sTItuVv2ByQ/xY3Hqv+oPUpZPeKRev/MJncpxSheHP0oTzmQ3PM010CweULZFptBZPcD4X3rP75k2grB1KGbw==}
+  /cspell-trie-lib/6.26.3:
+    resolution: {integrity: sha512-pda7iXr74SC9eD5ksAEDDR2M/ervnGaHXugTjn+TVXXBH16lnmqz/Ns5Zlp351lwb3BhqjVU+XqZ0tn28ISvAw==}
     engines: {node: '>=14'}
     dependencies:
-      '@cspell/cspell-pipe': 6.24.0
-      '@cspell/cspell-types': 6.24.0
+      '@cspell/cspell-pipe': 6.26.3
+      '@cspell/cspell-types': 6.26.3
       gensequence: 4.0.3
     dev: true
 
-  /cspell/6.24.0:
-    resolution: {integrity: sha512-NdmBDabyRmndvL62sG22fs5bDeAYCoyWl7qWZ8d8AKqfy2Ar4gCtVRQR4KD0d7xgw527/QRY+pxXV9FYZVJYcw==}
+  /cspell/6.26.3:
+    resolution: {integrity: sha512-h7p8JpWSFhgNbsJLlpjzMCQ0k6TuhX/M5JcrED14x17CuZR7ad29lQDRF0Un82Wxhd8hJNxZubV9IBdWZA7Qig==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      '@cspell/cspell-pipe': 6.24.0
-      '@cspell/dynamic-import': 6.24.0
+      '@cspell/cspell-pipe': 6.26.3
+      '@cspell/dynamic-import': 6.26.3
       chalk: 4.1.2
       commander: 10.0.0
-      cspell-gitignore: 6.24.0
-      cspell-glob: 6.24.0
-      cspell-lib: 6.24.0
+      cspell-gitignore: 6.26.3
+      cspell-glob: 6.26.3
+      cspell-lib: 6.26.3
       fast-glob: 3.2.12
       fast-json-stable-stringify: 2.1.0
       file-entry-cache: 6.0.1
@@ -3398,6 +3403,13 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
+  /magic-string/0.29.0:
+    resolution: {integrity: sha512-WcfidHrDjMY+eLjlU+8OvwREqHwpgCeKVBUpQ3OhYYuvfaYCUgcbuBzappNzZvg/v8onU3oQj+BYpkOJe9Iw4Q==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.14
+    dev: true
+
   /make-dir/3.1.0:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
     engines: {node: '>=8'}
@@ -4201,8 +4213,8 @@ packages:
       rimraf: 2.7.1
     dev: true
 
-  /sass/1.58.1:
-    resolution: {integrity: sha512-bnINi6nPXbP1XNRaranMFEBZWUfdW/AF16Ql5+ypRxfTvCRTTKrLsMIakyDcayUt2t/RZotmL4kgJwNH5xO+bg==}
+  /sass/1.58.3:
+    resolution: {integrity: sha512-Q7RaEtYf6BflYrQ+buPudKR26/lH+10EmO9bBqbmPh/KeLqv8bjpTNqxe71ocONqXq+jYiCbpPUmQMS+JJPk4A==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -4483,8 +4495,8 @@ packages:
     resolution: {integrity: sha512-Dj1Okke1C3uKKwQcetra4jSuk0DqbzbYtXipzFlFMZtowbF1x7BKJwB9AayVMyFARvU8EDrZdcax4At/452cAg==}
     dev: true
 
-  /stylelint-config-recommended-scss/9.0.0_6kmz6pqyyc6yqevihcpt7hoegq:
-    resolution: {integrity: sha512-5e9pn3Ztfncd8s9OqvvCW7tZpYe+vGmPi7VEXX7XEp+Kj38PnKCrvFCBL+hQ7rkD4d5QzjB3BxlFEyo/30UWUw==}
+  /stylelint-config-recommended-scss/9.0.1_xczz5gvex7qa2pnzrs7ducdpai:
+    resolution: {integrity: sha512-qAmz/TdrqslwiMTuLM3QXeISUkfEDUXGMfRBCHm/xrkCJNnQefv+mzG2mWTsWkqcVk8HAyUkug10dwAcYp2fCQ==}
     peerDependencies:
       postcss: ^8.3.3
       stylelint: ^15.0.0
@@ -4494,20 +4506,20 @@ packages:
     dependencies:
       postcss: 8.4.21
       postcss-scss: 4.0.5_postcss@8.4.21
-      stylelint: 15.1.0
-      stylelint-config-recommended: 10.0.1_stylelint@15.1.0
-      stylelint-scss: 4.4.0_stylelint@15.1.0
+      stylelint: 15.2.0
+      stylelint-config-recommended: 10.0.1_stylelint@15.2.0
+      stylelint-scss: 4.4.0_stylelint@15.2.0
     dev: true
 
-  /stylelint-config-recommended/10.0.1_stylelint@15.1.0:
+  /stylelint-config-recommended/10.0.1_stylelint@15.2.0:
     resolution: {integrity: sha512-TQ4xQ48tW4QSlODcti7pgSRqBZcUaBzuh0jPpfiMhwJKBPkqzTIAU+IrSWL/7BgXlOM90DjB7YaNgFpx8QWhuA==}
     peerDependencies:
       stylelint: ^15.0.0
     dependencies:
-      stylelint: 15.1.0
+      stylelint: 15.2.0
     dev: true
 
-  /stylelint-scss/4.4.0_stylelint@15.1.0:
+  /stylelint-scss/4.4.0_stylelint@15.2.0:
     resolution: {integrity: sha512-Qy66a+/30aylFhPmUArHhVsHOun1qrO93LGT15uzLuLjWS7hKDfpFm34mYo1ndR4MCo8W4bEZM1+AlJRJORaaw==}
     peerDependencies:
       stylelint: ^14.5.1 || ^15.0.0
@@ -4517,11 +4529,11 @@ packages:
       postcss-resolve-nested-selector: 0.1.1
       postcss-selector-parser: 6.0.11
       postcss-value-parser: 4.2.0
-      stylelint: 15.1.0
+      stylelint: 15.2.0
     dev: true
 
-  /stylelint/15.1.0:
-    resolution: {integrity: sha512-Tw8OyIiYhxnIHUzgoLlCyWgCUKsPYiP3TDgs7M1VbayS+q5qZly2yxABg+YPe/hFRWiu0cOtptCtpyrn1CrnYw==}
+  /stylelint/15.2.0:
+    resolution: {integrity: sha512-wjg5OLn8zQwjlj5cYUgyQpMWKzct42AG5dYlqkHRJQJqsystFFn3onqEc263KH4xfEI0W3lZCnlIhFfS64uwSA==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -4598,7 +4610,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /svelte-check/3.0.3_sgour5et74aa4mldkpgsb4cole:
+  /svelte-check/3.0.3_jatlebrdzjt6hu3wg5wyd6pz7q:
     resolution: {integrity: sha512-ByBFXo3bfHRGIsYEasHkdMhLkNleVfszX/Ns1oip58tPJlKdo5Ssr8kgVIuo5oq00hss8AIcdesuy0Xt0BcTvg==}
     hasBin: true
     peerDependencies:
@@ -4611,7 +4623,7 @@ packages:
       picocolors: 1.0.0
       sade: 1.8.1
       svelte: 3.55.1
-      svelte-preprocess: 5.0.1_d4iyqnzwlcepvei3gwdgfnxjzq
+      svelte-preprocess: 5.0.1_gegiqu72urveby3as2factxdmu
       typescript: 4.9.4
     transitivePeerDependencies:
       - '@babel/core'
@@ -4650,7 +4662,7 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /svelte-preprocess/5.0.1_d4iyqnzwlcepvei3gwdgfnxjzq:
+  /svelte-preprocess/5.0.1_gegiqu72urveby3as2factxdmu:
     resolution: {integrity: sha512-0HXyhCoc9rsW4zGOgtInylC6qj259E1hpFnJMJWTf+aIfeqh4O/QHT31KT2hvPEqQfdjmqBR/kO2JDkkciBLrQ==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
@@ -4694,14 +4706,14 @@ packages:
       detect-indent: 6.1.0
       magic-string: 0.27.0
       postcss: 8.4.21
-      sass: 1.58.1
+      sass: 1.58.3
       sorcery: 0.11.0
       strip-indent: 3.0.0
       svelte: 3.55.1
       typescript: 4.9.4
     dev: true
 
-  /svelte-preprocess/5.0.1_sgour5et74aa4mldkpgsb4cole:
+  /svelte-preprocess/5.0.1_jatlebrdzjt6hu3wg5wyd6pz7q:
     resolution: {integrity: sha512-0HXyhCoc9rsW4zGOgtInylC6qj259E1hpFnJMJWTf+aIfeqh4O/QHT31KT2hvPEqQfdjmqBR/kO2JDkkciBLrQ==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
@@ -4745,7 +4757,7 @@ packages:
       detect-indent: 6.1.0
       magic-string: 0.27.0
       postcss: 8.4.21
-      sass: 1.58.1
+      sass: 1.58.3
       sorcery: 0.11.0
       strip-indent: 3.0.0
       svelte: 3.55.1
@@ -4945,8 +4957,8 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: true
 
-  /undici/5.18.0:
-    resolution: {integrity: sha512-1iVwbhonhFytNdg0P4PqyIAXbdlVZVebtPDvuM36m66mRw4OGrCm2MYynJv/UENFLdP13J1nPVQzVE2zTs1OeA==}
+  /undici/5.19.1:
+    resolution: {integrity: sha512-YiZ61LPIgY73E7syxCDxxa3LV2yl3sN8spnIuTct60boiiRaE1J8mNWHO8Im2Zi/sFrPusjLlmRPrsyraSqX6A==}
     engines: {node: '>=12.18'}
     dependencies:
       busboy: 1.6.0
@@ -5006,8 +5018,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite/4.1.1_sass@1.58.1:
-    resolution: {integrity: sha512-LM9WWea8vsxhr782r9ntg+bhSFS06FJgCvvB0+8hf8UWtvaiDagKYWXndjfX6kGl74keHJUcpzrQliDXZlF5yg==}
+  /vite/4.1.2_sass@1.58.3:
+    resolution: {integrity: sha512-MWDb9Rfy3DI8omDQySbMK93nQqStwbsQWejXRY2EBzEWKmLAXWb1mkI9Yw2IJrc+oCvPCI1Os5xSSIBYY6DEAw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -5035,12 +5047,12 @@ packages:
       postcss: 8.4.21
       resolve: 1.22.1
       rollup: 3.14.0
-      sass: 1.58.1
+      sass: 1.58.3
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
 
-  /vitefu/0.2.3_vite@4.1.1:
+  /vitefu/0.2.3_vite@4.1.2:
     resolution: {integrity: sha512-75l7TTuU8isAhz1QFtNKjDkqjxvndfMC1AfIMjJ0ZQ59ZD0Ow9QOIsJJX16Wv9PS8f+zMzp6fHy5cCbKG/yVUQ==}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0
@@ -5048,7 +5060,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.1.1_sass@1.58.1
+      vite: 4.1.2_sass@1.58.3
     dev: true
 
   /vscode-languageserver-textdocument/1.0.8:
