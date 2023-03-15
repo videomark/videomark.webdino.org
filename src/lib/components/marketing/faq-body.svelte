@@ -32,10 +32,7 @@
   section {
     position: relative;
     margin-top: 48px;
-
-    &:global([id]) {
-      scroll-margin-top: 6rem;
-    }
+    scroll-margin-top: 6rem;
 
     // for some reason `:target` doesn’t work on Chrome/Safari, so use an attribute instead
     &[aria-current='true'] {
