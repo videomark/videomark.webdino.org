@@ -1,5 +1,5 @@
 <script>
-  import { json, _ } from 'svelte-i18n';
+  import { _, json } from 'svelte-i18n';
   import { page } from '$app/stores';
   import Button from '$lib/components/common/button.svelte';
   import DownloadButtons from '$lib/components/marketing/download-buttons.svelte';
@@ -50,6 +50,7 @@
   </Grid>
 </Section>
 
+<!-- eslint-disable max-len -->
 <style lang="scss">
   .announcement {
     padding: 0.8rem 1.6rem;
