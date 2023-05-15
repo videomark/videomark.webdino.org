@@ -29,10 +29,10 @@ dependencies:
 devDependencies:
   '@sveltejs/adapter-static':
     specifier: 2.0.2
-    version: 2.0.2(@sveltejs/kit@1.16.2)
+    version: 2.0.2(@sveltejs/kit@1.16.3)
   '@sveltejs/kit':
-    specifier: 1.16.2
-    version: 1.16.2(svelte@3.59.1)(vite@4.3.5)
+    specifier: 1.16.3
+    version: 1.16.3(svelte@3.59.1)(vite@4.3.6)
   '@types/d3-array':
     specifier: ^3.0.4
     version: 3.0.4
@@ -73,11 +73,11 @@ devDependencies:
     specifier: ^2.27.5
     version: 2.27.5(eslint@8.40.0)
   eslint-plugin-svelte:
-    specifier: ^2.27.4
-    version: 2.27.4(eslint@8.40.0)(svelte@3.59.1)
+    specifier: ^2.28.0
+    version: 2.28.0(eslint@8.40.0)(svelte@3.59.1)
   marked:
-    specifier: ^5.0.1
-    version: 5.0.1
+    specifier: ^5.0.2
+    version: 5.0.2
   netlify-cms-proxy-server:
     specifier: ^1.3.24
     version: 1.3.24
@@ -121,8 +121,8 @@ devDependencies:
     specifier: ^5.0.3
     version: 5.0.3(postcss@8.4.23)(sass@1.62.1)(svelte@3.59.1)(typescript@5.0.4)
   vite:
-    specifier: ^4.3.5
-    version: 4.3.5(sass@1.62.1)
+    specifier: ^4.3.6
+    version: 4.3.6(sass@1.62.1)
   yaml:
     specifier: ^2.2.2
     version: 2.2.2
@@ -870,16 +870,16 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@sveltejs/adapter-static@2.0.2(@sveltejs/kit@1.16.2):
+  /@sveltejs/adapter-static@2.0.2(@sveltejs/kit@1.16.3):
     resolution: {integrity: sha512-9wYtf6s6ew7DHUHMrt55YpD1FgV7oWql2IGsW5BXquLxqcY9vjrqCFo0TzzDpo+ZPZkW/v77k0eOP6tsAb8HmQ==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.16.2(svelte@3.59.1)(vite@4.3.5)
+      '@sveltejs/kit': 1.16.3(svelte@3.59.1)(vite@4.3.6)
     dev: true
 
-  /@sveltejs/kit@1.16.2(svelte@3.59.1)(vite@4.3.5):
-    resolution: {integrity: sha512-yxcpA4nvlVlJ+VyYnj0zD3QN05kfmoh4OyitlPrVG34nnZSHzFpE4eZ33X1A/tc9prslSFRhpM6rWngCs0nM8w==}
+  /@sveltejs/kit@1.16.3(svelte@3.59.1)(vite@4.3.6):
+    resolution: {integrity: sha512-8uv0udYRpVuE1BweFidcWHfL+u2gAANKmvIal1dN/FWPBl7DJYbt9zYEtr3bNTiXystT8Sn0Wp54RfwpbPqHjQ==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -887,7 +887,7 @@ packages:
       svelte: ^3.54.0
       vite: ^4.0.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 2.1.1(svelte@3.59.1)(vite@4.3.5)
+      '@sveltejs/vite-plugin-svelte': 2.1.1(svelte@3.59.1)(vite@4.3.6)
       '@types/cookie': 0.5.1
       cookie: 0.5.0
       devalue: 4.3.0
@@ -901,12 +901,12 @@ packages:
       svelte: 3.59.1
       tiny-glob: 0.2.9
       undici: 5.22.0
-      vite: 4.3.5(sass@1.62.1)
+      vite: 4.3.6(sass@1.62.1)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte@2.1.1(svelte@3.59.1)(vite@4.3.5):
+  /@sveltejs/vite-plugin-svelte@2.1.1(svelte@3.59.1)(vite@4.3.6):
     resolution: {integrity: sha512-7YeBDt4us0FiIMNsVXxyaP4Hwyn2/v9x3oqStkHU3ZdIc5O22pGwUwH33wUqYo+7Itdmo8zxJ45Qvfm3H7UUjQ==}
     engines: {node: ^14.18.0 || >= 16}
     peerDependencies:
@@ -919,8 +919,8 @@ packages:
       magic-string: 0.30.0
       svelte: 3.59.1
       svelte-hmr: 0.15.1(svelte@3.59.1)
-      vite: 4.3.5(sass@1.62.1)
-      vitefu: 0.2.4(vite@4.3.5)
+      vite: 4.3.6(sass@1.62.1)
+      vitefu: 0.2.4(vite@4.3.6)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2168,8 +2168,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-svelte@2.27.4(eslint@8.40.0)(svelte@3.59.1):
-    resolution: {integrity: sha512-P1VPNgM0a6AGWU/qlk3Jf/55B4TIF6V0vlkRrZsqe+Um3SeCbH8dSakI/WJ4kwupYr7lMzHIbnjFXpzemXqzVw==}
+  /eslint-plugin-svelte@2.28.0(eslint@8.40.0)(svelte@3.59.1):
+    resolution: {integrity: sha512-bXPXKnjq5uKoVAQtC2E0L1Vp+mmJ3nlC9jyz8zwfZ99pQROL2h7Hes01QdYil1vxgh6tLXl5YVpZ2wwyAbBz5g==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0-0
@@ -2188,7 +2188,7 @@ packages:
       postcss-load-config: 3.1.4(postcss@8.4.23)
       postcss-safe-parser: 6.0.0(postcss@8.4.23)
       svelte: 3.59.1
-      svelte-eslint-parser: 0.27.0(svelte@3.59.1)
+      svelte-eslint-parser: 0.28.0(svelte@3.59.1)
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -3199,8 +3199,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /marked@5.0.1:
-    resolution: {integrity: sha512-Nn9peC4lvIZdcfp8Uze6xk4ZYowkcj/K6+e/6rLHadhtjqeip/bYRxMgt3124IGGJ3RPs2uX5YVmAGbUutY18g==}
+  /marked@5.0.2:
+    resolution: {integrity: sha512-TXksm9GwqXCRNbFUZmMtqNLvy3K2cQHuWmyBDLOrY1e6i9UvZpOTJXoz7fBjYkJkaUFzV9hBFxMuZSyQt8R6KQ==}
     engines: {node: '>= 18'}
     hasBin: true
     dev: true
@@ -4442,8 +4442,8 @@ packages:
       - sugarss
     dev: true
 
-  /svelte-eslint-parser@0.27.0(svelte@3.59.1):
-    resolution: {integrity: sha512-x9cBbCZwLdCnNE3yPqGhvAqEl9FCILC6AaV2xRtwzaMCpvpqO7ceONXj9xka3fQFczSqLzkwOxP4Ln4cIQNqXg==}
+  /svelte-eslint-parser@0.28.0(svelte@3.59.1):
+    resolution: {integrity: sha512-qWg5M3CIp7LkcdG5bpn44QEd48UxvgxG5L+Sbl701EG8Wujht7EqJuJhqgzvO3bbI9ENbWCXK49eCcwiNnpMzw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       svelte: ^3.37.0
@@ -4770,8 +4770,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite@4.3.5(sass@1.62.1):
-    resolution: {integrity: sha512-0gEnL9wiRFxgz40o/i/eTBwm+NEbpUeTWhzKrZDSdKm6nplj+z4lKz8ANDgildxHm47Vg8EUia0aicKbawUVVA==}
+  /vite@4.3.6(sass@1.62.1):
+    resolution: {integrity: sha512-cqIyLSbA6gornMS659AXTVKF7cvSHMdKmJJwQ9DXq3lwsT1uZSdktuBRlpHQ8VnOWx0QHtjDwxPpGtyo9Fh/Qg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -4803,7 +4803,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitefu@0.2.4(vite@4.3.5):
+  /vitefu@0.2.4(vite@4.3.6):
     resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0
@@ -4811,7 +4811,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.3.5(sass@1.62.1)
+      vite: 4.3.6(sass@1.62.1)
     dev: true
 
   /vscode-languageserver-textdocument@1.0.8:
