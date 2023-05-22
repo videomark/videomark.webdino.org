@@ -9,7 +9,7 @@
 <Sidebar fixed>
   <nav>
     <ul>
-      {#each unique($json('pages.stats.nav.links'), 'href') as { href, text } (href)}
+      {#each unique(/** @type {object[]} */ ($json('pages.stats.nav.links')), 'href') as { href, text } (href)}
         <li>
           <a {href} aria-current={$page.url.pathname === href ? 'page' : undefined}>{text}</a>
         </li>

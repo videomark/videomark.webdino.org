@@ -1,5 +1,5 @@
 <script>
-  import { json, _ } from 'svelte-i18n';
+  import { _, json } from 'svelte-i18n';
   import Header from '$lib/components/marketing/header.svelte';
   import MetaTags from '$lib/components/marketing/meta-tags.svelte';
   import Section from '$lib/components/marketing/section.svelte';
@@ -17,7 +17,7 @@
   {@html parse($_('pages.notice.acknowledgements.body'))}
 </Section>
 
-<Section accent="2">
+<Section accent={2}>
   <h2>{$_('pages.notice.copyright.heading')}</h2>
   {@html parse($_('pages.notice.copyright.body', { values: { year: new Date().getFullYear() } }))}
 </Section>

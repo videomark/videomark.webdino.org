@@ -66,7 +66,7 @@
     }
 
     getColor(value) {
-      return value ? `hsl(${parseInt((value - 2) * 40, 10)}, 100%, 45%)` : '#FFF';
+      return value ? `hsl(${Math.round((value - 2) * 40)}, 100%, 45%)` : '#FFF';
     }
 
     renderBarChart(group, labels, stats) {
@@ -78,7 +78,7 @@
       for (let i = 0; i < labels.length; i += 1) {
         const d = stats.find((_d) => _d[group] === i);
         const key = labels[i] || i;
-        const value = d ? parseInt(d.average * 100, 10) / 100 : 0;
+        const value = d ? Math.round(d.average * 100) / 100 : 0;
 
         data.push({ key, value, color: this.getColor(value) });
 
@@ -196,7 +196,7 @@
           (_d) => _d.country === 'JP' && _d.subdivision === `${key < 10 ? '0' : ''}${key}`,
         );
 
-        const value = d ? parseInt(d.data[0].average * 100, 10) / 100 : 0;
+        const value = d ? Math.round(d.data[0].average * 100) / 100 : 0;
 
         data.push({ key, value, color: this.getColor(value) });
       }
@@ -217,7 +217,7 @@
         .translate([width / 2, height / 2]);
 
       const path = d3.geoPath().projection(projection);
-      const topo = topojson.feature(this.map, this.map.objects.japan).features;
+      const topo = /** @type {any} */ (topojson).feature(this.map, this.map.objects.japan).features;
 
       svg
         .selectAll('.pref')

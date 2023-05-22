@@ -11,6 +11,7 @@
 
   /**
    * The `type` of the `<button>`. It will be ignored when a button-looking link is used.
+   * @type {'button' | 'submit' | 'reset'}
    */
   export let type = 'button';
 </script>

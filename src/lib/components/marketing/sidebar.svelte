@@ -19,7 +19,7 @@
   class:fixed
   class:open={$menuOpen}
   on:click={(event) => {
-    if (event.target.matches('a')) {
+    if (/** @type {HTMLElement} */ (event.target).matches('a')) {
       menuOpen.set(false);
     } else {
       event.stopPropagation();
@@ -28,7 +28,7 @@
 >
   <nav class="global">
     <ul>
-      {#each unique($json('pages._global.header.links'), 'href') as { href, text } (href)}
+      {#each unique(/** @type {object[]} */ ($json('pages._global.header.links')), 'href') as { href, text } (href)}
         <li>
           <a {href} aria-current={$page.url.pathname === href ? 'page' : undefined}>{text}</a>
         </li>

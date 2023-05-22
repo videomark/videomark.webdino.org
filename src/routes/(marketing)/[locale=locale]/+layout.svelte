@@ -1,13 +1,18 @@
 <script>
   import { onMount } from 'svelte';
-  import { json, locale as currentLocale, _ } from 'svelte-i18n';
+  import { _, locale as currentLocale, json } from 'svelte-i18n';
   import { preloadCode } from '$app/navigation';
   import { page } from '$app/stores';
   import ToggleMenuButton from '$lib/components/marketing/toggle-menu-button.svelte';
   import { unique } from '$lib/services/util/array';
 
   onMount(() => {
-    preloadCode(unique($json('pages._global.header.links'), 'href').map(({ href }) => href));
+    preloadCode(
+      // @ts-ignore
+      unique(/** @type {object[]} */ ($json('pages._global.header.links')), 'href').map(
+        ({ href }) => href,
+      ),
+    );
   });
 </script>
 
@@ -25,7 +30,7 @@
   <div class="spacer" />
   <nav>
     <!-- Somehow the array contains duplicate items during initialization, so use `unique` -->
-    {#each unique($json('pages._global.header.links'), 'href') as { href, text } (href)}
+    {#each unique(/** @type {object[]} */ ($json('pages._global.header.links')), 'href') as { href, text } (href)}
       <div>
         <a {href} aria-current={$page.url.pathname === href ? 'page' : undefined}>{text}</a>
       </div>
@@ -40,7 +45,7 @@
     <div>
       {@html $_('pages._global.meta.copyright', { values: { year: new Date().getFullYear() } })}
     </div>
-    {#each unique($json('pages._global.footer.links'), 'href') as { href, text } (href)}
+    {#each unique(/** @type {object[]} */ ($json('pages._global.footer.links')), 'href') as { href, text } (href)}
       <div><a {href}>{text}</a></div>
     {/each}
   </nav>

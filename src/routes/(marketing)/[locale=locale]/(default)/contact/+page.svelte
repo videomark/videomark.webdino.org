@@ -1,5 +1,5 @@
 <script>
-  import { json, _ } from 'svelte-i18n';
+  import { _, json } from 'svelte-i18n';
   import { goto } from '$app/navigation';
   import Button from '$lib/components/common/button.svelte';
   import Header from '$lib/components/marketing/header.svelte';
@@ -14,7 +14,9 @@
     fetch('https://sodium.netlify.app/contact/form', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(new FormData(target)).toString(),
+      body: new URLSearchParams(
+        /** @type {any} */ (new FormData(/** @type {HTMLFormElement} */ (target))),
+      ).toString(),
     });
 
     goto('contact/thanks');

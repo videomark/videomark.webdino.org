@@ -1,5 +1,5 @@
 <script>
-  import { json, _ } from 'svelte-i18n';
+  import { _, json } from 'svelte-i18n';
   import DownloadButtons from '$lib/components/marketing/download-buttons.svelte';
   import GridItem from '$lib/components/marketing/grid-item.svelte';
   import Grid from '$lib/components/marketing/grid.svelte';
@@ -17,7 +17,7 @@
   <DownloadButtons />
 </Section>
 
-<Section accent="1">
+<Section accent={1}>
   <h2>{$_('pages.help_extension.player_qoe.heading')}</h2>
   <Grid>
     <GridItem>
@@ -51,7 +51,7 @@
   </Grid>
 </Section>
 
-<Section accent="2">
+<Section accent={2}>
   <h2>{$_('pages.help_extension.result_list.heading')}</h2>
   <Grid>
     <GridItem>

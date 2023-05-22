@@ -3,6 +3,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "eslint.validate": ["javascript", "svelte"],
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.validate.enable": true,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

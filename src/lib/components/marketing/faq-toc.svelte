@@ -1,6 +1,6 @@
 <script>
   import md5 from 'md5';
-  import { json, _ } from 'svelte-i18n';
+  import { _, json } from 'svelte-i18n';
   import { unique } from '$lib/services/util/array';
 
   /**
@@ -22,7 +22,7 @@
         {heading}
       </a>
       <ul>
-        {#each unique($json(`pages.faq.${category}.items`), 'question') as { question } (question)}
+        {#each unique(/** @type {object[]} */ ($json(`pages.faq.${category}.items`)), 'question') as { question } (question)}
           <li>
             <a href={`#${md5(question)}`} aria-current={targetId === md5(question)}>
               {question}

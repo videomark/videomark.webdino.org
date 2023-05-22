@@ -1,6 +1,6 @@
 <script>
   import md5 from 'md5';
-  import { json, _ } from 'svelte-i18n';
+  import { _, json } from 'svelte-i18n';
   import { unique } from '$lib/services/util/array';
   import { parse } from '$lib/services/util/markdown';
 
@@ -19,7 +19,7 @@
   {@const heading = $_(`pages.faq.${category}.heading`)}
   <section id={md5(heading)} aria-current={targetId === md5(heading)}>
     <h2>{heading}</h2>
-    {#each unique($json(`pages.faq.${category}.items`), 'question') as { question, answer } (question)}
+    {#each unique(/** @type {object[]} */ ($json(`pages.faq.${category}.items`)), 'question') as { question, answer } (question)}
       <section id={md5(question)} aria-current={targetId === md5(question)}>
         <h3>{question}</h3>
         {@html parse(answer)}

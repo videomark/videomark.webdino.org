@@ -4,13 +4,21 @@
   `<MongoChartsRenderer>` component, which can be included only once in the stats page layout.
 -->
 <script>
-  import { _ } from 'svelte-i18n';
+  import { _, json } from 'svelte-i18n';
+  import { get } from 'svelte/store';
+
+  /**
+   * Chart source ID in the localized string resource.
+   */
+  export let src = '';
 
   /**
    * Chart list, including the IDs and optional cache expires.
-   * @type {Array.<Object>}
+   * @type {object[]}
    */
-  export let charts = [];
+  export let srcArray = undefined;
+
+  $: charts = src ? /** @type {object[]} */ (get(json)(src)) : srcArray || [];
 </script>
 
 {#each charts as { id, cache, note }}

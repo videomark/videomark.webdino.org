@@ -18,7 +18,7 @@
 
   afterNavigate(() => {
     document.querySelectorAll('[data-chart-id]').forEach((container) => {
-      const { chartId, cache } = container.dataset;
+      const { chartId, cache } = /** @type {HTMLElement} */ (container).dataset;
       const _cache = Number(cache);
 
       const chart = sdk.createChart({

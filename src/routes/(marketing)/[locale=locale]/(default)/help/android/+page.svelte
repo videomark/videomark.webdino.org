@@ -1,5 +1,5 @@
 <script>
-  import { json, _ } from 'svelte-i18n';
+  import { _, json } from 'svelte-i18n';
   import Button from '$lib/components/common/button.svelte';
   import GridItem from '$lib/components/marketing/grid-item.svelte';
   import Grid from '$lib/components/marketing/grid.svelte';
@@ -19,7 +19,7 @@
   </p>
 </Section>
 
-<Section accent="1">
+<Section accent={1}>
   <h2>{$_('pages.help_android.player_qoe.heading')}</h2>
   <Grid>
     <GridItem>
@@ -53,7 +53,7 @@
   </Grid>
 </Section>
 
-<Section accent="2">
+<Section accent={2}>
   <h2>{$_('pages.help_android.result_list.heading')}</h2>
   <Grid>
     <GridItem>

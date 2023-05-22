@@ -1,5 +1,5 @@
 <script>
-  import { json, _ } from 'svelte-i18n';
+  import { _, json } from 'svelte-i18n';
   import GridItem from '$lib/components/marketing/grid-item.svelte';
   import Grid from '$lib/components/marketing/grid.svelte';
   import MetaTags from '$lib/components/marketing/meta-tags.svelte';
@@ -22,7 +22,7 @@
   </div>
 </Section>
 
-<Section accent="1">
+<Section accent={1}>
   <h2>{$_('pages.about.how_to_use.heading')}</h2>
   <Grid>
     <GridItem>
@@ -64,7 +64,7 @@
   </Grid>
 </Section>
 
-<Section accent="2">
+<Section accent={2}>
   <h2>{$_('pages.about.architecture.heading')}</h2>
   <ResponsiveImage>
     <img

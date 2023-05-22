@@ -1,5 +1,5 @@
 <script>
-  import { json, _ } from 'svelte-i18n';
+  import { _, json } from 'svelte-i18n';
   import Header from '$lib/components/marketing/header.svelte';
   import MetaTags from '$lib/components/marketing/meta-tags.svelte';
   import MongoCharts from '$lib/components/marketing/mongo-charts.svelte';
@@ -17,5 +17,5 @@
 <Section>
   <h2>{$_('pages.stats_resolutions.trends.heading')}</h2>
   {@html parse($_('pages.stats_resolutions.trends.body', { default: '' }))}
-  <MongoCharts charts={$json('pages.stats_resolutions.trends.charts')} />
+  <MongoCharts src={'pages.stats_resolutions.trends.charts'} />
 </Section>

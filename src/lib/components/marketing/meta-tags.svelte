@@ -15,8 +15,17 @@
   $: ({ locale = 'ja' } = $page.params);
   $: path = $page.url.pathname.replace(new RegExp(`^\\/${locale}`), '');
   $: ({
-    meta: { siteTitle, siteDescription, siteImage } = {},
-    social: { facebookAccount, twitterAccount } = {},
+    // @ts-ignore
+    meta: { siteTitle, siteDescription, siteImage } = {
+      siteTitle: '',
+      siteDescription: '',
+      siteImage: '',
+    },
+    // @ts-ignore
+    social: { facebookAccount, twitterAccount } = {
+      facebookAccount: '',
+      twitterAccount: '',
+    },
   } = get(json)('pages._global'));
   // eslint-disable-next-line no-nested-ternary
   $: _pageTitle = pageTitle
