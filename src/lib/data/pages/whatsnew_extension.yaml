@@ -184,6 +184,9 @@ ja:
         - 「設定画面を開く」ボタンの追加などポップアップの見た目と振る舞いを改善しました
   intro:
     heading: Web VideoMark の新機能とお知らせ
+    body: |-
+      VideoMark 拡張機能のリリースノートは [GitHub](https://github.com/videomark/videomark/releases)
+      へ移動しました。以下では過去のバージョンの変更履歴をご覧いただけます。
 en:
   meta:
     pageImage:

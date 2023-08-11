@@ -11,7 +11,7 @@
 
 <Article>
   <h1>{$_('pages.whatsnew_extension.intro.heading')}</h1>
-  {@html parse($_('pages.whatsnew_extension.body', { default: '' }))}
+  {@html parse($_('pages.whatsnew_extension.intro.body', { default: '' }))}
   <ReleaseNotes
     releases={unique(
       /** @type {object[]} */ ($json('pages.whatsnew_extension.releases')),
