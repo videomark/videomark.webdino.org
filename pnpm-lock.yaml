@@ -69,19 +69,19 @@ devDependencies:
     version: 8.47.0
   eslint-config-airbnb-base:
     specifier: ^15.0.0
-    version: 15.0.0(eslint-plugin-import@2.28.0)(eslint@8.47.0)
+    version: 15.0.0(eslint-plugin-import@2.28.1)(eslint@8.47.0)
   eslint-config-prettier:
     specifier: ^9.0.0
     version: 9.0.0(eslint@8.47.0)
   eslint-plugin-import:
-    specifier: ^2.28.0
-    version: 2.28.0(eslint@8.47.0)
+    specifier: ^2.28.1
+    version: 2.28.1(eslint@8.47.0)
   eslint-plugin-svelte:
     specifier: ^2.32.4
     version: 2.32.4(eslint@8.47.0)(svelte@4.2.0)
   marked:
-    specifier: ^7.0.2
-    version: 7.0.2
+    specifier: ^7.0.4
+    version: 7.0.4
   netlify-cms-proxy-server:
     specifier: ^1.3.24
     version: 1.3.24
@@ -89,44 +89,44 @@ devDependencies:
     specifier: ^4.1.5
     version: 4.1.5
   postcss:
-    specifier: ^8.4.27
-    version: 8.4.27
+    specifier: ^8.4.28
+    version: 8.4.28
   postcss-html:
     specifier: ^1.5.0
     version: 1.5.0
   prettier:
-    specifier: ^3.0.1
-    version: 3.0.1
+    specifier: ^3.0.2
+    version: 3.0.2
   prettier-plugin-svelte:
     specifier: ^3.0.3
-    version: 3.0.3(prettier@3.0.1)(svelte@4.2.0)
+    version: 3.0.3(prettier@3.0.2)(svelte@4.2.0)
   sass:
-    specifier: ^1.65.1
-    version: 1.65.1
+    specifier: ^1.66.1
+    version: 1.66.1
   stylelint:
-    specifier: ^15.10.2
-    version: 15.10.2
+    specifier: ^15.10.3
+    version: 15.10.3
   stylelint-config-recommended-scss:
     specifier: ^12.0.0
-    version: 12.0.0(postcss@8.4.27)(stylelint@15.10.2)
+    version: 12.0.0(postcss@8.4.28)(stylelint@15.10.3)
   stylelint-scss:
     specifier: ^5.1.0
-    version: 5.1.0(stylelint@15.10.2)
+    version: 5.1.0(stylelint@15.10.3)
   svelte:
     specifier: ^4.2.0
     version: 4.2.0
   svelte-check:
     specifier: ^3.5.0
-    version: 3.5.0(postcss@8.4.27)(sass@1.65.1)(svelte@4.2.0)
+    version: 3.5.0(postcss@8.4.28)(sass@1.66.1)(svelte@4.2.0)
   svelte-i18n:
     specifier: ^3.7.0
     version: 3.7.0(svelte@4.2.0)
   svelte-preprocess:
     specifier: ^5.0.4
-    version: 5.0.4(postcss@8.4.27)(sass@1.65.1)(svelte@4.2.0)(typescript@5.0.4)
+    version: 5.0.4(postcss@8.4.28)(sass@1.66.1)(svelte@4.2.0)(typescript@5.0.4)
   vite:
     specifier: ^4.4.9
-    version: 4.4.9(sass@1.65.1)
+    version: 4.4.9(sass@1.66.1)
   yaml:
     specifier: ^2.3.1
     version: 2.3.1
@@ -460,29 +460,29 @@ packages:
     engines: {node: '>=16'}
     dev: true
 
-  /@csstools/css-parser-algorithms@2.3.0(@csstools/css-tokenizer@2.1.1):
-    resolution: {integrity: sha512-dTKSIHHWc0zPvcS5cqGP+/TPFUJB0ekJ9dGKvMAFoNuBFhDPBt9OMGNZiIA5vTiNdGHHBeScYPXIGBMnVOahsA==}
+  /@csstools/css-parser-algorithms@2.3.1(@csstools/css-tokenizer@2.2.0):
+    resolution: {integrity: sha512-xrvsmVUtefWMWQsGgFffqWSK03pZ1vfDki4IVIIUxxDKnGBzqNgv0A7SB1oXtVNEkcVO8xi1ZrTL29HhSu5kGA==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
-      '@csstools/css-tokenizer': ^2.1.1
+      '@csstools/css-tokenizer': ^2.2.0
     dependencies:
-      '@csstools/css-tokenizer': 2.1.1
+      '@csstools/css-tokenizer': 2.2.0
     dev: true
 
-  /@csstools/css-tokenizer@2.1.1:
-    resolution: {integrity: sha512-GbrTj2Z8MCTUv+52GE0RbFGM527xuXZ0Xa5g0Z+YN573uveS4G0qi6WNOMyz3yrFM/jaILTTwJ0+umx81EzqfA==}
+  /@csstools/css-tokenizer@2.2.0:
+    resolution: {integrity: sha512-wErmsWCbsmig8sQKkM6pFhr/oPha1bHfvxsUY5CYSQxwyhA9Ulrs8EqCgClhg4Tgg2XapVstGqSVcz0xOYizZA==}
     engines: {node: ^14 || ^16 || >=18}
     dev: true
 
-  /@csstools/media-query-list-parser@2.1.2(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1):
-    resolution: {integrity: sha512-M8cFGGwl866o6++vIY7j1AKuq9v57cf+dGepScwCcbut9ypJNr4Cj+LLTWligYUZ0uyhEoJDKt5lvyBfh2L3ZQ==}
+  /@csstools/media-query-list-parser@2.1.4(@csstools/css-parser-algorithms@2.3.1)(@csstools/css-tokenizer@2.2.0):
+    resolution: {integrity: sha512-V/OUXYX91tAC1CDsiY+HotIcJR+vPtzrX8pCplCpT++i8ThZZsq5F5dzZh/bDM3WUOjrvC1ljed1oSJxMfjqhw==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
-      '@csstools/css-parser-algorithms': ^2.3.0
-      '@csstools/css-tokenizer': ^2.1.1
+      '@csstools/css-parser-algorithms': ^2.3.1
+      '@csstools/css-tokenizer': ^2.2.0
     dependencies:
-      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-tokenizer': 2.1.1
+      '@csstools/css-parser-algorithms': 2.3.1(@csstools/css-tokenizer@2.2.0)
+      '@csstools/css-tokenizer': 2.2.0
     dev: true
 
   /@csstools/selector-specificity@3.0.0(postcss-selector-parser@6.0.13):
@@ -953,7 +953,7 @@ packages:
       sirv: 2.0.2
       svelte: 4.2.0
       undici: 5.23.0
-      vite: 4.4.9(sass@1.65.1)
+      vite: 4.4.9(sass@1.66.1)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -969,7 +969,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 2.4.1(svelte@4.2.0)(vite@4.4.9)
       debug: 4.3.4
       svelte: 4.2.0
-      vite: 4.4.9(sass@1.65.1)
+      vite: 4.4.9(sass@1.66.1)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -988,7 +988,7 @@ packages:
       magic-string: 0.30.0
       svelte: 4.2.0
       svelte-hmr: 0.15.1(svelte@4.2.0)
-      vite: 4.4.9(sass@1.65.1)
+      vite: 4.4.9(sass@1.66.1)
       vitefu: 0.2.4(vite@4.4.9)
     transitivePeerDependencies:
       - supports-color
@@ -1195,9 +1195,9 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.21.1
-      get-intrinsic: 1.1.3
+      define-properties: 1.2.0
+      es-abstract: 1.22.1
+      get-intrinsic: 1.2.1
       is-string: 1.0.7
     dev: true
 
@@ -1215,10 +1215,10 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.21.1
+      define-properties: 1.2.0
+      es-abstract: 1.22.1
       es-shim-unscopables: 1.0.0
-      get-intrinsic: 1.1.3
+      get-intrinsic: 1.2.1
     dev: true
 
   /array.prototype.flat@1.3.1:
@@ -1226,8 +1226,8 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.21.1
+      define-properties: 1.2.0
+      es-abstract: 1.22.1
       es-shim-unscopables: 1.0.0
     dev: true
 
@@ -1236,8 +1236,8 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.21.1
+      define-properties: 1.2.0
+      es-abstract: 1.22.1
       es-shim-unscopables: 1.0.0
     dev: true
 
@@ -2080,45 +2080,6 @@ packages:
       unbox-primitive: 1.0.2
     dev: true
 
-  /es-abstract@1.21.1:
-    resolution: {integrity: sha512-QudMsPOz86xYz/1dG1OuGBKOELjCh99IIWHLzy5znUB6j8xG2yMA7bfTV86VSqKF+Y/H08vQPR+9jyXpuC6hfg==}
-    engines: {node: '>= 0.4'}
-    dependencies:
-      available-typed-arrays: 1.0.5
-      call-bind: 1.0.2
-      es-set-tostringtag: 2.0.1
-      es-to-primitive: 1.2.1
-      function-bind: 1.1.1
-      function.prototype.name: 1.1.5
-      get-intrinsic: 1.1.3
-      get-symbol-description: 1.0.0
-      globalthis: 1.0.3
-      gopd: 1.0.1
-      has: 1.0.3
-      has-property-descriptors: 1.0.0
-      has-proto: 1.0.1
-      has-symbols: 1.0.3
-      internal-slot: 1.0.4
-      is-array-buffer: 3.0.1
-      is-callable: 1.2.7
-      is-negative-zero: 2.0.2
-      is-regex: 1.1.4
-      is-shared-array-buffer: 1.0.2
-      is-string: 1.0.7
-      is-typed-array: 1.1.10
-      is-weakref: 1.0.2
-      object-inspect: 1.12.2
-      object-keys: 1.1.1
-      object.assign: 4.1.4
-      regexp.prototype.flags: 1.4.3
-      safe-regex-test: 1.0.0
-      string.prototype.trimend: 1.0.6
-      string.prototype.trimstart: 1.0.6
-      typed-array-length: 1.0.4
-      unbox-primitive: 1.0.2
-      which-typed-array: 1.1.9
-    dev: true
-
   /es-abstract@1.22.1:
     resolution: {integrity: sha512-ioRRcXMO6OFyRpyzV3kE1IIBd4WG5/kltnzdxSCqoP8CMGs/Li+M1uF5o7lOkZVFjDs+NLesthnF66Pg/0q0Lw==}
     engines: {node: '>= 0.4'}
@@ -2168,7 +2129,7 @@ packages:
     resolution: {integrity: sha512-g3OMbtlwY3QewlqAiMLI47KywjWZoEytKr8pf6iTC8uJq5bIAH52Z9pnQ8pVL6whrCto53JZDuUIsifGeLorTg==}
     engines: {node: '>= 0.4'}
     dependencies:
-      get-intrinsic: 1.1.3
+      get-intrinsic: 1.2.1
       has: 1.0.3
       has-tostringtag: 1.0.0
     dev: true
@@ -2274,7 +2235,7 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-airbnb-base@15.0.0(eslint-plugin-import@2.28.0)(eslint@8.47.0):
+  /eslint-config-airbnb-base@15.0.0(eslint-plugin-import@2.28.1)(eslint@8.47.0):
     resolution: {integrity: sha512-xaX3z4ZZIcFLvh2oUNvcX5oEofXda7giYmuplVxoOg5A7EXJMrUyqRgR+mhDhPK8LZ4PttFOBvCYDbX3sUoUig==}
     engines: {node: ^10.12.0 || >=12.0.0}
     peerDependencies:
@@ -2283,7 +2244,7 @@ packages:
     dependencies:
       confusing-browser-globals: 1.0.11
       eslint: 8.47.0
-      eslint-plugin-import: 2.28.0(eslint@8.47.0)
+      eslint-plugin-import: 2.28.1(eslint@8.47.0)
       object.assign: 4.1.4
       object.entries: 1.1.5
       semver: 6.3.0
@@ -2302,7 +2263,7 @@ packages:
     resolution: {integrity: sha512-gozW2blMLJCeFpBwugLTGyvVjNoeo1knonXAcatC6bjPBZitotxdWf7Gimr25N4c0AAOo4eOUfaG82IJPDpqCA==}
     dependencies:
       debug: 3.2.7
-      is-core-module: 2.12.1
+      is-core-module: 2.13.0
       resolve: 1.22.3
     transitivePeerDependencies:
       - supports-color
@@ -2336,8 +2297,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-import@2.28.0(eslint@8.47.0):
-    resolution: {integrity: sha512-B8s/n+ZluN7sxj9eUf7/pRFERX0r5bnFA2dCaLHy2ZeaQEAz0k+ZZkFWRFHJAqxfxQDx6KLv9LeIki7cFdwW+Q==}
+  /eslint-plugin-import@2.28.1(eslint@8.47.0):
+    resolution: {integrity: sha512-9I9hFlITvOV55alzoKBI+K9q74kv0iKMeY6av5+umsNwayt59fz692daGyjR+oStBQgx6nwR9rXldDev3Clw+A==}
     engines: {node: '>=4'}
     peerDependencies:
       '@typescript-eslint/parser': '*'
@@ -2356,13 +2317,12 @@ packages:
       eslint-import-resolver-node: 0.3.7
       eslint-module-utils: 2.8.0(eslint-import-resolver-node@0.3.7)(eslint@8.47.0)
       has: 1.0.3
-      is-core-module: 2.12.1
+      is-core-module: 2.13.0
       is-glob: 4.0.3
       minimatch: 3.1.2
       object.fromentries: 2.0.6
       object.groupby: 1.0.0
       object.values: 1.1.6
-      resolve: 1.22.3
       semver: 6.3.1
       tsconfig-paths: 3.14.2
     transitivePeerDependencies:
@@ -2387,9 +2347,9 @@ packages:
       eslint: 8.47.0
       esutils: 2.0.3
       known-css-properties: 0.28.0
-      postcss: 8.4.27
-      postcss-load-config: 3.1.4(postcss@8.4.27)
-      postcss-safe-parser: 6.0.0(postcss@8.4.27)
+      postcss: 8.4.28
+      postcss-load-config: 3.1.4(postcss@8.4.28)
+      postcss-safe-parser: 6.0.0(postcss@8.4.28)
       postcss-selector-parser: 6.0.13
       semver: 7.5.3
       svelte: 4.2.0
@@ -2746,8 +2706,8 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.21.1
+      define-properties: 1.2.0
+      es-abstract: 1.22.1
       functions-have-names: 1.2.3
     dev: true
 
@@ -2787,7 +2747,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      get-intrinsic: 1.1.3
+      get-intrinsic: 1.2.1
     dev: true
 
   /glob-parent@5.1.2:
@@ -2849,7 +2809,7 @@ packages:
     resolution: {integrity: sha512-sFdI5LyBiNTHjRd7cGPWapiHWMOXKyuBNX/cWJ3NfzrZQVa8GI/8cofCl74AOVqq9W5kNmguTIzJ/1s2gyI9wA==}
     engines: {node: '>= 0.4'}
     dependencies:
-      define-properties: 1.1.4
+      define-properties: 1.2.0
     dev: true
 
   /globalyzer@0.1.0:
@@ -2862,7 +2822,7 @@ packages:
     dependencies:
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.3.0
+      fast-glob: 3.3.1
       ignore: 5.2.4
       merge2: 1.4.1
       slash: 3.0.0
@@ -2879,7 +2839,7 @@ packages:
   /gopd@1.0.1:
     resolution: {integrity: sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==}
     dependencies:
-      get-intrinsic: 1.1.3
+      get-intrinsic: 1.2.1
     dev: true
 
   /graceful-fs@4.2.10:
@@ -3046,16 +3006,7 @@ packages:
     resolution: {integrity: sha512-O0DB1JC/sPyZl7cIo78n5dR7eUSwwpYPiXRhTzNxZVAMUuB8vlnRFyLxdrVToks6XPLVnFfbzaVd5WLjhgg+vA==}
     engines: {node: '>= 0.4'}
     dependencies:
-      get-intrinsic: 1.1.3
-      has: 1.0.3
-      side-channel: 1.0.4
-    dev: true
-
-  /internal-slot@1.0.4:
-    resolution: {integrity: sha512-tA8URYccNzMo94s5MQZgH8NB/XTa6HsOo0MLfXTKKEnHVVdegzaQoFZ7Jp44bdvLvY2waT5dc+j5ICEswhi7UQ==}
-    engines: {node: '>= 0.4'}
-    dependencies:
-      get-intrinsic: 1.1.3
+      get-intrinsic: 1.2.1
       has: 1.0.3
       side-channel: 1.0.4
     dev: true
@@ -3086,14 +3037,6 @@ packages:
   /ipaddr.js@1.9.1:
     resolution: {integrity: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==}
     engines: {node: '>= 0.10'}
-    dev: true
-
-  /is-array-buffer@3.0.1:
-    resolution: {integrity: sha512-ASfLknmY8Xa2XtB4wmbz13Wu202baeA18cJBCeCy0wXUHZF0IPyVEXqKEcd+t2fNSLLL1vC6k7lxZEojNbISXQ==}
-    dependencies:
-      call-bind: 1.0.2
-      get-intrinsic: 1.1.3
-      is-typed-array: 1.1.10
     dev: true
 
   /is-array-buffer@3.0.2:
@@ -3147,14 +3090,14 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /is-core-module@2.11.0:
-    resolution: {integrity: sha512-RRjxlvLDkD1YJwDbroBHMb+cukurkDWNyHx7D3oNB5x9rb5ogcksMC5wHCadcXoo67gVr/+3GFySh3134zi6rw==}
+  /is-core-module@2.12.1:
+    resolution: {integrity: sha512-Q4ZuBAe2FUsKtyQJoQHlvP8OvBERxO3jEmy1I7hcRXcJBGGHFh/aJBswbXuS9sgrDH2QUO8ilkwNPHvHMd8clg==}
     dependencies:
       has: 1.0.3
     dev: true
 
-  /is-core-module@2.12.1:
-    resolution: {integrity: sha512-Q4ZuBAe2FUsKtyQJoQHlvP8OvBERxO3jEmy1I7hcRXcJBGGHFh/aJBswbXuS9sgrDH2QUO8ilkwNPHvHMd8clg==}
+  /is-core-module@2.13.0:
+    resolution: {integrity: sha512-Z7dk6Qo8pOCp3l4tsX2C5ZVas4V+UxwQodwZhLopL91TX8UyyHEXafPcyoeeWuLrwzHcr3igO78wNLwHJHsMCQ==}
     dependencies:
       has: 1.0.3
     dev: true
@@ -3369,10 +3312,6 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /known-css-properties@0.27.0:
-    resolution: {integrity: sha512-uMCj6+hZYDoffuvAJjFAPz56E9uoowFHmTkqRtRq5WyC5Q6Cu/fTZKNQpX/RbzChBYLLl3lo8CjFZBAZXq9qFg==}
-    dev: true
-
   /known-css-properties@0.28.0:
     resolution: {integrity: sha512-9pSL5XB4J+ifHP0e0jmmC98OGC1nL8/JjS+fi6mnTlIf//yt/MfVLtKg7S6nCtj/8KTcWX7nRlY0XywoYY1ISQ==}
     dev: true
@@ -3484,8 +3423,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /marked@7.0.2:
-    resolution: {integrity: sha512-ADEBjnCHOrsLoV7JPvUNWtELZ0b4SeIALhrfxuA9uhS3hw2PCezROoFduIqMOjeagBPto732+YC5tZHBMQRdqg==}
+  /marked@7.0.4:
+    resolution: {integrity: sha512-t8eP0dXRJMtMvBojtkcsA7n48BkauktUKzfkPSCq85ZMTJ0v76Rke4DYz01omYpPTUh4p/f7HePgRo3ebG8+QQ==}
     engines: {node: '>= 16'}
     hasBin: true
     dev: true
@@ -3724,8 +3663,8 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       hosted-git-info: 4.1.0
-      is-core-module: 2.11.0
-      semver: 7.5.3
+      is-core-module: 2.12.1
+      semver: 7.5.4
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -3792,8 +3731,8 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.21.1
+      define-properties: 1.2.0
+      es-abstract: 1.22.1
     dev: true
 
   /object.groupby@1.0.0:
@@ -3810,8 +3749,8 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.21.1
+      define-properties: 1.2.0
+      es-abstract: 1.22.1
     dev: true
 
   /on-finished@2.3.0:
@@ -4001,11 +3940,11 @@ packages:
     dependencies:
       htmlparser2: 8.0.1
       js-tokens: 8.0.0
-      postcss: 8.4.27
-      postcss-safe-parser: 6.0.0(postcss@8.4.27)
+      postcss: 8.4.28
+      postcss-safe-parser: 6.0.0(postcss@8.4.28)
     dev: true
 
-  /postcss-load-config@3.1.4(postcss@8.4.27):
+  /postcss-load-config@3.1.4(postcss@8.4.28):
     resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==}
     engines: {node: '>= 10'}
     peerDependencies:
@@ -4018,7 +3957,7 @@ packages:
         optional: true
     dependencies:
       lilconfig: 2.1.0
-      postcss: 8.4.27
+      postcss: 8.4.28
       yaml: 1.10.2
     dev: true
 
@@ -4030,22 +3969,22 @@ packages:
     resolution: {integrity: sha512-HvExULSwLqHLgUy1rl3ANIqCsvMS0WHss2UOsXhXnQaZ9VCc2oBvIpXrl00IUFT5ZDITME0o6oiXeiHr2SAIfw==}
     dev: true
 
-  /postcss-safe-parser@6.0.0(postcss@8.4.27):
+  /postcss-safe-parser@6.0.0(postcss@8.4.28):
     resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.3.3
     dependencies:
-      postcss: 8.4.27
+      postcss: 8.4.28
     dev: true
 
-  /postcss-scss@4.0.6(postcss@8.4.27):
+  /postcss-scss@4.0.6(postcss@8.4.28):
     resolution: {integrity: sha512-rLDPhJY4z/i4nVFZ27j9GqLxj1pwxE80eAzUNRMXtcpipFYIeowerzBgG3yJhMtObGEXidtIgbUpQ3eLDsf5OQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.4.19
     dependencies:
-      postcss: 8.4.27
+      postcss: 8.4.28
     dev: true
 
   /postcss-selector-parser@6.0.13:
@@ -4060,8 +3999,8 @@ packages:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
     dev: true
 
-  /postcss@8.4.27:
-    resolution: {integrity: sha512-gY/ACJtJPSmUFPDCHtX78+01fHa64FaU4zaaWfuh1MhGJISufJAH4cun6k/8fwsHYeK4UQmENQK+tRLCFJE8JQ==}
+  /postcss@8.4.28:
+    resolution: {integrity: sha512-Z7V5j0cq8oEKyejIKfpD8b4eBy9cwW2JWPk0+fB1HOAMsfHbnAXLLS+PfVWlzMSLQaWttKDt607I0XHmpE67Vw==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.6
@@ -4074,18 +4013,18 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-svelte@3.0.3(prettier@3.0.1)(svelte@4.2.0):
+  /prettier-plugin-svelte@3.0.3(prettier@3.0.2)(svelte@4.2.0):
     resolution: {integrity: sha512-dLhieh4obJEK1hnZ6koxF+tMUrZbV5YGvRpf2+OADyanjya5j0z1Llo8iGwiHmFWZVG/hLEw/AJD5chXd9r3XA==}
     peerDependencies:
       prettier: ^3.0.0
       svelte: ^3.2.0 || ^4.0.0-next.0
     dependencies:
-      prettier: 3.0.1
+      prettier: 3.0.2
       svelte: 4.2.0
     dev: true
 
-  /prettier@3.0.1:
-    resolution: {integrity: sha512-fcOWSnnpCrovBsmFZIGIy9UqK2FaI7Hqax+DIO0A9UxeVoY4iweyaFjS5TavZN97Hfehph0nhsZnjlVKzEQSrQ==}
+  /prettier@3.0.2:
+    resolution: {integrity: sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -4195,7 +4134,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
+      define-properties: 1.2.0
       functions-have-names: 1.2.3
     dev: true
 
@@ -4239,7 +4178,7 @@ packages:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
     hasBin: true
     dependencies:
-      is-core-module: 2.11.0
+      is-core-module: 2.12.1
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
     dev: true
@@ -4248,7 +4187,7 @@ packages:
     resolution: {integrity: sha512-P8ur/gp/AmbEzjr729bZnLjXK5Z+4P0zhIJgBgzqRih7hL7BOukHGtSTA3ACMY467GRFz3duQsi0bDZdR7DKdw==}
     hasBin: true
     dependencies:
-      is-core-module: 2.12.1
+      is-core-module: 2.13.0
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
     dev: true
@@ -4314,7 +4253,7 @@ packages:
     resolution: {integrity: sha512-JBUUzyOgEwXQY1NuPtvcj/qcBDbDmEvWufhlnXZIm75DEHp+afM1r1ujJpJsV/gSM4t59tpDyPi1sd6ZaPFfsA==}
     dependencies:
       call-bind: 1.0.2
-      get-intrinsic: 1.1.3
+      get-intrinsic: 1.2.1
       is-regex: 1.1.4
     dev: true
 
@@ -4336,8 +4275,8 @@ packages:
       rimraf: 2.7.1
     dev: true
 
-  /sass@1.65.1:
-    resolution: {integrity: sha512-9DINwtHmA41SEd36eVPQ9BJKpn7eKDQmUHmpI0y5Zv2Rcorrh0zS+cFrt050hdNbmmCNKTW3hV5mWfuegNRsEA==}
+  /sass@1.66.1:
+    resolution: {integrity: sha512-50c+zTsZOJVgFfTgwwEzkjA3/QACgdNsKueWPyAR0mRINIvLAStVQBbPg14iuqEQ74NPDbXzJARJ/O4SI1zftA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -4592,32 +4531,32 @@ packages:
     resolution: {integrity: sha512-I7RGvmjV4pJ7O3kdf+LXFpVfdNOxtCW/2C8f6jNiW4+PQchwxkCDzlk1/7p+Wl4bqFIZeF47qAHXLuHHWKAxog==}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.21.1
+      define-properties: 1.2.0
+      es-abstract: 1.22.1
     dev: true
 
   /string.prototype.trimend@1.0.6:
     resolution: {integrity: sha512-JySq+4mrPf9EsDBEDYMOb/lM7XQLulwg5R/m1r0PXEFqrV0qHvl58sdTilSXtKOflCsK2E8jxf+GKC0T07RWwQ==}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.21.1
+      define-properties: 1.2.0
+      es-abstract: 1.22.1
     dev: true
 
   /string.prototype.trimstart@1.0.5:
     resolution: {integrity: sha512-THx16TJCGlsN0o6dl2o6ncWUsdgnLRSA23rRE5pyGBw/mLr3Ej/R2LaqCtgP8VNMGZsvMWnf9ooZPyY2bHvUFg==}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.21.1
+      define-properties: 1.2.0
+      es-abstract: 1.22.1
     dev: true
 
   /string.prototype.trimstart@1.0.6:
     resolution: {integrity: sha512-omqjMDaY92pbn5HOX7f9IccLA+U1tA9GvtU4JrodiXFfYB7jPzzHpRzpglLAjtUV6bB557zwClJezTqnAiYnQA==}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.21.1
+      define-properties: 1.2.0
+      es-abstract: 1.22.1
     dev: true
 
   /string_decoder@1.3.0:
@@ -4668,7 +4607,7 @@ packages:
     resolution: {integrity: sha512-Dj1Okke1C3uKKwQcetra4jSuk0DqbzbYtXipzFlFMZtowbF1x7BKJwB9AayVMyFARvU8EDrZdcax4At/452cAg==}
     dev: true
 
-  /stylelint-config-recommended-scss@12.0.0(postcss@8.4.27)(stylelint@15.10.2):
+  /stylelint-config-recommended-scss@12.0.0(postcss@8.4.28)(stylelint@15.10.3):
     resolution: {integrity: sha512-5Bb2mlGy6WLa30oNeKpZvavv2lowJUsUJO25+OA68GFTemlwd1zbFsL7q0bReKipOSU3sG47hKneZ6Nd+ctrFA==}
     peerDependencies:
       postcss: ^8.3.3
@@ -4677,22 +4616,22 @@ packages:
       postcss:
         optional: true
     dependencies:
-      postcss: 8.4.27
-      postcss-scss: 4.0.6(postcss@8.4.27)
-      stylelint: 15.10.2
-      stylelint-config-recommended: 12.0.0(stylelint@15.10.2)
-      stylelint-scss: 5.1.0(stylelint@15.10.2)
+      postcss: 8.4.28
+      postcss-scss: 4.0.6(postcss@8.4.28)
+      stylelint: 15.10.3
+      stylelint-config-recommended: 12.0.0(stylelint@15.10.3)
+      stylelint-scss: 5.1.0(stylelint@15.10.3)
     dev: true
 
-  /stylelint-config-recommended@12.0.0(stylelint@15.10.2):
+  /stylelint-config-recommended@12.0.0(stylelint@15.10.3):
     resolution: {integrity: sha512-x6x8QNARrGO2sG6iURkzqL+Dp+4bJorPMMRNPScdvaUK8PsynriOcMW7AFDKqkWAS5wbue/u8fUT/4ynzcmqdQ==}
     peerDependencies:
       stylelint: ^15.5.0
     dependencies:
-      stylelint: 15.10.2
+      stylelint: 15.10.3
     dev: true
 
-  /stylelint-scss@5.1.0(stylelint@15.10.2):
+  /stylelint-scss@5.1.0(stylelint@15.10.3):
     resolution: {integrity: sha512-E+KlQFXv1Euha43qw3q+wKBSli557wxbbo6/39DWhRNXlUa9Cz+FYrcgz+PT6ag0l6UisCYjAGCNhoSl4FcwlA==}
     peerDependencies:
       stylelint: ^14.5.1 || ^15.0.0
@@ -4701,17 +4640,17 @@ packages:
       postcss-resolve-nested-selector: 0.1.1
       postcss-selector-parser: 6.0.13
       postcss-value-parser: 4.2.0
-      stylelint: 15.10.2
+      stylelint: 15.10.3
     dev: true
 
-  /stylelint@15.10.2:
-    resolution: {integrity: sha512-UxqSb3hB74g4DTO45QhUHkJMjKKU//lNUAOWyvPBVPZbCknJ5HjOWWZo+UDuhHa9FLeVdHBZXxu43eXkjyIPWg==}
+  /stylelint@15.10.3:
+    resolution: {integrity: sha512-aBQMMxYvFzJJwkmg+BUUg3YfPyeuCuKo2f+LOw7yYbU8AZMblibwzp9OV4srHVeQldxvSFdz0/Xu8blq2AesiA==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
-      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-tokenizer': 2.1.1
-      '@csstools/media-query-list-parser': 2.1.2(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.1(@csstools/css-tokenizer@2.2.0)
+      '@csstools/css-tokenizer': 2.2.0
+      '@csstools/media-query-list-parser': 2.1.4(@csstools/css-parser-algorithms@2.3.1)(@csstools/css-tokenizer@2.2.0)
       '@csstools/selector-specificity': 3.0.0(postcss-selector-parser@6.0.13)
       balanced-match: 2.0.0
       colord: 2.9.3
@@ -4719,7 +4658,7 @@ packages:
       css-functions-list: 3.2.0
       css-tree: 2.3.1
       debug: 4.3.4
-      fast-glob: 3.3.0
+      fast-glob: 3.3.1
       fastest-levenshtein: 1.0.16
       file-entry-cache: 6.0.1
       global-modules: 2.0.0
@@ -4730,15 +4669,15 @@ packages:
       import-lazy: 4.0.0
       imurmurhash: 0.1.4
       is-plain-object: 5.0.0
-      known-css-properties: 0.27.0
+      known-css-properties: 0.28.0
       mathml-tag-names: 2.1.3
       meow: 10.1.5
       micromatch: 4.0.5
       normalize-path: 3.0.0
       picocolors: 1.0.0
-      postcss: 8.4.27
+      postcss: 8.4.28
       postcss-resolve-nested-selector: 0.1.1
-      postcss-safe-parser: 6.0.0(postcss@8.4.27)
+      postcss-safe-parser: 6.0.0(postcss@8.4.28)
       postcss-selector-parser: 6.0.13
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
@@ -4780,7 +4719,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /svelte-check@3.5.0(postcss@8.4.27)(sass@1.65.1)(svelte@4.2.0):
+  /svelte-check@3.5.0(postcss@8.4.28)(sass@1.66.1)(svelte@4.2.0):
     resolution: {integrity: sha512-KHujbn4k17xKYLmtCwv0sKKM7uiHTYcQvXnvrCcNU6a7hcszh99zFTIoiu/Sp/ewAw5aJmillJ1Cs8gKLmcX4A==}
     hasBin: true
     peerDependencies:
@@ -4793,7 +4732,7 @@ packages:
       picocolors: 1.0.0
       sade: 1.8.1
       svelte: 4.2.0
-      svelte-preprocess: 5.0.4(postcss@8.4.27)(sass@1.65.1)(svelte@4.2.0)(typescript@5.0.4)
+      svelte-preprocess: 5.0.4(postcss@8.4.28)(sass@1.66.1)(svelte@4.2.0)(typescript@5.0.4)
       typescript: 5.0.4
     transitivePeerDependencies:
       - '@babel/core'
@@ -4819,8 +4758,8 @@ packages:
       eslint-scope: 7.2.0
       eslint-visitor-keys: 3.4.1
       espree: 9.6.0
-      postcss: 8.4.27
-      postcss-scss: 4.0.6(postcss@8.4.27)
+      postcss: 8.4.28
+      postcss-scss: 4.0.6(postcss@8.4.28)
       svelte: 4.2.0
     dev: true
 
@@ -4849,7 +4788,7 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /svelte-preprocess@5.0.4(postcss@8.4.27)(sass@1.65.1)(svelte@4.2.0)(typescript@5.0.4):
+  /svelte-preprocess@5.0.4(postcss@8.4.28)(sass@1.66.1)(svelte@4.2.0)(typescript@5.0.4):
     resolution: {integrity: sha512-ABia2QegosxOGsVlsSBJvoWeXy1wUKSfF7SWJdTjLAbx/Y3SrVevvvbFNQqrSJw89+lNSsM58SipmZJ5SRi5iw==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
@@ -4890,8 +4829,8 @@ packages:
       '@types/pug': 2.0.6
       detect-indent: 6.1.0
       magic-string: 0.27.0
-      postcss: 8.4.27
-      sass: 1.65.1
+      postcss: 8.4.28
+      sass: 1.66.1
       sorcery: 0.11.0
       strip-indent: 3.0.0
       svelte: 4.2.0
@@ -5167,7 +5106,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite@4.4.9(sass@1.65.1):
+  /vite@4.4.9(sass@1.66.1):
     resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -5196,9 +5135,9 @@ packages:
         optional: true
     dependencies:
       esbuild: 0.18.12
-      postcss: 8.4.27
+      postcss: 8.4.28
       rollup: 3.27.2
-      sass: 1.65.1
+      sass: 1.66.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -5211,7 +5150,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.4.9(sass@1.65.1)
+      vite: 4.4.9(sass@1.66.1)
     dev: true
 
   /vscode-languageserver-textdocument@1.0.8:
@@ -5256,18 +5195,6 @@ packages:
       for-each: 0.3.3
       gopd: 1.0.1
       has-tostringtag: 1.0.0
-    dev: true
-
-  /which-typed-array@1.1.9:
-    resolution: {integrity: sha512-w9c4xkx6mPidwp7180ckYWfMmvxpjlZuIudNtDf4N/tTAUB8VJbX25qZoAsrtGuYNnGw3pa0AXgbGKRB8/EceA==}
-    engines: {node: '>= 0.4'}
-    dependencies:
-      available-typed-arrays: 1.0.5
-      call-bind: 1.0.2
-      for-each: 0.3.3
-      gopd: 1.0.1
-      has-tostringtag: 1.0.0
-      is-typed-array: 1.1.10
     dev: true
 
   /which@1.3.1:
