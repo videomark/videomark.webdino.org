@@ -8,7 +8,7 @@ ja:
   player_qoe:
     heading: 動画視聴中に体感品質値を確認
     body: >-
-      インストールしたら Paravi、TVer または YouTube
+      インストールしたら AMEBA、Netflix、TVer、YouTube などの [対応サービス](/ja/spec)
       を開いて動画を再生してください。動画視聴中に自動的に再生品質やネットワーク品質などの視聴情報を記録します。
 
 
