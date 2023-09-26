@@ -31,7 +31,6 @@ ja:
   products:
     firefox_extension: Firefox 用拡張機能
     chrome_extension: Chrome/Edge 用拡張機能
-    android_browser: Android 用ブラウザー
   misc:
     note_prefix: "注:"
 en:

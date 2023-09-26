@@ -7,7 +7,6 @@ import { supportedLocales } from '$lib/services/util/i18n';
  */
 const redirectMap = {
   '/': '/ja',
-  '/androidbrowser': 'https://play.google.com/store/apps/details?id=org.webdino.videomarkbrowser',
   '/androidnightly': 'https://addons.mozilla.org/firefox/collections/16375456/vm/',
   '/chromeextension':
     'https://chrome.google.com/webstore/detail/web-videomark/lapldfdplijeiifekbgipcfjnklaahbd',

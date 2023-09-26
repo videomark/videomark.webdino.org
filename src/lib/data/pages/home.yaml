@@ -8,8 +8,8 @@ ja:
     heading: Web VideoMark について
     body: >-
       Web VideoMark では YouTube などの動画配信サービスの視聴時に体感品質を計測可能にする [Chrome/Edge
-      ブラウザー用の拡張機能](/chromeextension)、[Firefox ブラウザー用の拡張機能](/firefoxextension) と
-      [Android 用のブラウザー](/androidbrowser) を提供しています。
+      ブラウザー用の拡張機能](/chromeextension) と [Firefox ブラウザー用の拡張機能](/firefoxextension)
+      を提供しています。
 
 
       インストールしたら、あとはいつも通り動画を見るだけです。ビットレートや解像度、途切れなく滑らかに再生されるかなどを自動計測し、その結果を体感品質値として表示します。

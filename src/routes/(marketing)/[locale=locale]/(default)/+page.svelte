@@ -30,7 +30,7 @@
       {$_('pages.home.hero.heading')}
     </p>
   </hgroup>
-  <DownloadButtons detectBrowser showAndroidLink />
+  <DownloadButtons detectBrowser={false} />
 </header>
 
 <Section>

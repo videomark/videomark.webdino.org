@@ -24,7 +24,6 @@
 /chromeextension   https://chrome.google.com/webstore/detail/web-videomark/lapldfdplijeiifekbgipcfjnklaahbd
 /firefoxextension  https://addons.mozilla.org/firefox/addon/videomark/
 /androidnightly    https://addons.mozilla.org/firefox/collections/16375456/vm/
-/androidbrowser    https://play.google.com/store/apps/details?id=org.webdino.videomarkbrowser
 
 # various stats pages
 /stats/* /ja/stats/:splat

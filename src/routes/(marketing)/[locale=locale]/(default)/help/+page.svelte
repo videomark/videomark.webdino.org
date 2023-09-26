@@ -39,7 +39,6 @@
   </Grid>
   <p class="centered">
     <Button href="help/extension">{$_('pages.help.how.links.extension')}</Button>
-    <Button href="help/android">{$_('pages.help.how.links.android')}</Button>
   </p>
 </Section>
 
