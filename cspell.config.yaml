@@ -28,7 +28,6 @@ words:
   - unspaced
   - VITE
 ignoreWords:
-  - androidbrowser
   - androidnightly
   - chromeextension
   - dbaeumer

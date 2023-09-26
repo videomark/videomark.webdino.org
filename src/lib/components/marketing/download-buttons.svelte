@@ -4,7 +4,6 @@
   import Button from '../common/button.svelte';
 
   export let detectBrowser = false;
-  export let showAndroidLink = false;
 
   let isFirefox = false;
 
@@ -23,8 +22,5 @@
   {:else}
     <Button href="/chromeextension">{$_('pages._global.products.chrome_extension')}</Button>
     <Button href="/firefoxextension">{$_('pages._global.products.firefox_extension')}</Button>
-  {/if}
-  {#if showAndroidLink}
-    <Button href="/androidbrowser">{$_('pages._global.products.android_browser')}</Button>
   {/if}
 </div>
