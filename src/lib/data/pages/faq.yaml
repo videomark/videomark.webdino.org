@@ -47,32 +47,7 @@ ja:
       - question: 調査対象となる動画配信サービスは何ですか？
         answer: >-
           Web VideoMark を利用して動画サービスの利用時に動画再生やネットワーク品質を測定し、計測結果や視聴履歴の確認が可能なサービスは
-          2020 年 2 月現在で次の通りです (対象サービスは順次拡大しています)。
-
-
-          - [AbemaTV](https://abema.tv/)
-
-          - [Amazon Prime Video](https://www.amazon.co.jp/gp/video/storefront/)
-
-          - [dTV](https://pc.video.dmkt-sp.jp/)
-
-          - [FOD](https://fod.fujitv.co.jp/)
-
-          - [gorin.jp](https://www.gorin.jp/)
-
-          - [NHK オンデマンド](https://www.nhk-ondemand.jp/)
-
-          - [Paravi](https://www.paravi.jp/)
-
-          - [TVer](https://tver.jp/)
-
-          - [TWILIGHT CONCERT](https://pr.iij.ad.jp/live/)
-
-          - [YouTube](https://www.youtube.com/)
-
-          - [ニコニコ動画](https://www.nicovideo.jp/video_top)
-
-          - [ニコニコ生放送](https://live.nicovideo.jp/)
+          [VideoMark の仕様ページ](/ja/spec) をご覧ください。
 
 
           但し、これらの動画配信サービスで配信されている動画であっても、計測を行えない場合がございます。また、体感品質地の推定やビットレート制御など、一部の機能についてはサポート対象となる動画サービスが限られます。コンテンツの提供元・配信元・配信手段によって、あるいは、利用者の環境や課金状況などに応じて異なった実装の HTML5 動画再生プレイヤーや異なる DRM (デジタル著作権管理) 技術が使われた動画ファイルで配信されており、該当機能を実現するための計測や制御が行えない (未対応) サービスがあります。
@@ -159,12 +134,6 @@ ja:
 
 
           再生中の体感品質値を確認されたいときは、一旦、フルスクリーン再生を中断してご確認ください。
-      - question: Android で Paravi の動画が再生されない
-        answer: Paravi では DRM (デジタル著作権管理) 技術を使っており、ご利用の Android 端末によっては DRM
-          コンテンツの再生に対応していないことがあります。端末標準搭載のブラウザーで PC
-          サイトにアクセスした場合でも視聴できない場合、端末がブラウザーによる DRM
-          コンテンツ再生に対応していない可能性があります。そのような場合は VideoMark Browser でも Paravi
-          の動画は再生できません。
       - question: 実際の計測位置と異なる地域 (都道府県) での測定結果になる
         answer: >-
           Web VideoMark では匿名化済みの IP アドレスを元に、送信元について以下の情報を MaxMind 社の提供する GeoIP
@@ -181,7 +150,7 @@ ja:
     items:
       - question: Web VideoMark ではどのような視聴情報を取得・送信しますか？
         answer: >-
-          Web VideoMark を利用して Paravi、TVer、YouTube
+          Web VideoMark を利用して AMEBA、Netflix、TVer、YouTube などの [対応サービス](/ja/spec)
           の動画を再生すると、以下の視聴情報を自動的に取得しサーバーに送信します。
 
 
