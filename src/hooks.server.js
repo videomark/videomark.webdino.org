@@ -7,7 +7,7 @@ import { supportedLocales } from '$lib/services/util/i18n';
  */
 const redirectMap = {
   '/': '/ja',
-  '/androidnightly': 'https://addons.mozilla.org/firefox/collections/16375456/vm/',
+  '/androidnightly': 'https://addons.mozilla.org/firefox/addon/videomark/',
   '/chromeextension':
     'https://chrome.google.com/webstore/detail/web-videomark/lapldfdplijeiifekbgipcfjnklaahbd',
   '/firefoxextension': 'https://addons.mozilla.org/firefox/addon/videomark/',

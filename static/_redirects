@@ -23,7 +23,7 @@
 # software download
 /chromeextension   https://chrome.google.com/webstore/detail/web-videomark/lapldfdplijeiifekbgipcfjnklaahbd
 /firefoxextension  https://addons.mozilla.org/firefox/addon/videomark/
-/androidnightly    https://addons.mozilla.org/firefox/collections/16375456/vm/
+/androidnightly    https://addons.mozilla.org/firefox/addon/videomark/
 
 # various stats pages
 /stats/* /ja/stats/:splat
