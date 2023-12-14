@@ -20,7 +20,8 @@ ja:
       src: https://res.cloudinary.com/videomark/c_scale,w_800/pc/logview-03.jpg
       alt: Web VideoMark 計測結果画面
     more: もっと見る →
-  announcement: ""
+  announcement: Firefox 用拡張機能が Android 版 Firefox に対応しました。Android
+    スマートフォン・タブレットをお持ちの方はぜひお試しください！
 en:
   meta:
     pageImage: null
