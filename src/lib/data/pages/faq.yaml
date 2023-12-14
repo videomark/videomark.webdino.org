@@ -22,28 +22,30 @@ ja:
           動画配信サービスの視聴環境をご自身で体感品質値によって確認・比較いただけるだけでなく、ご利用環境での問題があればそれを特定・解決しより良い品質でインターネットと動画配信サービスをご利用いただけることに繋がります。
       - question: Web VideoMark がサポートする OS とブラウザーは何ですか？
         answer: >-
-          デスクトップパソコン (Windows、macOS、Linux) 向けに調査用ソフトウェアを配布しています。ウェブブラウザー (Google
-          Chrome、Microsoft Edge または Mozilla Firefox) に拡張機能 Web VideoMark
-          をインストールしてご協力ください。なお、サポート対象となる OS のバージョンは使用する各ウェブブラウザーのシステム要件に準拠します。
+          Web VideoMark の調査用ソフトウェアはウェブブラウザーに組み込む拡張機能として提供しており、ブラウザーの挙動を拡張・変更することで、ウェブベースの動画配信サービス視聴時の視聴情報を読み取り分析しています。
 
 
-          [Google Chrome のシステム要件](https://support.google.com/chrome/a/answer/7100626)
+          デスクトップパソコン (Windows、macOS、Linux) では、Google Chrome、Microsoft Edge または Mozilla Firefox に Web VideoMark 拡張機能をインストールしてご協力ください。
+          サポート対象となる OS のバージョンは使用する各ウェブブラウザーのシステム要件に準拠します。
+
+
+          - [Chrome/Edge 用拡張機能のインストールはこちらから](/chromeextension)
+
+          - [Firefox 用拡張機能のインストールはこちらから](/firefoxextension)
+
+          - 参考: [Google Chrome のシステム要件](https://support.google.com/chrome/a/answer/7100626)
 
 
           一部の Chromium ベースのウェブブラウザー (Brave、Vivaldi) については問題なく動作することを確認しています。
+
+
+          Android スマートフォン・タブレットでは Firefox 用拡張機能をご利用ください。
+          Android 版 Chrome は今のところ拡張機能に対応していないため、Web VideoMark をインストールすることはできません。
+
+
+          なお、従来提供していた Chromium ベースの Android 向け計測専用ブラウザー「VideoMark Browser」は、メンテナンスの都合により公開を終了させていただきました。
       - question: Safari では調査に協力できないのですか？
         answer: macOS、iOS (iPhone)、iPadOS 向け Safari ブラウザーへの対応は現在検討中です。
-      - question: Android では調査に協力できないのですか？
-        answer: >-
-          Web VideoMark はウェブブラウザーの挙動を拡張・変更することで、Web
-          ベースでブラウザー用に提供されている動画配信サービス視聴時の視聴情報を読み取り分析しています。Android 版 Chrome
-          は拡張機能に対応しておらず、必要な視聴情報を取得するソフトウェアを実装・提供することができません。
-
-
-          Android 版 Firefox では現在のところ特定の拡張機能のみインストール可能となっていますが、2023 年末までにこの制約が廃止されることが [Mozilla より発表されました](https://blog.mozilla.org/addons/2023/08/10/prepare-your-firefox-desktop-extension-for-the-upcoming-android-release/)。これを受けて、本プロジェクトでは Android 版 Firefox への対応準備を進めています。
-
-
-          従来提供していた Chromium ベースの計測専用ブラウザー「VideoMark Browser」は、メンテナンスの都合により公開を終了させていただきました。
       - question: 調査対象となる動画配信サービスは何ですか？
         answer: >-
           Web VideoMark を利用して動画サービスの利用時に動画再生やネットワーク品質を測定し、計測結果や視聴履歴の確認が可能なサービスは
