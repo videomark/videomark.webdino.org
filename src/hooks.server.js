@@ -18,7 +18,7 @@ export function handle({ event, resolve }) {
 
   // Redirect some routes
   if (pathname in redirectMap) {
-    throw redirect(302, redirectMap[pathname]);
+    redirect(302, redirectMap[pathname]);
   }
 
   const [, lang = 'en'] =
