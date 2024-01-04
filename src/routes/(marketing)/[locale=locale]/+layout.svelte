@@ -7,12 +7,11 @@
   import { unique } from '$lib/services/util/array';
 
   onMount(() => {
-    preloadCode(
-      // @ts-ignore
-      unique(/** @type {object[]} */ ($json('pages._global.header.links')), 'href').map(
-        ({ href }) => href,
-      ),
-    );
+    (async () => {
+      const links = unique(/** @type {object[]} */ ($json('pages._global.header.links')), 'href');
+
+      await Promise.all(links.map(({ href }) => preloadCode(href)));
+    })();
   });
 </script>
 
