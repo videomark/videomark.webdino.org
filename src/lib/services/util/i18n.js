@@ -15,12 +15,16 @@ export const supportedLocales = {
  * @see https://vitejs.dev/guide/features.html#glob-import
  */
 export const initLocales = () => {
-  const files = import.meta.glob('../../data/**/*.yaml', { as: 'raw', eager: true });
+  const files = import.meta.glob('$lib/data/**/*.yaml', {
+    query: '?raw',
+    import: 'default',
+    eager: true,
+  });
 
   Object.entries(files).forEach(([path, content]) => {
     const [, pages, slug] = path.match(/(pages\/)?(\w+)\.yaml/);
 
-    Object.entries(YAML.parse(content)).forEach(([locale, messages]) => {
+    Object.entries(YAML.parse(/** @type {string} */ (content))).forEach(([locale, messages]) => {
       addMessages(locale, pages ? { pages: { [slug]: messages } } : { [slug]: messages });
     });
   });
