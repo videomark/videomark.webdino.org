@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: sodium/videomark.mozilla.org
+  repo: videomark/videomark.webdino.org
   branch: main
   base_url: https://sveltia-cms-auth.britegrid.workers.dev
   squash_merges: true
