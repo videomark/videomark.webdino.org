@@ -7,7 +7,7 @@
   import { onMount } from 'svelte';
   import { locale as currentLocale } from 'svelte-i18n';
   import { get } from 'svelte/store';
-  import * as topojson from 'topojson';
+  import * as topojson from 'topojson-client';
 
   const locale = get(currentLocale);
 
