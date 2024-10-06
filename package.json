@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.5",
-    "@sveltejs/kit": "^2.6.1",
+    "@sveltejs/kit": "^2.6.2",
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "@types/d3-array": "^3.2.1",
     "@types/d3-axis": "^3.0.6",
@@ -32,7 +32,7 @@
     "eslint": "^8.57.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-svelte": "^2.44.1",
     "intl-messageformat": "^10.5.14",
     "marked": "^14.1.2",
@@ -62,5 +62,10 @@
     "d3-selection": "^3.0.0",
     "md5": "^2.3.0",
     "topojson-client": "^3.1.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "cookie@<0.7.0": ">=0.7.0"
+    }
   }
 }
