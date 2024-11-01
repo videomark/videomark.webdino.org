@@ -8,7 +8,7 @@ const config = {
     adapter: adapter(),
     prerender: {
       // Add some orphaned pages
-      entries: ['*', '/ja/contact/thanks', '/ja/whatsnew'],
+      entries: ['*', '/ja/contact/thanks', '/ja/offboarding', '/ja/whatsnew'],
     },
     csp: {
       mode: 'hash',
