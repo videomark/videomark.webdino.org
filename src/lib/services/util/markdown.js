@@ -21,4 +21,12 @@ renderer.link = (args) => {
  * @param {string} markdown
  * @returns {string}
  */
-export const parse = (markdown) => /** @type {string} */ (marked(markdown, { renderer }));
+export const parse = (markdown) =>
+  /** @type {string} */ (marked.parse(markdown, { renderer, breaks: true }));
+
+/**
+ * @param {string} markdown
+ * @returns {string}
+ */
+export const parseInline = (markdown) =>
+  /** @type {string} */ (marked.parseInline(markdown, { renderer, breaks: true }));
