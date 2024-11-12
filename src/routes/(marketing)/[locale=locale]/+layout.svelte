@@ -26,7 +26,7 @@
       />
     </a>
   </h1>
-  <div class="spacer" />
+  <div class="spacer"></div>
   <nav>
     <!-- Somehow the array contains duplicate items during initialization, so use `unique` -->
     {#each unique(/** @type {object[]} */ ($json('pages._global.header.links')), 'href') as { href, text } (href)}

@@ -1,5 +1,5 @@
 <script>
-  import { json, _ } from 'svelte-i18n';
+  import { _, json } from 'svelte-i18n';
   import BasicChartsRenderer from '$lib/components/marketing/basic-charts-renderer.svelte';
   import Header from '$lib/components/marketing/header.svelte';
   import MetaTags from '$lib/components/marketing/meta-tags.svelte';
@@ -16,17 +16,17 @@
 
 <Section>
   <h2>{$_('pages.stats.hourly_qoe.heading')}</h2>
-  <div class="hourly-qoe-graph" />
+  <div class="hourly-qoe-graph"></div>
 </Section>
 
 <Section>
   <h2>{$_('pages.stats.daily_qoe.heading')}</h2>
-  <div class="daily-qoe-graph" />
+  <div class="daily-qoe-graph"></div>
 </Section>
 
 <Section>
   <h2>{$_('pages.stats.map.heading')}</h2>
-  <div class="regional-qoe-graph" />
+  <div class="regional-qoe-graph"></div>
   <p class="align-center">
     <small>{@html parse($_('pages.stats.map.note'))}</small>
   </p>

@@ -41,7 +41,7 @@
       </p>
       <p class="input-item">
         <label for="input-company">{$_('pages.contact.form.company')}</label>
-        <span class="req" />
+        <span class="req"></span>
         <input type="text" id="input-company" name="company" />
       </p>
       <p class="input-item">
@@ -51,7 +51,7 @@
       </p>
       <p class="input-item" hidden>
         <label for="input-tel">TEL</label>
-        <span class="req" />
+        <span class="req"></span>
         <input type="text" id="input-tel" name="tel" />
       </p>
       <p class="input-item">
@@ -62,7 +62,7 @@
       <p class="input-item">
         <label for="input-message">{$_('pages.contact.form.message')}</label>
         <span class="req">{$_('pages.contact.form.required')}</span>
-        <textarea name="message" id="input-message" required />
+        <textarea name="message" id="input-message" required></textarea>
       </p>
       <p class="centered">
         <Button type="submit">{$_('pages.contact.form.submit')}</Button>

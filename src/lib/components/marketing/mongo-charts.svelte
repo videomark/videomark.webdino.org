@@ -23,7 +23,7 @@
 
 {#each charts as { id, cache, note }}
   <section>
-    <div data-chart-id={id} data-cache={cache} />
+    <div data-chart-id={id} data-cache={cache}></div>
     {#if note}
       <div role="note">{$_('pages._global.misc.note_prefix')} {note}</div>
     {/if}
