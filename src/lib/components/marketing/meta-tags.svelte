@@ -63,4 +63,5 @@
   <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192" />
   <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-144.png" sizes="144x144" />
   <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-192.png" sizes="192x192" />
+  <slot />
 </svelte:head>
