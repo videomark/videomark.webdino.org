@@ -1,6 +1,6 @@
 <script>
   import { _, json } from 'svelte-i18n';
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import Button from '$lib/components/common/button.svelte';
   import DownloadButtons from '$lib/components/marketing/download-buttons.svelte';
   import GridItem from '$lib/components/marketing/grid-item.svelte';
@@ -10,7 +10,7 @@
   import Section from '$lib/components/marketing/section.svelte';
   import { parse } from '$lib/services/util/markdown';
 
-  $: ({ locale = 'ja' } = $page.params);
+  $: ({ locale = 'ja' } = page.params);
 </script>
 
 <MetaTags meta={$json('pages.home.meta')} pageTitleWithSiteName={false} />

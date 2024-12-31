@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
   import { _, locale as currentLocale, json } from 'svelte-i18n';
   import { preloadCode } from '$app/navigation';
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import ToggleMenuButton from '$lib/components/marketing/toggle-menu-button.svelte';
   import { unique } from '$lib/services/util/array';
 
@@ -31,7 +31,7 @@
     <!-- Somehow the array contains duplicate items during initialization, so use `unique` -->
     {#each unique(/** @type {object[]} */ ($json('pages._global.header.links')), 'href') as { href, text } (href)}
       <div>
-        <a {href} aria-current={$page.url.pathname === href ? 'page' : undefined}>{text}</a>
+        <a {href} aria-current={page.url.pathname === href ? 'page' : undefined}>{text}</a>
       </div>
     {/each}
   </nav>

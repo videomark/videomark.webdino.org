@@ -1,7 +1,7 @@
 <script>
   import { json } from 'svelte-i18n';
   import { get } from 'svelte/store';
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import { supportedLocales } from '$lib/services/util/i18n';
 
   const { VITE_SITE_ORIGIN: origin } = import.meta.env;
@@ -12,8 +12,8 @@
   $: pageTitle = meta.pageTitle || '';
   $: pageDescription = meta.pageDescription || '';
   $: pageImage = meta.pageImage || '';
-  $: ({ locale = 'ja' } = $page.params);
-  $: path = $page.url.pathname.replace(new RegExp(`^\\/${locale}`), '');
+  $: ({ locale = 'ja' } = page.params);
+  $: path = page.url.pathname.replace(new RegExp(`^\\/${locale}`), '');
   $: ({
     // @ts-ignore
     meta: { siteTitle, siteDescription, siteImage } = {
