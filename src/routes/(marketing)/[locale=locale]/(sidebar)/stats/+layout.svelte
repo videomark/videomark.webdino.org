@@ -1,6 +1,6 @@
 <script>
   import { json } from 'svelte-i18n';
-  import { page } from '$app/state';
+  import { page } from '$app/stores';
   import MongoChartsRenderer from '$lib/components/marketing/mongo-charts-renderer.svelte';
   import Sidebar from '$lib/components/marketing/sidebar.svelte';
   import { unique } from '$lib/services/util/array';
@@ -11,7 +11,7 @@
     <ul>
       {#each unique(/** @type {object[]} */ ($json('pages.stats.nav.links')), 'href') as { href, text } (href)}
         <li>
-          <a {href} aria-current={page.url.pathname === href ? 'page' : undefined}>{text}</a>
+          <a {href} aria-current={$page.url.pathname === href ? 'page' : undefined}>{text}</a>
         </li>
       {/each}
     </ul>

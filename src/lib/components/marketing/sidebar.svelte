@@ -1,6 +1,6 @@
 <script>
   import { json } from 'svelte-i18n';
-  import { page } from '$app/state';
+  import { page } from '$app/stores';
   import { menuOpen } from '$lib/services/marketing/store';
   import { unique } from '$lib/services/util/array';
 
@@ -31,7 +31,7 @@
     <ul>
       {#each unique(/** @type {object[]} */ ($json('pages._global.header.links')), 'href') as { href, text } (href)}
         <li>
-          <a {href} aria-current={page.url.pathname === href ? 'page' : undefined}>{text}</a>
+          <a {href} aria-current={$page.url.pathname === href ? 'page' : undefined}>{text}</a>
         </li>
       {/each}
     </ul>
