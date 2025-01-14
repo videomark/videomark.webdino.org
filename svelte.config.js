@@ -19,7 +19,11 @@ const config = {
         'img-src': ['self', 'blob:', 'data:', 'https://res.cloudinary.com'],
         'script-src': ['self', 'wasm-unsafe-eval'],
         'connect-src': ['self', 'https://sodium.webdino.org:8443', 'https://sodium.netlify.app'],
-        'frame-src': ['https://charts.mongodb.com', 'https://docs.google.com'],
+        'frame-src': [
+          'https://charts.mongodb.com',
+          'https://docs.google.com',
+          'https://accounts.google.com/',
+        ],
         'form-action': ['self'],
         'frame-ancestors': ['none'],
         'base-uri': ['none'],
