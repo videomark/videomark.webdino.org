@@ -26,9 +26,9 @@
     "@types/d3-scale": "^4.0.9",
     "@types/d3-selection": "^3.0.11",
     "@types/md5": "^2.3.5",
-    "@types/node": "^22.13.13",
+    "@types/node": "^22.13.14",
     "@types/topojson-client": "^3.1.5",
-    "cspell": "^8.17.5",
+    "cspell": "^8.18.1",
     "eslint": "^8.57.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^10.1.1",
@@ -42,7 +42,7 @@
     "prettier": "^3.5.3",
     "prettier-plugin-svelte": "^3.3.3",
     "sass": "^1.86.0",
-    "stylelint": "^16.16.0",
+    "stylelint": "^16.17.0",
     "stylelint-config-recommended-scss": "^14.1.0",
     "stylelint-scss": "^6.11.1",
     "svelte": "^5.25.3",
@@ -50,7 +50,7 @@
     "svelte-i18n": "^4.0.1",
     "svelte-preprocess": "^6.0.3",
     "vite": "^6.2.3",
-    "yaml": "^2.7.0"
+    "yaml": "^2.7.1"
   },
   "type": "module",
   "dependencies": {
