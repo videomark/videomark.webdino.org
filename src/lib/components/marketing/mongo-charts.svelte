@@ -35,6 +35,10 @@
     margin: 48px 0 0;
   }
 
+  [data-chart-id] {
+    height: 500px;
+  }
+
   [role='note'] {
     color: #4e6e8e;
     font-size: 0.9rem;

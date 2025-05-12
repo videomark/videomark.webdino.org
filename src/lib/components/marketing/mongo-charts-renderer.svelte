@@ -10,6 +10,7 @@
   import { onMount } from 'svelte';
   import { afterNavigate } from '$app/navigation';
 
+  /** @type {ChartsEmbedSDK} */
   let sdk;
 
   onMount(() => {
@@ -17,8 +18,24 @@
   });
 
   afterNavigate(() => {
-    document.querySelectorAll('[data-chart-id]').forEach((container) => {
-      const { chartId, cache } = /** @type {HTMLElement} */ (container).dataset;
+    document.querySelectorAll('[data-chart-id]').forEach(async (element) => {
+      const container = /** @type {HTMLElement} */ (element);
+
+      // Load the chart lazily when the container comes into the viewport
+      await new Promise((resolve) => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(({ isIntersecting }) => {
+            if (isIntersecting) {
+              observer.unobserve(container);
+              resolve(undefined);
+            }
+          });
+        });
+
+        observer.observe(container);
+      });
+
+      const { chartId, cache } = container.dataset;
       const _cache = Number(cache);
 
       const chart = sdk.createChart({
