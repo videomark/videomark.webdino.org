@@ -1,4 +1,0 @@
-name = "videomark-webdino-org"
-pages_build_output_dir = "build"
-compatibility_date = "2025-06-29"
-compatibility_flags = [ "nodejs_compat" ]
