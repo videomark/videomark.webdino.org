@@ -5,14 +5,18 @@
   import { parse } from '$lib/services/util/markdown';
 
   /**
-   * All the FAQ categories.
+   * @typedef {Object} Props
+   * @property {any} [categories] All the FAQ categories.
+   * @property {string} [targetId] Any element ID specified in the URL (`location.hash`).
    */
-  export let categories = [];
 
-  /**
-   * Any element ID specified in the URL (`location.hash`).
-   */
-  export let targetId = '';
+  /** @type {Props} */
+  let {
+    /* eslint-disable prefer-const */
+    categories = [],
+    targetId = '',
+    /* eslint-enable prefer-const */
+  } = $props();
 </script>
 
 {#each categories as category}

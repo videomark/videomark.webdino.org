@@ -1,16 +1,26 @@
 <script>
-  import { locale as currentLocale, isLoading } from 'svelte-i18n';
-  import { page } from '$app/stores';
-  import { initLocales } from '$lib/services/util/i18n';
+  import { locale as currentLocale } from 'svelte-i18n';
+  import { page } from '$app/state';
 
   import '$lib/styles/marketing.scss';
 
-  $: ({ locale = 'ja' } = $page.params);
-  $: currentLocale.set(locale);
+  /**
+   * @typedef {Object} Props
+   * @property {import('svelte').Snippet} [children]
+   */
 
-  initLocales();
+  /** @type {Props} */
+  let {
+    /* eslint-disable prefer-const */
+    children,
+    /* eslint-enable prefer-const */
+  } = $props();
+
+  const { locale = 'ja' } = $derived(page.params);
+
+  $effect(() => {
+    currentLocale.set(locale);
+  });
 </script>
 
-{#if !$isLoading}
-  <slot />
-{/if}
+{@render children?.()}

@@ -1,5 +1,19 @@
+<script>
+  /**
+   * @typedef {Object} Props
+   * @property {import('svelte').Snippet} [children] Slot content.
+   */
+
+  /** @type {Props} */
+  let {
+    /* eslint-disable prefer-const */
+    children,
+    /* eslint-enable prefer-const */
+  } = $props();
+</script>
+
 <figure>
-  <slot />
+  {@render children?.()}
 </figure>
 
 <style lang="scss">

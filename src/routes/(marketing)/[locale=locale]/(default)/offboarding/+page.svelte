@@ -16,7 +16,7 @@
   {@html parse($_('pages.offboarding.intro.body'))}
 </Header>
 
-<!-- svelte-ignore a11y-missing-attribute -->
+<!-- svelte-ignore a11y_missing_attribute -->
 <iframe
   src="https://docs.google.com/forms/d/e/1FAIpQLSdPXZ6902B2nzLCgkzfVAgO0rVCnC46nAgiJHj2NMZaaSfk_A/viewform?embedded=true"
 ></iframe>

@@ -5,21 +5,36 @@
 -->
 <script>
   /**
-   * The URL for a button-looking link. If omitted, the result will be an actual `<button>`.
+   * @typedef {Object} Props
+   * @property {string} [href] The URL for a button-looking link. If omitted, the result will be an
+   * actual `<button>`.
+   * @property {'button' | 'submit' | 'reset'} [type] The `type` of the `<button>`. It will be
+   * ignored when a button-looking link is used.
+   * @property {(event: MouseEvent) => void} [onclick] Click event handler.
+   * @property {import('svelte').Snippet} [children] Slot content.
    */
-  export let href = '';
 
-  /**
-   * The `type` of the `<button>`. It will be ignored when a button-looking link is used.
-   * @type {'button' | 'submit' | 'reset'}
-   */
-  export let type = 'button';
+  /** @type {Props} */
+  let {
+    /* eslint-disable prefer-const */
+    href = '',
+    type = 'button',
+    onclick,
+    children,
+    // eslint-disable-next-line svelte/valid-compile
+    ...rest
+    /* eslint-enable prefer-const */
+  } = $props();
 </script>
 
 {#if href}
-  <a class="button" {href}><slot /></a>
+  <a class="button" {href}>
+    {@render children?.()}
+  </a>
 {:else}
-  <button {type} on:click {...$$props}><slot /></button>
+  <button {type} {onclick} {...rest}>
+    {@render children?.()}
+  </button>
 {/if}
 
 <style lang="scss">

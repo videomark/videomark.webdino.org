@@ -1,10 +1,23 @@
 <script>
-  export let accent = 0;
+  /**
+   * @typedef {Object} Props
+   * @property {number} [accent] Accent color ID, either `1` or `2`. Defaults to `0`. If `0`, no
+   * accent color is applied.
+   * @property {import('svelte').Snippet} [children] Slot content.
+   */
+
+  /** @type {Props} */
+  let {
+    /* eslint-disable prefer-const */
+    accent = 0,
+    children,
+    /* eslint-enable prefer-const */
+  } = $props();
 </script>
 
 <div class={`outer accent-${accent}`}>
   <section class="inner">
-    <slot />
+    {@render children?.()}
   </section>
 </div>
 

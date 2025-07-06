@@ -8,7 +8,8 @@
   aria-label={$menuOpen
     ? $_('pages._global.header.menu.close')
     : $_('pages._global.header.menu.open')}
-  on:click|stopPropagation={() => {
+  onclick={(event) => {
+    event.stopPropagation();
     menuOpen.set(!$menuOpen);
   }}
 >

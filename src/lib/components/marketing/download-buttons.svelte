@@ -3,9 +3,20 @@
   import { _ } from 'svelte-i18n';
   import Button from '../common/button.svelte';
 
-  export let detectBrowser = false;
+  /**
+   * @typedef {Object} Props
+   * @property {boolean} [detectBrowser] Whether to detect the browser and show the appropriate
+   * download button. If `false`, both buttons will be shown. Defaults to `false`.
+   */
 
-  let isFirefox = false;
+  /** @type {Props} */
+  let {
+    /* eslint-disable prefer-const */
+    detectBrowser = false,
+    /* eslint-enable prefer-const */
+  } = $props();
+
+  let isFirefox = $state(false);
 
   onMount(() => {
     isFirefox = navigator.userAgent.includes('Firefox/');

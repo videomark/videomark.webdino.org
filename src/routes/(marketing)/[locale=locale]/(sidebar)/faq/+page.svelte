@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import { json, _ } from 'svelte-i18n';
+  import { _, json } from 'svelte-i18n';
   import Article from '$lib/components/marketing/article.svelte';
   import FaqBody from '$lib/components/marketing/faq-body.svelte';
   import FaqToc from '$lib/components/marketing/faq-toc.svelte';
@@ -8,7 +8,7 @@
   import Sidebar from '$lib/components/marketing/sidebar.svelte';
 
   const categories = ['general', 'qoe', 'privacy', 'limitations'];
-  let targetId = '';
+  let targetId = $state('');
 
   const getHash = () => {
     targetId = window.location.hash.substring(1);
@@ -21,7 +21,7 @@
 </script>
 
 <svelte:window
-  on:hashchange={() => {
+  onhashchange={() => {
     getHash();
   }}
 />

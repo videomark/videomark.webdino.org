@@ -4,5 +4,12 @@
  * @param {String} key Object key to be checked.
  * @returns {Array.<Object>} Filtered array.
  */
-export const unique = (array, key) =>
-  array.filter((item, index) => array.findIndex((_item) => _item[key] === item[key]) === index);
+export const unique = (array, key) => {
+  if (!Array.isArray(array)) {
+    return [];
+  }
+
+  return array.filter(
+    (item, index) => array.findIndex((_item) => _item[key] === item[key]) === index,
+  );
+};

@@ -1,20 +1,34 @@
 <script>
   import { json } from 'svelte-i18n';
   import { get } from 'svelte/store';
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import { supportedLocales } from '$lib/services/util/i18n';
 
   const { VITE_SITE_ORIGIN: origin } = import.meta.env;
 
-  export let meta = {};
-  export let pageTitleWithSiteName = true;
+  /**
+   * @typedef {Object} Props
+   * @property {any} [meta] Meta information for the page.
+   * @property {boolean} [pageTitleWithSiteName] Whether to append the site name to the page title.
+   * Defaults to `true`.
+   * @property {import('svelte').Snippet} [children] Slot content.
+   */
 
-  $: pageTitle = meta.pageTitle || '';
-  $: pageDescription = meta.pageDescription || '';
-  $: pageImage = meta.pageImage || '';
-  $: ({ locale = 'ja' } = $page.params);
-  $: path = $page.url.pathname.replace(new RegExp(`^\\/${locale}`), '');
-  $: ({
+  /** @type {Props} */
+  let {
+    /* eslint-disable prefer-const */
+    meta = {},
+    pageTitleWithSiteName = true,
+    children,
+    /* eslint-enable prefer-const */
+  } = $props();
+
+  const pageTitle = $derived(meta.pageTitle || '');
+  const pageDescription = $derived(meta.pageDescription || '');
+  const pageImage = $derived(meta.pageImage || '');
+  const { locale = 'ja' } = $derived(page.params);
+  const path = $derived(page.url.pathname.replace(new RegExp(`^\\/${locale}`), ''));
+  const {
     // @ts-ignore
     meta: { siteTitle, siteDescription, siteImage } = {
       siteTitle: '',
@@ -26,16 +40,18 @@
       facebookAccount: '',
       twitterAccount: '',
     },
-  } = get(json)('pages._global'));
-  // eslint-disable-next-line no-nested-ternary
-  $: _pageTitle = pageTitle
-    ? pageTitleWithSiteName
-      ? `${pageTitle} | ${siteTitle}`
-      : pageTitle
-    : siteTitle || '';
-  $: _pageDescription = pageDescription || siteDescription || '';
-  $: _pageImage = pageImage || siteImage ? `${origin}${pageImage || siteImage}` : '';
-  $: canonicalURL = `${origin}/${locale}${path}`;
+  } = $derived(get(json)('pages._global'));
+  const _pageTitle = $derived(
+    // eslint-disable-next-line no-nested-ternary
+    pageTitle
+      ? pageTitleWithSiteName
+        ? `${pageTitle} | ${siteTitle}`
+        : pageTitle
+      : siteTitle || '',
+  );
+  const _pageDescription = $derived(pageDescription || siteDescription || '');
+  const _pageImage = $derived(pageImage || siteImage ? `${origin}${pageImage || siteImage}` : '');
+  const canonicalURL = $derived(`${origin}/${locale}${path}`);
 </script>
 
 <svelte:head>
@@ -63,5 +79,5 @@
   <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192" />
   <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-144.png" sizes="144x144" />
   <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-192.png" sizes="192x192" />
-  <slot />
+  {@render children?.()}
 </svelte:head>

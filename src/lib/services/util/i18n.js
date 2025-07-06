@@ -1,4 +1,4 @@
-import { addMessages, getLocaleFromNavigator, init } from 'svelte-i18n';
+import { addMessages, init } from 'svelte-i18n';
 import YAML from 'yaml';
 
 /**
@@ -14,7 +14,7 @@ export const supportedLocales = {
  * @see https://github.com/kaisermann/svelte-i18n/blob/main/docs/Getting%20Started.md
  * @see https://vitejs.dev/guide/features.html#glob-import
  */
-export const initLocales = () => {
+export const initLocales = async () => {
   const files = import.meta.glob('$lib/data/**/*.yaml', {
     query: '?raw',
     import: 'default',
@@ -29,8 +29,8 @@ export const initLocales = () => {
     });
   });
 
-  init({
-    fallbackLocale: 'en',
-    initialLocale: (getLocaleFromNavigator() || '').match(/^ja(?:-JP)?$/i) ? 'ja' : 'en',
+  await init({
+    fallbackLocale: 'ja',
+    initialLocale: 'ja',
   });
 };

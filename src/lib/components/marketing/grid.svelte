@@ -1,9 +1,21 @@
 <script>
-  export let reverse = false;
+  /**
+   * @typedef {Object} Props
+   * @property {boolean} [reverse]
+   * @property {import('svelte').Snippet} [children] Slot content.
+   */
+
+  /** @type {Props} */
+  let {
+    /* eslint-disable prefer-const */
+    reverse = false,
+    children,
+    /* eslint-enable prefer-const */
+  } = $props();
 </script>
 
 <div class="grid" class:reverse>
-  <slot />
+  {@render children?.()}
 </div>
 
 <style lang="scss">

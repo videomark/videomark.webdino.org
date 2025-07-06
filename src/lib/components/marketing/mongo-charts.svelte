@@ -8,17 +8,20 @@
   import { get } from 'svelte/store';
 
   /**
-   * Chart source ID in the localized string resource.
+   * @typedef {Object} Props
+   * @property {string} [src] Chart source ID in the localized string resource.
+   * @property {object[]} [srcArray] Chart list, including the IDs and optional cache expires.
    */
-  export let src = '';
 
-  /**
-   * Chart list, including the IDs and optional cache expires.
-   * @type {object[]}
-   */
-  export let srcArray = undefined;
+  /** @type {Props} */
+  let {
+    /* eslint-disable prefer-const */
+    src = '',
+    srcArray = undefined,
+    /* eslint-enable prefer-const */
+  } = $props();
 
-  $: charts = src ? /** @type {object[]} */ (get(json)(src)) : srcArray || [];
+  const charts = $derived(src ? /** @type {object[]} */ (get(json)(src)) : srcArray || []);
 </script>
 
 {#each charts as { id, cache, note }}

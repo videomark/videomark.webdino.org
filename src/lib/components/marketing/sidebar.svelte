@@ -1,25 +1,38 @@
 <script>
   import { json } from 'svelte-i18n';
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import { menuOpen } from '$lib/services/marketing/store';
   import { unique } from '$lib/services/util/array';
 
-  export let fixed = false;
+  /**
+   * @typedef {Object} Props
+   * @property {boolean} [fixed] Whether the sidebar is fixed on the left side of the screen.
+   * Defaults to `false`.
+   * @property {import('svelte').Snippet} [children] Slot content.
+   */
+
+  /** @type {Props} */
+  let {
+    /* eslint-disable prefer-const */
+    fixed = false,
+    children,
+    /* eslint-enable prefer-const */
+  } = $props();
 </script>
 
 <svelte:body
-  on:click={() => {
+  onclick={() => {
     menuOpen.set(false);
   }}
 />
 
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 <aside
   class="sidebar"
   class:fixed
   class:open={$menuOpen}
-  on:click={(event) => {
+  onclick={(event) => {
     if (/** @type {HTMLElement} */ (event.target).matches('a')) {
       menuOpen.set(false);
     } else {
@@ -31,12 +44,12 @@
     <ul>
       {#each unique(/** @type {object[]} */ ($json('pages._global.header.links')), 'href') as { href, text } (href)}
         <li>
-          <a {href} aria-current={$page.url.pathname === href ? 'page' : undefined}>{text}</a>
+          <a {href} aria-current={page.url.pathname === href ? 'page' : undefined}>{text}</a>
         </li>
       {/each}
     </ul>
   </nav>
-  <slot />
+  {@render children?.()}
 </aside>
 
 <style lang="scss">

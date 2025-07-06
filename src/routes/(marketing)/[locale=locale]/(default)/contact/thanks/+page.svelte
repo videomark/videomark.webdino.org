@@ -1,12 +1,12 @@
 <script>
-  import { json, _ } from 'svelte-i18n';
-  import { page } from '$app/stores';
+  import { _, json } from 'svelte-i18n';
+  import { page } from '$app/state';
   import Header from '$lib/components/marketing/header.svelte';
   import MetaTags from '$lib/components/marketing/meta-tags.svelte';
   import Section from '$lib/components/marketing/section.svelte';
   import { parse } from '$lib/services/util/markdown';
 
-  $: ({ locale = 'ja' } = $page.params);
+  const { locale = 'ja' } = $derived(page.params);
 </script>
 
 <MetaTags meta={$json('pages.contact.meta')} />

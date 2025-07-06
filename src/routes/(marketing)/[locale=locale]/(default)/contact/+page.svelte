@@ -32,7 +32,13 @@
 
 <div class="outer">
   <div class="inner">
-    <form method="POST" on:submit|preventDefault={(event) => sendForm(event)}>
+    <form
+      method="POST"
+      onsubmit={(event) => {
+        event.preventDefault();
+        sendForm(event);
+      }}
+    >
       <input type="hidden" name="form-name" value="contact" />
       <p class="input-item">
         <label for="input-name">{$_('pages.contact.form.name')}</label>
