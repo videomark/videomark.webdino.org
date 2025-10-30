@@ -11,8 +11,11 @@
 
 <Article>
   <h1>{$_('pages.whatsnew_android.intro.heading')}</h1>
-  {@html parse($_('pages.whatsnew_android.body', { default: '' }))}
+  {@html parse($_('pages.whatsnew_android.intro.body', { default: '' }))}
   <ReleaseNotes
-    releases={unique(/** @type {object[]} */ ($json('pages.whatsnew_android.releases')), 'version')}
+    releases={unique(
+      /** @type {object[]} */ ($json('pages.whatsnew_android.releases')),
+      'version',
+    ).reverse()}
   />
 </Article>

@@ -5,6 +5,9 @@
   "eslint.validate": ["javascript", "svelte"],
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "javascript.validate.enable": true,
+  "yaml.schemas": {
+    "https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json": ["/static/admin/config.yml"]
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

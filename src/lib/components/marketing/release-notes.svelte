@@ -24,7 +24,7 @@
   } = $props();
 </script>
 
-{#each releases.reverse() as release (release.version)}
+{#each releases as release (release.version)}
   {@const { version, date, body } = release}
   <Article>
     <h2>

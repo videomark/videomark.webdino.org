@@ -3,26 +3,18 @@ backend:
   repo: videomark/videomark.webdino.org
   branch: main
   base_url: https://sveltia-cms-auth.britegrid.workers.dev
-  squash_merges: true
-
-# https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
-local_backend: true
 
 media_folder: static/uploads
 public_folder: /uploads
 
-locale: ja
-
 i18n:
   structure: single_file
-  locales: [ja, en]
+  locales: [ja]
 
 collections:
   - name: pages
     label: 固定ページ
     i18n: true
-    editor:
-      preview: true
     files:
       - name: home
         label: ホーム
@@ -69,7 +61,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
               - name: more
                 label: 続きを見る
@@ -119,7 +111,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: background
@@ -133,7 +125,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
               - name: image
                 label: 画像
@@ -159,7 +151,7 @@ collections:
                 i18n: true
               - name: body_1
                 label: 本文 1
-                widget: text
+                widget: markdown
                 i18n: true
               - name: image_1
                 label: 画像 1
@@ -176,7 +168,7 @@ collections:
                     i18n: true
               - name: body_2
                 label: 本文 2
-                widget: text
+                widget: markdown
                 i18n: true
               - name: image_2
                 label: 画像 2
@@ -202,7 +194,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
               - name: image
                 label: 画像
@@ -228,7 +220,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
               - name: image
                 label: 画像
@@ -254,7 +246,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
       - name: help
         label: 使い方
@@ -287,7 +279,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: what
@@ -301,7 +293,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
               - name: image
                 label: 画像
@@ -327,7 +319,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
               - name: links
                 label: リンク
@@ -362,7 +354,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
               - name: image
                 label: 画像
@@ -408,7 +400,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: install
@@ -422,7 +414,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
           - name: player_qoe
             label: 視聴時 QoE
@@ -435,7 +427,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
               - name: image
                 label: 画像
@@ -461,7 +453,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
               - name: image
                 label: 画像
@@ -487,7 +479,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
               - name: image
                 label: 画像
@@ -513,7 +505,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
               - name: image
                 label: 画像
@@ -559,7 +551,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: nav
@@ -609,7 +601,7 @@ collections:
                 i18n: true
               - name: note
                 label: 注釈
-                widget: text
+                widget: markdown
                 i18n: true
           - name: opendata
             label: オープンデータ
@@ -622,7 +614,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
       - name: stats_tokyo2020
         label: 統計情報 — Tokyo 2020
@@ -655,7 +647,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: qoe_distribution
@@ -669,7 +661,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
               - name: charts
@@ -684,7 +676,8 @@ collections:
                     widget: string
                     i18n: true
                   - name: cache
-                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    label: キャッシュ
+                    hint: '単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間'
                     widget: number
                     min: -1
                     required: false
@@ -705,7 +698,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
               - name: charts
@@ -720,7 +713,8 @@ collections:
                     widget: string
                     i18n: true
                   - name: cache
-                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    label: キャッシュ
+                    hint: '単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間'
                     widget: number
                     min: -1
                     required: false
@@ -741,7 +735,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
               - name: charts
@@ -756,7 +750,8 @@ collections:
                     widget: string
                     i18n: true
                   - name: cache
-                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    label: キャッシュ
+                    hint: '単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間'
                     widget: number
                     min: -1
                     required: false
@@ -797,7 +792,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: trends
@@ -811,7 +806,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
               - name: charts
@@ -826,7 +821,8 @@ collections:
                     widget: string
                     i18n: true
                   - name: cache
-                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    label: キャッシュ
+                    hint: '単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間'
                     widget: number
                     min: -1
                     required: false
@@ -867,7 +863,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: throughput
@@ -881,7 +877,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
               - name: charts
@@ -896,7 +892,8 @@ collections:
                     widget: string
                     i18n: true
                   - name: cache
-                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    label: キャッシュ
+                    hint: '単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間'
                     widget: number
                     min: -1
                     required: false
@@ -917,7 +914,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
               - name: charts
@@ -932,7 +929,8 @@ collections:
                     widget: string
                     i18n: true
                   - name: cache
-                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    label: キャッシュ
+                    hint: '単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間'
                     widget: number
                     min: -1
                     required: false
@@ -973,7 +971,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: trends
@@ -987,7 +985,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
               - name: charts
@@ -1002,7 +1000,8 @@ collections:
                     widget: string
                     i18n: true
                   - name: cache
-                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    label: キャッシュ
+                    hint: '単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間'
                     widget: number
                     min: -1
                     required: false
@@ -1023,7 +1022,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
               - name: charts
@@ -1038,7 +1037,8 @@ collections:
                     widget: string
                     i18n: true
                   - name: cache
-                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    label: キャッシュ
+                    hint: '単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間'
                     widget: number
                     min: -1
                     required: false
@@ -1059,7 +1059,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
               - name: charts
@@ -1074,7 +1074,8 @@ collections:
                     widget: string
                     i18n: true
                   - name: cache
-                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    label: キャッシュ
+                    hint: '単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間'
                     widget: number
                     min: -1
                     required: false
@@ -1095,7 +1096,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
               - name: charts
@@ -1110,7 +1111,8 @@ collections:
                     widget: string
                     i18n: true
                   - name: cache
-                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    label: キャッシュ
+                    hint: '単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間'
                     widget: number
                     min: -1
                     required: false
@@ -1151,7 +1153,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: throughput
@@ -1165,7 +1167,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
               - name: charts
@@ -1180,7 +1182,8 @@ collections:
                     widget: string
                     i18n: true
                   - name: cache
-                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    label: キャッシュ
+                    hint: '単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間'
                     widget: number
                     min: -1
                     required: false
@@ -1201,7 +1204,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
               - name: charts
@@ -1216,7 +1219,8 @@ collections:
                     widget: string
                     i18n: true
                   - name: cache
-                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    label: キャッシュ
+                    hint: '単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間'
                     widget: number
                     min: -1
                     required: false
@@ -1237,7 +1241,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
               - name: charts
@@ -1252,7 +1256,8 @@ collections:
                     widget: string
                     i18n: true
                   - name: cache
-                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    label: キャッシュ
+                    hint: '単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間'
                     widget: number
                     min: -1
                     required: false
@@ -1293,7 +1298,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: trends
@@ -1307,7 +1312,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
               - name: charts
@@ -1322,7 +1327,8 @@ collections:
                     widget: string
                     i18n: true
                   - name: cache
-                    label: 'キャッシュ (単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間)'
+                    label: キャッシュ
+                    hint: '単位: 時間、不可の場合は 0、更新不要の場合は -1、省略時は 24 時間'
                     widget: number
                     min: -1
                     required: false
@@ -1382,7 +1388,7 @@ collections:
                     i18n: true
                   - name: answer
                     label: 回答
-                    widget: text
+                    widget: markdown
                     i18n: true
           - name: qoe
             label: QoE
@@ -1405,7 +1411,7 @@ collections:
                     i18n: true
                   - name: answer
                     label: 回答
-                    widget: text
+                    widget: markdown
                     i18n: true
           - name: privacy
             label: プライバシー
@@ -1428,7 +1434,7 @@ collections:
                     i18n: true
                   - name: answer
                     label: 回答
-                    widget: text
+                    widget: markdown
                     i18n: true
           - name: limitations
             label: 制限事項
@@ -1451,7 +1457,7 @@ collections:
                     i18n: true
                   - name: answer
                     label: 回答
-                    widget: text
+                    widget: markdown
                     i18n: true
       - name: contact
         label: お問い合わせ
@@ -1484,7 +1490,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: form
@@ -1531,7 +1537,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
               - name: link_label
                 label: リンクラベル
@@ -1568,7 +1574,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: heading_template
@@ -1606,7 +1612,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: releases
@@ -1630,7 +1636,7 @@ collections:
                 i18n: duplicate
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
       - name: whatsnew_extension
         label: リリースノート — 拡張機能
@@ -1663,7 +1669,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: releases
@@ -1687,7 +1693,7 @@ collections:
                 i18n: duplicate
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
       - name: spec
         label: 仕様
@@ -1720,7 +1726,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: services
@@ -1734,7 +1740,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
           - name: limitations
             label: 制限事項
@@ -1747,7 +1753,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
           - name: parsing
             label: 分析処理
@@ -1760,7 +1766,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
       - name: opendata
         label: オープンデータ
@@ -1793,7 +1799,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: download
@@ -1807,7 +1813,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
           - name: sample
             label: サンプル
@@ -1820,7 +1826,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
           - name: filtering
             label: フィルタ処理
@@ -1833,7 +1839,45 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
+                i18n: true
+      - name: offboarding
+        label: アンインストール時アンケート
+        file: src/lib/data/pages/offboarding.yaml
+        i18n: true
+        fields:
+          - name: meta
+            label: メタデータ
+            widget: object
+            i18n: true
+            summary: '{{fields.pageTitle}}'
+            fields:
+              - name: pageTitle
+                label: ページタイトル
+                widget: string
+                i18n: true
+          - name: intro
+            label: イントロ
+            widget: object
+            i18n: true
+            fields:
+              - name: heading
+                label: 大見出し
+                widget: string
+                i18n: true
+              - name: body
+                label: 本文
+                widget: markdown
+                required: false
+                i18n: true
+          - name: reinstall
+            label: 再インストール案内
+            widget: object
+            i18n: true
+            fields:
+              - name: title
+                label: 見出し
+                widget: string
                 i18n: true
       - name: notice
         label: 著作権等
@@ -1866,7 +1910,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 required: false
                 i18n: true
           - name: acknowledgements
@@ -1880,7 +1924,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
           - name: copyright
             label: 著作権表記
@@ -1893,7 +1937,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
           - name: contributors
             label: 協力者
@@ -1906,7 +1950,7 @@ collections:
                 i18n: true
               - name: body
                 label: 本文
-                widget: text
+                widget: markdown
                 i18n: true
       - name: terms
         label: 利用規約
@@ -1939,7 +1983,7 @@ collections:
                 i18n: true
           - name: body
             label: 本文
-            widget: text
+            widget: markdown
             required: false
             i18n: true
       - name: privacy
@@ -1973,7 +2017,7 @@ collections:
                 i18n: true
           - name: body
             label: 本文
-            widget: text
+            widget: markdown
             required: false
             i18n: true
       - name: _global

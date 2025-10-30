@@ -11,7 +11,7 @@
 
 <Header>
   <h1>{$_('pages.stats_tokyo2020.intro.heading')}</h1>
-  {@html parse($_('pages.stats_tokyo2020.body', { default: '' }))}
+  {@html parse($_('pages.stats_tokyo2020.intro.body', { default: '' }))}
 </Header>
 
 <Section>

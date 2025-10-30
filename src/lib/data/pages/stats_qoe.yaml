@@ -1,60 +1,77 @@
 ja:
   meta:
     pageTitle: 統計情報 — 体感品質
-  body: このページでは Web VideoMark で推定計算した動画サービス利用時の推定体感品質値 (QoE)
-    の結果をまとめて公開しています。品質推定ロジックは NTT
-    コミュニケーションズ株式会社により提供されており、日本電信電話株式会社ネットワーク基盤技術研究所が開発した視聴状況可視化技術とサービス品質評価技術を用いています。体感品質値の推定は
-    Web VideoMark で計測対象としている動画サービスのうち [一部にのみ対応](/ja/spec)
-    しています。体感品質値は動画サービスの動画エンコード設定、ネットワーク品質、再生時設定などが複合的に影響した結果としての品質であり、必ずしも動画サービスや
-    ISP の優劣を表す指標ではありません。
+    pageDescription: ''
+  intro:
+    heading: 動画配信サービスの体感品質の変化
+    body: このページでは Web VideoMark で推定計算した動画サービス利用時の推定体感品質値 (QoE) の結果をまとめて公開しています。品質推定ロジックは NTT コミュニケーションズ株式会社により提供されており、日本電信電話株式会社ネットワーク基盤技術研究所が開発した視聴状況可視化技術とサービス品質評価技術を用いています。体感品質値の推定は Web VideoMark で計測対象としている動画サービスのうち [一部にのみ対応](/ja/spec) しています。体感品質値は動画サービスの動画エンコード設定、ネットワーク品質、再生時設定などが複合的に影響した結果としての品質であり、必ずしも動画サービスや ISP の優劣を表す指標ではありません。
   trends:
     heading: 体感品質値の推移
-    body:
-      動画サービス毎、計測数の多い中から一部抜粋した ISP と都道府県毎の QoE 推定値の推移です。計測数の不足により一部 QoE
-      値の変動が過大となっている可能性があります。ISP と都道府県の推定については [仕様ページ](/ja/spec) をご覧ください。
+    body: 動画サービス毎、計測数の多い中から一部抜粋した ISP と都道府県毎の QoE 推定値の推移です。計測数の不足により一部 QoE 値の変動が過大となっている可能性があります。ISP と都道府県の推定については [仕様ページ](/ja/spec) をご覧ください。
     charts:
       - id: 76e35024-41f4-4239-b83c-6adce0d80ce8
+        cache: null
+        note: ''
       - id: 2a02488e-b14c-4a50-9ee0-c3c1ff49810a
+        cache: null
+        note: ''
       - id: 1442a237-d4bf-4ad1-b4b1-35dcf1bb887b
+        cache: null
+        note: ''
   distribution:
     heading: 体感品質値の分布
     body: 動画視聴開始時刻と体感品質値の散布図です。
     charts:
       - id: 325111fb-1b4d-4784-84d6-7d082037f085
+        cache: null
+        note: ''
       - id: a8e41ab4-180d-4a93-9bbe-c53c4cd644bd
+        cache: null
+        note: ''
       - id: 213cfa76-bc9d-4618-a131-e935e1a0ecff
+        cache: null
+        note: ''
   hourly:
     heading: 時間帯別平均 QoE
     body: 24 時間帯の平均 QoE 変動の年間平均です。
     charts:
       - id: 69a35bda-4970-4306-8022-d271dde7dd54
+        cache: null
+        note: ''
       - id: b7a8a8ea-f9b1-48c7-98aa-8f77d5eed9e8
         cache: -1
+        note: ''
       - id: 1557429d-7dbb-4840-a378-605a613817d1
         cache: -1
-      - cache: -1
-        id: 40067398-9350-410b-af99-b6f8b0627377
+        note: ''
+      - id: 40067398-9350-410b-af99-b6f8b0627377
+        cache: -1
+        note: ''
       - id: 68b0e072-bab5-4c6a-be21-f081b83de28a
         cache: -1
+        note: ''
       - id: f13d7873-e426-4f35-a3f2-c943f2fc109f
         cache: -1
+        note: ''
   weekly:
     heading: 週別平均 QoE
     body: 週別平均 QoE の時系列推移です。
     charts:
       - id: e1a1de06-b2fe-4247-acc2-70515afd49e0
+        cache: null
+        note: ''
       - id: 89545579-9ee3-4f3d-8d4d-8b47dc8f78a6
         cache: -1
+        note: ''
       - id: a22c7f88-15c5-4e8e-a31d-53f93784250b
         cache: -1
+        note: ''
       - id: 6b38faac-7830-4fdc-afde-f59b1968ed33
         cache: -1
+        note: ''
       - id: 26fd6720-c503-472c-984e-ad899696fb49
         cache: -1
+        note: ''
       - id: 7d7fe499-676f-4575-b264-901b9d49930c
         cache: -1
-  intro:
-    heading: 動画配信サービスの体感品質の変化
-en:
-  meta:
-    pageImage:
+        note: ''

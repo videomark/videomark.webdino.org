@@ -6,11 +6,3 @@ ja:
     body: よろしければ、簡単なアンケートにご回答ください。今後の参考にさせていただきます。
   reinstall:
     title: 誤ってアンインストールされた場合は、<br>以下から再インストールできます。
-en:
-  meta:
-    pageTitle: ""
-  intro:
-    heading: ""
-    body: ""
-  reinstall:
-    title: ""

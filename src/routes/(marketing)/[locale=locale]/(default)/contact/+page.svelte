@@ -27,7 +27,7 @@
 
 <Header>
   <h1>{$_('pages.contact.intro.heading')}</h1>
-  {@html parse($_('pages.contact.body'))}
+  {@html parse($_('pages.contact.intro.body'))}
 </Header>
 
 <div class="outer">

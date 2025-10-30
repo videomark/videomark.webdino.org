@@ -1,5 +1,5 @@
 <script>
-  import { json, _ } from 'svelte-i18n';
+  import { _, json } from 'svelte-i18n';
   import Header from '$lib/components/marketing/header.svelte';
   import MetaTags from '$lib/components/marketing/meta-tags.svelte';
   import Section from '$lib/components/marketing/section.svelte';
@@ -10,7 +10,7 @@
 
 <Header>
   <h1>{$_('pages.spec.intro.heading')}</h1>
-  {@html parse($_('pages.spec.body'))}
+  {@html parse($_('pages.spec.intro.body'))}
 </Header>
 
 <Section>

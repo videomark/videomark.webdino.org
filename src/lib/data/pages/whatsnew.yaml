@@ -1,17 +1,12 @@
 ja:
   meta:
     pageTitle: 新機能とお知らせ
-  body: >-
-    デスクトップブラウザー向けの Web VideoMark 拡張機能と、Android 端末向けの計測機能内蔵ブラウザー VideoMark
-    Browser についての新機能やお知らせです。それぞれのページを参照してください。
-
-
-    - [Web VideoMark 拡張機能の新機能とお知らせ](whatsnew/extension)
-
-    - [Android 用 VideoMark Browser の新機能とお知らせ](whatsnew/android)
-  heading_template: "バージョン {version}: {date} リリース"
+    pageDescription: ''
   intro:
     heading: VideoMark の新機能とお知らせ
-en:
-  meta:
-    pageImage:
+    body: |-
+      デスクトップブラウザー向けの Web VideoMark 拡張機能と、Android 端末向けの計測機能内蔵ブラウザー VideoMark Browser についての新機能やお知らせです。それぞれのページを参照してください。
+
+      - [Web VideoMark 拡張機能の新機能とお知らせ](whatsnew/extension)
+      - [Android 用 VideoMark Browser の新機能とお知らせ](whatsnew/android)
+  heading_template: 'バージョン {version}: {date} リリース'

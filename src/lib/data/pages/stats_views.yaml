@@ -1,15 +1,20 @@
 ja:
   meta:
     pageTitle: 統計情報 — 動画視聴数
-  trends:
-    heading: "動画視聴数: 視聴行動の変化"
-    body: ""
-    charts:
-      - id: 4b580aa1-6f3f-4036-92de-009102c34374
-      - id: d09fa88b-409f-4f16-8105-f159e4a06783
-      - id: 5bacad00-61d0-48b3-9c95-416f45fe605a
+    pageDescription: ''
   intro:
     heading: 動画視聴数
-en:
-  meta:
-    pageImage:
+    body: ''
+  trends:
+    heading: '動画視聴数: 視聴行動の変化'
+    body: ''
+    charts:
+      - id: 4b580aa1-6f3f-4036-92de-009102c34374
+        cache: null
+        note: ''
+      - id: d09fa88b-409f-4f16-8105-f159e4a06783
+        cache: null
+        note: ''
+      - id: 5bacad00-61d0-48b3-9c95-416f45fe605a
+        cache: null
+        note: ''

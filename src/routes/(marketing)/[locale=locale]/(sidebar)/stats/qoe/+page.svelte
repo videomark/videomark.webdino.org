@@ -11,7 +11,7 @@
 
 <Header>
   <h1>{$_('pages.stats_qoe.intro.heading')}</h1>
-  {@html parse($_('pages.stats_qoe.body'))}
+  {@html parse($_('pages.stats_qoe.intro.body'))}
 </Header>
 
 <Section>

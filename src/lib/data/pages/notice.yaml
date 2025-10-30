@@ -1,47 +1,42 @@
 ja:
   meta:
     pageTitle: 著作権・謝辞
+    pageDescription: ''
+  intro:
+    heading: 著作権・謝辞
+    body: ''
   acknowledgements:
     heading: 謝辞
-    body: >-
-      Web VideoMark プロジェクトは [一般社団法人 WebDINO Japan](https://www.webdino.org/)
-      が運営しています。本プロジェクトの実現に協力いただいている、各個人・団体・企業の皆様に感謝申し上げます。
-
+    body: |-
+      Web VideoMark プロジェクトは [一般社団法人 WebDINO Japan](https://www.webdino.org/) が運営しています。本プロジェクトの実現に協力いただいている、各個人・団体・企業の皆様に感謝申し上げます。
 
       動画再生の体感品質値 (QoE 値) の計算に利用している品質推定ロジックは NTT コミュニケーションズ株式会社により提供されており、日本電信電話株式会社ネットワーク基盤技術研究所が開発した視聴状況可視化技術とサービス品質評価技術を用いて、効率的にデータを収集・処理して客観的動画再生の体感推定品質値の計算を実現しています。
-
 
       動画配信サービス利用時の視聴情報の取得、分析を行うソフトウェアの開発には [株式会社アクタスソフトウェア](https://www.acutus.jp/) の協力を得ています。各ソフトウェアの開発に協力・貢献いただいているメンバーについてはソースコードを公開している [GitHub](https://github.com/videomark) の各リポジトリをご覧ください。
   copyright:
     heading: 著作権表記
-    body: >-
-      Copyright &copy; {year} [WebDINO Japan](https://www.webdino.org/). All
-      rights reserved.
-
+    body: |-
+      Copyright &copy; {year} [WebDINO Japan](https://www.webdino.org/). All rights reserved.
 
       本サイトのデザイン、コンテンツの作成にあたっては以下の通り提供されているものを一部利用しています。
 
-
       - [HTML5 UP](https://html5up.net)
-        - [Photon テーマ](https://html5up.net/photon)
-          - サイトデザインの参考・一部の CSS 等に利用
+          - [Photon テーマ](https://html5up.net/photon)
+              - サイトデザインの参考・一部の CSS 等に利用
       - [国土地理院](https://www.gsi.go.jp/)
-        - [地球地図日本](https://www.gsi.go.jp/kankyochiri/gm_jpn.html)
-          - 統計データのビジュアライズで日本地図の描画に利用
+          - [地球地図日本](https://www.gsi.go.jp/kankyochiri/gm_jpn.html)
+              - 統計データのビジュアライズで日本地図の描画に利用
   contributors:
     heading: 協力者・貢献者
     body: |-
       本ウェブサイトのコンテンツやコードの執筆や実装に協力・貢献頂いているメンバーのリストです。
 
       <!-- cSpell:disable -->
+
       - [Kohei Yoshino](https://github.com/kyoshino)
       - [Kohei Watanabe](https://github.com/kou029w)
       - [Noriatsu Kudo](https://github.com/kudodo)
       - [Tomoko Hirata](https://github.com/tomoko523)
       - [Tomoya Asai](https://github.com/dynamis)
+
       <!-- cSpell:enable -->
-  intro:
-    heading: 著作権・謝辞
-en:
-  meta:
-    pageImage:

@@ -3,5 +3,5 @@ node_modules
 /build
 pnpm-lock.yaml
 
-# CMS JSON data
+# CMS data
 /src/lib/data

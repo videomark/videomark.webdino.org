@@ -16,6 +16,6 @@
     releases={unique(
       /** @type {object[]} */ ($json('pages.whatsnew_extension.releases')),
       'version',
-    )}
+    ).reverse()}
   />
 </Article>

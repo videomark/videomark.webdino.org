@@ -1,22 +1,19 @@
 ja:
+  meta:
+    pageTitle: お問い合わせ
+    pageDescription: ''
+  intro:
+    heading: お問い合わせ
+    body: Web VideoMark に関するお問い合わせ・ご相談は、以下のフォームよりお願いいたします。
   form:
+    required: 必須
     name: お名前
     company: 会社名
     email: メールアドレス
     subject: 件名
     message: 内容
     submit: 送信
-    required: 必須
-  meta:
-    pageTitle: お問い合わせ
-  body: Web VideoMark に関するお問い合わせ・ご相談は、以下のフォームよりお願いいたします。
   thanks:
     title: お問合わせいただき、ありがとうございます。
     body: お送りいただきました内容を確認の上、ご連絡させていただきます。
     link_label: ←トップに戻る
-  intro:
-    heading: お問い合わせ
-en:
-  meta:
-    pageImage:
-  body: ""
