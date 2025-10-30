@@ -8,6 +8,6 @@
 <MetaTags meta={$json('pages.terms.meta')} />
 
 <Article>
-  <h1>{$_('pages.terms.heading')}</h1>
+  <h1>{$_('pages.terms.intro.heading')}</h1>
   {@html parse($_('pages.terms.body'))}
 </Article>
