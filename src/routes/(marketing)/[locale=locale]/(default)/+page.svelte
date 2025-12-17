@@ -8,7 +8,7 @@
   import MetaTags from '$lib/components/marketing/meta-tags.svelte';
   import Screenshot from '$lib/components/marketing/screenshot.svelte';
   import Section from '$lib/components/marketing/section.svelte';
-  import { parse } from '$lib/services/util/markdown';
+  import { parse, parseInline } from '$lib/services/util/markdown';
 
   const { locale = 'ja' } = $derived(page.params);
 </script>
@@ -17,7 +17,7 @@
 
 {#if $_('pages.home.announcement', { default: '' })}
   <div class="announcement">
-    {$_('pages.home.announcement')}
+    {@html parseInline($_('pages.home.announcement'))}
   </div>
 {/if}
 
@@ -60,6 +60,10 @@
     line-height: 1.4rem;
     font-weight: 600;
     text-align: center;
+
+    :global(a) {
+      color: #ccc;
+    }
   }
 
   header {

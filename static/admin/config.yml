@@ -38,7 +38,7 @@ collections:
                 i18n: true
           - name: announcement
             label: お知らせ
-            widget: string
+            widget: markdown
             required: false
             i18n: true
           - name: hero
