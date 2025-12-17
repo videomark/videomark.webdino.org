@@ -1986,6 +1986,30 @@ collections:
             widget: markdown
             required: false
             i18n: true
+          - name: history
+            label: 改定履歴
+            widget: object
+            i18n: true
+            fields:
+              - name: heading
+                label: 見出し
+                widget: string
+                i18n: true
+              - name: changes
+                label: 主な変更点
+                widget: list
+                i18n: true
+                fields:
+                  - name: date
+                    label: 日付
+                    widget: datetime
+                    time_format: false
+                    picker_utc: true
+                    i18n: true
+                  - name: body
+                    label: 本文
+                    widget: markdown
+                    i18n: true
       - name: privacy
         label: プライバシーポリシー
         file: src/lib/data/pages/privacy.yaml
@@ -2020,6 +2044,30 @@ collections:
             widget: markdown
             required: false
             i18n: true
+          - name: history
+            label: 改定履歴
+            widget: object
+            i18n: true
+            fields:
+              - name: heading
+                label: 見出し
+                widget: string
+                i18n: true
+              - name: changes
+                label: 主な変更点
+                widget: list
+                i18n: true
+                fields:
+                  - name: date
+                    label: 日付
+                    widget: datetime
+                    time_format: false
+                    picker_utc: true
+                    i18n: true
+                  - name: body
+                    label: 本文
+                    widget: markdown
+                    i18n: true
       - name: _global
         label: その他共通の文字列
         file: src/lib/data/pages/_global.yaml
