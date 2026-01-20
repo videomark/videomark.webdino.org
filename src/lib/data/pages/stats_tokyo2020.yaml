@@ -1,13 +1,13 @@
 ja:
   meta:
     pageTitle: 統計情報 — Tokyo 2020
-    pageDescription: ''
+    pageDescription: このページでは 2020 年東京オリンピック・パラリンピックの公式動画を Web VideoMark で計測した際の結果をまとめて公開しています。
   intro:
     heading: Tokyo 2020 動画計測
     body: |-
-      このページでは、東京オリンピック・パラリンピックの公式動画を Web VideoMark で計測した際の結果をまとめて公開しています。
+      このページでは、2020 年東京オリンピック・パラリンピックの公式動画を Web VideoMark で計測した際の結果をまとめて公開しています。
 
-      民放オリンピック公式動画サイト [gorin.jp](https://www.gorin.jp/)、民放公式テレビポータルサイト TVer の [Tokyo 2020 特設ページ](https://tver.jp/tokyo2020/)、 東京オリンピック・パラリンピック競技大会組織委員会の [YouTube 公式チャンネル](https://www.youtube.com/c/tokyo2020/) で配信されている各動画を計測対象としました。
+      民放オリンピック公式動画サイト「gorin.jp」、民放公式テレビポータルサイト TVer の Tokyo 2020 特設ページ (いずれも公開終了)、 東京オリンピック・パラリンピック競技大会組織委員会の [YouTube 公式チャンネル](https://www.youtube.com/c/tokyo2020) で配信されている各動画を計測対象としました。
   qoe_distribution:
     heading: 体感品質値の分布
     body: オリンピック公式動画視聴の体感品質値を CDN サーバー、ISP、都道府県で色分けした散布図です。ISP と都道府県の推定については [仕様ページ](/ja/spec) をご覧ください。

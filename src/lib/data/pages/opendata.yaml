@@ -1,7 +1,7 @@
 ja:
   meta:
     pageTitle: オープンデータ
-    pageDescription: ''
+    pageDescription: Web VideoMark で収集された計測ログのオープンデータをダウンロードできます。
   intro:
     heading: オープンデータ
     body: ''
@@ -11,9 +11,9 @@ ja:
   sample:
     heading: データサンプル
     body: |-
-      クライアントから送信されるデータのログファイルでは各行に、時刻、エンドポイントラベル (`sodium` など)、JSON 形式のログデータが含まれる。JSON 形式のデータは [sodium.js ライブラリ](https://github.com/videomark/videomark/tree/master/packages/sodium) を用いて送信されたものに、末尾オクテットを削除した送信元の IP アドレスから MaxMind GeoIP DB を用いて推定した `country`, `subdivision`, `isp` を追加したものです。
+      クライアントから送信されるデータのログファイルでは各行に、時刻、エンドポイントラベル (`sodium` など)、JSON 形式のログデータが含まれる。JSON 形式のデータは [sodium.js スクリプト](https://github.com/videomark/videomark/tree/master/src/lib/content/sodium) を用いて送信されたものに、末尾オクテットを削除した送信元の IP アドレスから MaxMind GeoIP DB を用いて推定した `country`、`subdivision`、`isp` を追加したものです。
 
-      sodium.js が送信するデータの定義や取得方法について、詳しくは [GitHub リポジトリの sodium パッケージの説明](https://github.com/videomark/videomark/tree/master/packages/sodium) をご覧ください。
+      sodium.js が送信するデータの定義や取得方法について、詳しくは [VideoMark リポジトリ上の説明](https://github.com/videomark/videomark/tree/master/src/lib/content/sodium) をご覧ください。
 
       <!-- cSpell:disable -->
 
@@ -32,7 +32,7 @@ ja:
 
       <!-- cSpell:enable -->
 
-      こちらのログデータを個別動画の計測セッションごとに整理した JSON にして、MongoDB に格納・分析できるように変換処理したものは次のようになります。ログデータからの変換処理内容や、出力データの形式について、詳しくは [sodium-transformer の Github リポジトリ](https://github.com/videomark/sodium-transformer) をご覧ください。
+      こちらのログデータを個別動画の計測セッションごとに整理した JSON にして、MongoDB に格納・分析できるように変換処理したものは次のようになります。ログデータからの変換処理内容や、出力データの形式について、詳しくは [sodium-transformer リポジトリ](https://github.com/videomark/sodium-transformer) をご覧ください。
 
       <!-- cSpell:disable -->
 
@@ -236,8 +236,8 @@ ja:
 
       - IP アドレスは記録から削除
       - 動画の URL は含めない
-      - video タグの src URL に含まれるドメイン名は匿名化する
+      - video タグの `src` URL に含まれるドメイン名は匿名化する
       - 一般的なブラウザーのものと異なるユーザーエージェントのデータは削除する
       - ユーザーエージェントに含まれる機種名は削除する
 
-      この処理についてもログデータの変換処理ツールで行っており、実装の詳細は [sodium-transformer の Github リポジトリ](https://github.com/videomark/sodium-transformer) をご覧ください。
+      この処理についてもログデータの変換処理ツールで行っており、実装の詳細は [sodium-transformer リポジトリ](https://github.com/videomark/sodium-transformer) をご覧ください。

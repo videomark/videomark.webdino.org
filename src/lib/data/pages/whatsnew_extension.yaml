@@ -1,7 +1,7 @@
 ja:
   meta:
     pageTitle: Web VideoMark の新機能とお知らせ
-    pageDescription: ''
+    pageDescription: このページでは、VideoMark 拡張機能の新機能や更新情報についてお知らせします。
   intro:
     heading: Web VideoMark の新機能とお知らせ
     body: |-
@@ -94,7 +94,7 @@ ja:
         - YouTube トップや検索結果から動画ページを開くと計測できない不具合を修正しました (Firefox のみ)
     - version: 1.4.1
       date: 2021-04-01
-      body: '- バージョン 1.4.0 で QoE 値の計算が出来ない問題を修正しました'
+      body: '- バージョン 1.4.0 で QoE 値の計算ができない問題を修正しました'
     - version: 1.5.0
       date: 2021-06-23
       body: |-

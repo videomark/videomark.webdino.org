@@ -114,10 +114,15 @@ table {
   margin: 1rem 0;
   display: block;
   overflow-x: auto;
+  background-color: #fff;
 }
 
 tr:nth-child(2n) {
   background-color: #f6f8fa;
+}
+
+th {
+  white-space: nowrap;
 }
 
 td,
