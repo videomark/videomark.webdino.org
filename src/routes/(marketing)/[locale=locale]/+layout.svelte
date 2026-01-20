@@ -30,7 +30,7 @@
 <header>
   <ToggleMenuButton />
   <h1>
-    <a href={`/${$currentLocale}`}>
+    <a href="/{$currentLocale}">
       <img
         src="https://res.cloudinary.com/videomark/wvm-logo-long.png"
         alt={$_('pages._global.meta.siteTitle')}
