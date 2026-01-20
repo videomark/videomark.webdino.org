@@ -1,7 +1,7 @@
 ja:
   meta:
     pageTitle: 統計情報 — IPv4/v6 比較
-    pageDescription: ''
+    pageDescription: ユーザーのインターネット環境が通信速度や体感品質 (QoE) にどう影響するか、IPv4 と IPv6 に分けてチャートを作成しました。
   intro:
     heading: IPv4/v6 比較
     body: ユーザーのインターネット環境が通信速度や体感品質 (QoE) にどう影響するか、IPv4 と IPv6 に分けてチャートを作成しました。

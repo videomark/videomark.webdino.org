@@ -59,13 +59,56 @@ collections:
                 label: 見出し
                 widget: string
                 i18n: true
+              - name: body_1
+                label: 本文 1
+                widget: markdown
+                i18n: true
+              - name: image_1
+                label: 画像 1
+                widget: object
+                i18n: true
+                fields:
+                  - name: src
+                    label: ソース
+                    widget: image
+                    i18n: true
+                  - name: alt
+                    label: キャプション
+                    widget: string
+                    i18n: true
+              - name: body_2
+                label: 本文 2
+                widget: markdown
+                i18n: true
+              - name: image_2
+                label: 画像 2
+                widget: object
+                i18n: true
+                fields:
+                  - name: src
+                    label: ソース
+                    widget: image
+                    i18n: true
+                  - name: alt
+                    label: キャプション
+                    widget: string
+                    i18n: true
+              - name: more
+                label: 詳細リンク
+                widget: string
+                i18n: true
+          - name: about
+            label: プロジェクト概要
+            widget: object
+            i18n: true
+            fields:
+              - name: heading
+                label: 見出し
+                widget: string
+                i18n: true
               - name: body
                 label: 本文
                 widget: markdown
-                i18n: true
-              - name: more
-                label: 続きを見る
-                widget: string
                 i18n: true
               - name: image
                 label: 画像
@@ -80,6 +123,10 @@ collections:
                     label: キャプション
                     widget: string
                     i18n: true
+              - name: more
+                label: 詳細リンク
+                widget: string
+                i18n: true
       - name: about
         label: プロジェクトについて
         file: src/lib/data/pages/about.yaml
@@ -129,49 +176,6 @@ collections:
                 i18n: true
               - name: image
                 label: 画像
-                widget: object
-                i18n: true
-                fields:
-                  - name: src
-                    label: ソース
-                    widget: image
-                    i18n: true
-                  - name: alt
-                    label: キャプション
-                    widget: string
-                    i18n: true
-          - name: how_to_use
-            label: 使い方
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 見出し
-                widget: string
-                i18n: true
-              - name: body_1
-                label: 本文 1
-                widget: markdown
-                i18n: true
-              - name: image_1
-                label: 画像 1
-                widget: object
-                i18n: true
-                fields:
-                  - name: src
-                    label: ソース
-                    widget: image
-                    i18n: true
-                  - name: alt
-                    label: キャプション
-                    widget: string
-                    i18n: true
-              - name: body_2
-                label: 本文 2
-                widget: markdown
-                i18n: true
-              - name: image_2
-                label: 画像 2
                 widget: object
                 i18n: true
                 fields:
@@ -248,130 +252,9 @@ collections:
                 label: 本文
                 widget: markdown
                 i18n: true
-      - name: help
-        label: 使い方
-        file: src/lib/data/pages/help.yaml
-        i18n: true
-        fields:
-          - name: meta
-            label: メタデータ
-            widget: object
-            i18n: true
-            summary: '{{fields.pageTitle}}'
-            fields:
-              - name: pageTitle
-                label: ページタイトル
-                widget: string
-                i18n: true
-              - name: pageDescription
-                label: ページ説明文
-                widget: text
-                required: false
-                i18n: true
-          - name: intro
-            label: イントロ
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 大見出し
-                widget: string
-                i18n: true
-              - name: body
-                label: 本文
-                widget: markdown
-                required: false
-                i18n: true
-          - name: what
-            label: 何ができるか
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 見出し
-                widget: string
-                i18n: true
-              - name: body
-                label: 本文
-                widget: markdown
-                i18n: true
-              - name: image
-                label: 画像
-                widget: object
-                i18n: true
-                fields:
-                  - name: src
-                    label: ソース
-                    widget: image
-                    i18n: true
-                  - name: alt
-                    label: キャプション
-                    widget: string
-                    i18n: true
-          - name: how
-            label: どうやって使うか
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 見出し
-                widget: string
-                i18n: true
-              - name: body
-                label: 本文
-                widget: markdown
-                i18n: true
-              - name: links
-                label: リンク
-                widget: object
-                i18n: true
-                fields:
-                  - name: extension
-                    label: ブラウザー拡張機能
-                    widget: string
-                    i18n: true
-              - name: image
-                label: 画像
-                widget: object
-                i18n: true
-                fields:
-                  - name: src
-                    label: ソース
-                    widget: image
-                    i18n: true
-                  - name: alt
-                    label: キャプション
-                    widget: string
-                    i18n: true
-          - name: call
-            label: 募集
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 見出し
-                widget: string
-                i18n: true
-              - name: body
-                label: 本文
-                widget: markdown
-                i18n: true
-              - name: image
-                label: 画像
-                widget: object
-                i18n: true
-                fields:
-                  - name: src
-                    label: ソース
-                    widget: image
-                    i18n: true
-                  - name: alt
-                    label: キャプション
-                    widget: string
-                    i18n: true
-      - name: help_extension
-        label: 使い方 — ブラウザー拡張機能
-        file: src/lib/data/pages/help_extension.yaml
+      - name: features
+        label: 機能と使い方
+        file: src/lib/data/pages/features.yaml
         i18n: true
         fields:
           - name: meta
@@ -1696,7 +1579,7 @@ collections:
                 widget: markdown
                 i18n: true
       - name: spec
-        label: 仕様
+        label: 対応サービス
         file: src/lib/data/pages/spec.yaml
         i18n: true
         fields:
@@ -1878,79 +1761,6 @@ collections:
               - name: title
                 label: 見出し
                 widget: string
-                i18n: true
-      - name: notice
-        label: 著作権等
-        file: src/lib/data/pages/notice.yaml
-        i18n: true
-        fields:
-          - name: meta
-            label: メタデータ
-            widget: object
-            i18n: true
-            summary: '{{fields.pageTitle}}'
-            fields:
-              - name: pageTitle
-                label: ページタイトル
-                widget: string
-                i18n: true
-              - name: pageDescription
-                label: ページ説明文
-                widget: text
-                required: false
-                i18n: true
-          - name: intro
-            label: イントロ
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 大見出し
-                widget: string
-                i18n: true
-              - name: body
-                label: 本文
-                widget: markdown
-                required: false
-                i18n: true
-          - name: acknowledgements
-            label: 謝辞
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 見出し
-                widget: string
-                i18n: true
-              - name: body
-                label: 本文
-                widget: markdown
-                i18n: true
-          - name: copyright
-            label: 著作権表記
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 見出し
-                widget: string
-                i18n: true
-              - name: body
-                label: 本文
-                widget: markdown
-                i18n: true
-          - name: contributors
-            label: 協力者
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 見出し
-                widget: string
-                i18n: true
-              - name: body
-                label: 本文
-                widget: markdown
                 i18n: true
       - name: terms
         label: 利用規約

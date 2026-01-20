@@ -18,5 +18,5 @@
 <Section>
   <h2>{$_('pages.contact.thanks.title')}</h2>
   {@html parse($_('pages.contact.thanks.body'))}
-  <p><a href={`/${locale}`}>{$_('pages.contact.thanks.link_label')}</a></p>
+  <p><a href="/${locale}">{$_('pages.contact.thanks.link_label')}</a></p>
 </Section>

@@ -1,11 +1,11 @@
 ja:
   meta:
     pageTitle: 新機能とお知らせ
-    pageDescription: ''
+    pageDescription: 旧バージョンの Web VideoMark 拡張機能と、提供を終了した Android 向けブラウザーについての新機能やお知らせです。
   intro:
     heading: VideoMark の新機能とお知らせ
     body: |-
-      デスクトップブラウザー向けの Web VideoMark 拡張機能と、Android 端末向けの計測機能内蔵ブラウザー VideoMark Browser についての新機能やお知らせです。それぞれのページを参照してください。
+      旧バージョンの Web VideoMark 拡張機能と、提供を終了した Android 端末向け計測機能内蔵ブラウザー「VideoMark Browser」についての新機能やお知らせです。現行バージョンのリリースノートは [GitHub](https://github.com/videomark/videomark/releases) をご覧ください。
 
       - [Web VideoMark 拡張機能の新機能とお知らせ](whatsnew/extension)
       - [Android 用 VideoMark Browser の新機能とお知らせ](whatsnew/android)

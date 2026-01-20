@@ -37,15 +37,40 @@
   <h2>{$_('pages.home.intro.heading')}</h2>
   <Grid>
     <GridItem>
-      {@html parse($_('pages.home.intro.body'))}
+      {@html parse($_('pages.home.intro.body_1'))}
+    </GridItem>
+    <GridItem>
+      <Screenshot>
+        <img src={$_('pages.home.intro.image_1.src')} alt={$_('pages.home.intro.image_1.alt')} />
+      </Screenshot>
+    </GridItem>
+  </Grid>
+  <Grid reverse>
+    <GridItem>
+      {@html parse($_('pages.home.intro.body_2'))}
       <p class="centered">
-        <Button href={`/${locale}/about`}>{$_('pages.home.intro.more')}</Button>
+        <Button href="/{locale}/features">{$_('pages.home.intro.more')}</Button>
       </p>
     </GridItem>
     <GridItem>
       <Screenshot>
-        <img src={$_('pages.home.intro.image.src')} alt={$_('pages.home.intro.image.alt')} />
+        <img src={$_('pages.home.intro.image_2.src')} alt={$_('pages.home.intro.image_2.alt')} />
       </Screenshot>
+    </GridItem>
+  </Grid>
+</Section>
+
+<Section accent={1}>
+  <h2>{$_('pages.home.about.heading')}</h2>
+  <Grid>
+    <GridItem>
+      <img src={$_('pages.home.about.image.src')} alt={$_('pages.home.about.image.alt')} />
+    </GridItem>
+    <GridItem>
+      {@html parse($_('pages.home.about.body'))}
+      <p class="centered">
+        <Button href="/{locale}/about">{$_('pages.home.about.more')}</Button>
+      </p>
     </GridItem>
   </Grid>
 </Section>

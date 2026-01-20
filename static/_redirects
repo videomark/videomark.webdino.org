@@ -3,10 +3,6 @@
 /about /ja/about
 /contact /ja/contact
 /faq /ja/faq
-/help /ja/help
-/help/android /ja/help/android
-/help/extension /ja/help/extension
-/notice /ja/notice
 /offboarding /ja/offboarding
 /opendata /ja/opendata
 /privacy /ja/privacy
@@ -16,6 +12,14 @@
 /whatsnew /ja/whatsnew
 /whatsnew/android /ja/whatsnew/android
 /whatsnew/extension /ja/whatsnew/extension
+
+# old pages
+/help /ja/features
+/help/android /ja/features
+/help/extension /ja/features
+/ja/help /ja/features
+/ja/help/android /ja/features
+/ja/help/extension /ja/features
 
 # unlocalized pages
 /en /ja

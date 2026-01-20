@@ -1,7 +1,7 @@
 ja:
   meta:
     pageTitle: 統計情報 — 応答時間・通信速度
-    pageDescription: ''
+    pageDescription: ネットワーク混雑状況の変化を時間帯ごとの平均応答時間と平均スループットで確認できます。
   intro:
     heading: '応答時間・通信速度: ネットワーク混雑状況の変化'
     body: ''

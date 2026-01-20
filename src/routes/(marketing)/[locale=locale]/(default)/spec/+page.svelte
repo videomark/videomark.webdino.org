@@ -13,7 +13,7 @@
   {@html parse($_('pages.spec.intro.body'))}
 </Header>
 
-<Section>
+<Section accent={1}>
   <h2>{$_('pages.spec.services.heading')}</h2>
   {@html parse($_('pages.spec.services.body'))}
 </Section>
@@ -23,7 +23,7 @@
   {@html parse($_('pages.spec.limitations.body'))}
 </Section>
 
-<Section>
+<Section accent={2}>
   <h2>{$_('pages.spec.parsing.heading')}</h2>
   {@html parse($_('pages.spec.parsing.body'))}
 </Section>
