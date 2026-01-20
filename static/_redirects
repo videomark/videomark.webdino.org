@@ -17,9 +17,11 @@
 /help /ja/features
 /help/android /ja/features
 /help/extension /ja/features
+/notice /ja/about
 /ja/help /ja/features
 /ja/help/android /ja/features
 /ja/help/extension /ja/features
+/ja/notice /ja/about
 
 # unlocalized pages
 /en /ja
