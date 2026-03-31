@@ -24,23 +24,6 @@
 </Section>
 
 <Section>
-  <h2>{$_('pages.features.player_qoe.heading')}</h2>
-  <Grid>
-    <GridItem>
-      {@html parse($_('pages.features.player_qoe.body'))}
-    </GridItem>
-    <GridItem>
-      <Screenshot>
-        <img
-          src={$_('pages.features.player_qoe.image.src')}
-          alt={$_('pages.features.player_qoe.image.alt')}
-        />
-      </Screenshot>
-    </GridItem>
-  </Grid>
-</Section>
-
-<Section accent={2}>
   <h2>{$_('pages.features.player_details.heading')}</h2>
   <Grid>
     <GridItem>
@@ -57,7 +40,7 @@
   </Grid>
 </Section>
 
-<Section>
+<Section accent={2}>
   <h2>{$_('pages.features.result_list.heading')}</h2>
   <Grid>
     <GridItem>
@@ -74,7 +57,7 @@
   </Grid>
 </Section>
 
-<Section accent={2}>
+<Section>
   <h2>{$_('pages.features.result_details.heading')}</h2>
   <Grid>
     <GridItem>

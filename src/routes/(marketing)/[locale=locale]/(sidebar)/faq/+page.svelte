@@ -7,7 +7,7 @@
   import MetaTags from '$lib/components/marketing/meta-tags.svelte';
   import Sidebar from '$lib/components/marketing/sidebar.svelte';
 
-  const categories = ['general', 'qoe', 'privacy', 'limitations'];
+  const categories = ['general', 'privacy', 'limitations'];
   let targetId = $state('');
 
   const getHash = () => {
