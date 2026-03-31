@@ -1,10 +1,7 @@
 <script>
   import { _, json } from 'svelte-i18n';
-  import GridItem from '$lib/components/marketing/grid-item.svelte';
-  import Grid from '$lib/components/marketing/grid.svelte';
   import Header from '$lib/components/marketing/header.svelte';
   import MetaTags from '$lib/components/marketing/meta-tags.svelte';
-  import ResponsiveImage from '$lib/components/marketing/responsive-image.svelte';
   import Section from '$lib/components/marketing/section.svelte';
   import { parse } from '$lib/services/util/markdown';
 </script>
@@ -28,26 +25,19 @@
 </Section>
 
 <Section>
-  <h2>{$_('pages.about.qoe.heading')}</h2>
-  <Grid>
-    <GridItem>
-      {@html parse($_('pages.about.qoe.body'))}
-    </GridItem>
-    <GridItem>
-      <img src={$_('pages.about.qoe.image.src')} alt={$_('pages.about.qoe.image.alt')} />
-    </GridItem>
-  </Grid>
-</Section>
-
-<Section accent={2}>
   <h2>{$_('pages.about.architecture.heading')}</h2>
-  <ResponsiveImage>
+  {@html parse($_('pages.about.architecture.body'))}
+  <!-- <ResponsiveImage>
     <img
       src={$_('pages.about.architecture.image.src')}
       alt={$_('pages.about.architecture.image.alt')}
     />
-  </ResponsiveImage>
-  {@html parse($_('pages.about.architecture.body'))}
+  </ResponsiveImage> -->
+</Section>
+
+<Section accent={2} id="qoe">
+  <h2>{$_('pages.about.qoe.heading')}</h2>
+  {@html parse($_('pages.about.qoe.body'))}
 </Section>
 
 <Section>

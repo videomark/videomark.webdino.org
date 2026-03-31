@@ -187,32 +187,6 @@ collections:
                     label: キャプション
                     widget: string
                     i18n: true
-          - name: qoe
-            label: QoE とは
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 見出し
-                widget: string
-                i18n: true
-              - name: body
-                label: 本文
-                widget: markdown
-                i18n: true
-              - name: image
-                label: 画像
-                widget: object
-                i18n: true
-                fields:
-                  - name: src
-                    label: ソース
-                    widget: image
-                    i18n: true
-                  - name: alt
-                    label: キャプション
-                    widget: string
-                    i18n: true
           - name: architecture
             label: 仕組み
             widget: object
@@ -239,6 +213,19 @@ collections:
                     label: キャプション
                     widget: string
                     i18n: true
+          - name: qoe
+            label: QoE 推定終了
+            widget: object
+            i18n: true
+            fields:
+              - name: heading
+                label: 見出し
+                widget: string
+                i18n: true
+              - name: body
+                label: 本文
+                widget: markdown
+                i18n: true
           - name: acknowledgment
             label: 謝辞
             widget: object
@@ -299,32 +286,6 @@ collections:
                 label: 本文
                 widget: markdown
                 i18n: true
-          - name: player_qoe
-            label: 視聴時 QoE
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 見出し
-                widget: string
-                i18n: true
-              - name: body
-                label: 本文
-                widget: markdown
-                i18n: true
-              - name: image
-                label: 画像
-                widget: object
-                i18n: true
-                fields:
-                  - name: src
-                    label: ソース
-                    widget: image
-                    i18n: true
-                  - name: alt
-                    label: キャプション
-                    widget: string
-                    i18n: true
           - name: player_details
             label: 視聴時詳細
             widget: object
@@ -455,50 +416,6 @@ collections:
                     label: パス
                     widget: string
                     i18n: true
-          - name: hourly_qoe
-            label: 時間帯別 QoE
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 見出し
-                widget: string
-                i18n: true
-          - name: daily_qoe
-            label: 曜日別 QoE
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 見出し
-                widget: string
-                i18n: true
-          - name: map
-            label: マップ
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 見出し
-                widget: string
-                i18n: true
-              - name: note
-                label: 注釈
-                widget: markdown
-                i18n: true
-          - name: opendata
-            label: オープンデータ
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 見出し
-                widget: string
-                i18n: true
-              - name: body
-                label: 本文
-                widget: markdown
-                i18n: true
       - name: stats_tokyo2020
         label: 統計情報 — Tokyo 2020
         file: src/lib/data/pages/stats_tokyo2020.yaml
@@ -1252,29 +1169,6 @@ collections:
                 i18n: true
           - name: general
             label: 一般
-            widget: object
-            i18n: true
-            fields:
-              - name: heading
-                label: 見出し
-                widget: string
-                i18n: true
-              - name: items
-                label: 項目
-                widget: list
-                summary: '{{fields.question}}'
-                i18n: true
-                fields:
-                  - name: question
-                    label: 質問
-                    widget: string
-                    i18n: true
-                  - name: answer
-                    label: 回答
-                    widget: markdown
-                    i18n: true
-          - name: qoe
-            label: QoE
             widget: object
             i18n: true
             fields:
