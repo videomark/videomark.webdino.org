@@ -1,10 +1,10 @@
 ja:
   meta:
-    pageTitle: Web VideoMark — 動画再生の再生品質を確認できるブラウザー向け拡張機能
+    pageTitle: Web VideoMark — 動画の再生品質を確認できるブラウザー向け拡張機能
     pageDescription: Web VideoMark プロジェクトでは、YouTube などの動画配信サービスの視聴時に再生品質を計測可能にするブラウザー拡張機能を提供しています。
   announcement: '体感品質 (QoE) 値の推定は 3 月末をもって終了させていただきました。<a href="/ja/about#qoe">詳しくはこちら</a>'
   hero:
-    heading: 動画再生の再生品質を確認できるブラウザー向け拡張機能
+    heading: 動画の再生品質を確認できるブラウザー向け拡張機能
   intro:
     heading: VideoMark でできること
     body_1: |-
