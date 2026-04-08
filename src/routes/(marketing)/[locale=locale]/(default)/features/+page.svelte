@@ -7,7 +7,13 @@
   import MetaTags from '$lib/components/marketing/meta-tags.svelte';
   import Screenshot from '$lib/components/marketing/screenshot.svelte';
   import Section from '$lib/components/marketing/section.svelte';
+  import { unique } from '$lib/services/util/array';
   import { parse } from '$lib/services/util/markdown';
+
+  /** @type {{ heading: string, body: string, image: { src: string, alt: string } }[]} */
+  const highlights = $derived(
+    unique(/** @type {object[]} */ ($json(`pages.features.highlights`)), 'heading'),
+  );
 </script>
 
 <MetaTags meta={$json('pages.features.meta')} />
@@ -23,53 +29,18 @@
   <DownloadButtons />
 </Section>
 
-<Section>
-  <h2>{$_('pages.features.player_details.heading')}</h2>
-  <Grid>
-    <GridItem>
-      {@html parse($_('pages.features.player_details.body'))}
-    </GridItem>
-    <GridItem>
-      <Screenshot>
-        <img
-          src={$_('pages.features.player_details.image.src')}
-          alt={$_('pages.features.player_details.image.alt')}
-        />
-      </Screenshot>
-    </GridItem>
-  </Grid>
-</Section>
-
-<Section accent={2}>
-  <h2>{$_('pages.features.result_list.heading')}</h2>
-  <Grid>
-    <GridItem>
-      {@html parse($_('pages.features.result_list.body'))}
-    </GridItem>
-    <GridItem>
-      <Screenshot>
-        <img
-          src={$_('pages.features.result_list.image.src')}
-          alt={$_('pages.features.result_list.image.alt')}
-        />
-      </Screenshot>
-    </GridItem>
-  </Grid>
-</Section>
-
-<Section>
-  <h2>{$_('pages.features.result_details.heading')}</h2>
-  <Grid>
-    <GridItem>
-      {@html parse($_('pages.features.result_details.body'))}
-    </GridItem>
-    <GridItem>
-      <Screenshot>
-        <img
-          src={$_('pages.features.result_details.image.src')}
-          alt={$_('pages.features.result_details.image.alt')}
-        />
-      </Screenshot>
-    </GridItem>
-  </Grid>
-</Section>
+{#each highlights as { heading, body, image: { src, alt } }, index (heading)}
+  <Section accent={index % 2 === 0 ? undefined : 2}>
+    <h2>{heading}</h2>
+    <Grid>
+      <GridItem>
+        {@html parse(body)}
+      </GridItem>
+      <GridItem>
+        <Screenshot>
+          <img {src} {alt} />
+        </Screenshot>
+      </GridItem>
+    </Grid>
+  </Section>
+{/each}
