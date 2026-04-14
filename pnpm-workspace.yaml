@@ -1,13 +1,14 @@
+allowBuilds:
+  "@parcel/watcher": false
+  core-js: false
+  es5-ext: false
+  esbuild: false
+  svelte-preprocess: true
+
+engineStrict: true
+
 minimumReleaseAge: 1440
-minimumReleaseAgeExclude:
-  - devalue
-  - svelte
-  - "@sveltejs/*"
+
 overrides:
-  "cookie@<0.7.0": ">=0.7.0"
-  "esbuild@<=0.24.2": ">=0.25.0"
-onlyBuiltDependencies:
-  - esbuild
-  - svelte-preprocess
-ignoredBuiltDependencies:
-  - core-js
+  cookie@<0.7.0: ">=0.7.0"
+  esbuild@<=0.24.2: ">=0.25.0"
