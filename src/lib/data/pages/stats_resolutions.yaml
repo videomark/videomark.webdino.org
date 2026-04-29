@@ -4,17 +4,21 @@ ja:
     pageDescription: YouTube のデフォルト解像度設定の変更傾向をチャートで確認できます。
   intro:
     heading: YouTube 解像度
-    body: ''
+    body: |-
+      **以下のチャートは 2026 年 4 月末時点でのアーカイブです**。今後新たなデータの追加は予定していません。
   trends:
     heading: デフォルト解像度変更
     body: ''
     charts:
       - id: b5bb2654-6869-4ec7-8f19-9a89685b87ea
+        title: YouTube の時間帯別解像度分布 (直近180日)
         cache: null
         note: ''
       - id: fab6e419-6ed9-42cc-95ae-019663405345
+        title: YouTube の時間帯別解像度 (解像度低下前, 2020年 3/23~6/23)
         cache: -1
         note: ''
       - id: e3183c1c-3005-492b-b6e6-4deb6f7f9888
+        title: YouTube 動画解像度の日別分布 (2020年6−7月)
         cache: null
         note: ''
