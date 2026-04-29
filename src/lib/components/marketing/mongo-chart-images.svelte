@@ -8,13 +8,13 @@
 
   /**
    * @typedef {Object} Props
-   * @property {string} [src] Chart source in the localized string resource.
+   * @property {string} src Chart source in the localized string resource.
    */
 
   /** @type {Props} */
   let {
     /* eslint-disable prefer-const */
-    src = '',
+    src,
     /* eslint-enable prefer-const */
   } = $props();
 
