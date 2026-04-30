@@ -4,8 +4,7 @@ ja:
     pageDescription: 動画視聴数の変化をチャートで確認できます。
   intro:
     heading: 動画視聴数
-    body: |-
-      **以下のチャートは 2026 年 4 月末時点でのアーカイブです**。今後新たなデータの追加は予定していません。
+    body: ''
   trends:
     heading: '動画視聴数: 視聴行動の変化'
     body: ''

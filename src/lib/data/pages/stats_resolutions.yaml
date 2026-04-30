@@ -4,8 +4,7 @@ ja:
     pageDescription: YouTube のデフォルト解像度設定の変更傾向をチャートで確認できます。
   intro:
     heading: YouTube 解像度
-    body: |-
-      **以下のチャートは 2026 年 4 月末時点でのアーカイブです**。今後新たなデータの追加は予定していません。
+    body: ''
   trends:
     heading: デフォルト解像度変更
     body: ''

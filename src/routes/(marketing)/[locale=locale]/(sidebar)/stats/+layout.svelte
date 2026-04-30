@@ -1,6 +1,7 @@
 <script>
-  import { json } from 'svelte-i18n';
+  import { _, json } from 'svelte-i18n';
   import { page } from '$app/state';
+  import Announcement from '$lib/components/marketing/announcement.svelte';
   import Sidebar from '$lib/components/marketing/sidebar.svelte';
   import { unique } from '$lib/services/util/array';
 
@@ -30,6 +31,9 @@
 </Sidebar>
 
 <main>
+  <Announcement>
+    {$_('pages.stats.archive_notice')}
+  </Announcement>
   {@render children?.()}
 </main>
 
