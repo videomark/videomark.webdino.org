@@ -10,12 +10,15 @@ ja:
     body: ''
     charts:
       - id: 9662db28-46ac-4dfe-bc22-c99fc9ec294b
+        title: 視聴中平均通信速度の日次平均 (最新180日)
         cache: null
         note: ''
       - id: d48e12b3-2bdc-4979-90f7-2dd82522e597
+        title: 平日(祝日除く) の時間帯別通信速度 (最新180日)
         cache: null
         note: ''
       - id: f09e09c8-73e6-4e2a-a8a8-55166b8d040e
+        title: 土日祝日の時間帯別通信速度 (最新180日)
         cache: null
         note: ''
   response_times:
@@ -23,11 +26,14 @@ ja:
     body: ''
     charts:
       - id: 174fe5f0-1ffc-4676-8e7e-92932343d73a
+        title: 視聴中平均応答時間の日次平均 (最新180日)
         cache: null
         note: ''
       - id: 5a6d3f77-0721-41d7-821e-42df977400ab
+        hidden: true # チャート読み込み不可
         cache: null
         note: ''
       - id: c74f35b6-369f-4665-af9e-f6706970e033
+        title: 土日祝日の時間帯別平均応答時間 (最新180日)
         cache: null
         note: ''

@@ -13,12 +13,15 @@ ja:
     body: オリンピック公式動画視聴の体感品質値を CDN サーバー、ISP、都道府県で色分けした散布図です。ISP と都道府県の推定については [仕様ページ](/ja/spec) をご覧ください。
     charts:
       - id: 0cfce7c0-c13f-4d35-8aeb-3a483713ccee
+        title: Tokyo 2020 QoE 分布 (CDN サーバ別)
         cache: -1
         note: ''
       - id: 34c3a42e-51f2-4bd8-95b1-73173077b77f
+        title: Tokyo 2020 QoE 分布 (ISP別)
         cache: -1
         note: ''
       - id: e57e1d82-e780-4d77-99cd-c4a3ad9c4b43
+        title: Tokyo 2020 QoE 分布 (都道府県別)
         cache: -1
         note: ''
   qoe_trends:
@@ -26,6 +29,7 @@ ja:
     body: オリンピック公式動画視聴の平均 QoE の推移です。
     charts:
       - id: c02d0e4e-e9e5-4777-9de1-034da39f30a4
+        title: Tokyo 2020 平均 QoE の推移
         cache: -1
         note: ''
   numbers:
@@ -33,5 +37,6 @@ ja:
     body: 本ページで掲載しているオリンピック公式動画視聴の計測数です。
     charts:
       - id: 8b412d81-be26-4895-b2eb-56457ddf20f3
+        title: Tokyo 2020 計測数 (CDN サーバ別)
         cache: -1
         note: ''

@@ -2,6 +2,7 @@
   import { _, json } from 'svelte-i18n';
   import { page } from '$app/state';
   import Button from '$lib/components/common/button.svelte';
+  import Announcement from '$lib/components/marketing/announcement.svelte';
   import DownloadButtons from '$lib/components/marketing/download-buttons.svelte';
   import GridItem from '$lib/components/marketing/grid-item.svelte';
   import Grid from '$lib/components/marketing/grid.svelte';
@@ -16,9 +17,9 @@
 <MetaTags meta={$json('pages.home.meta')} pageTitleWithSiteName={false} />
 
 {#if $_('pages.home.announcement', { default: '' })}
-  <div class="announcement">
+  <Announcement>
     {@html parseInline($_('pages.home.announcement'))}
-  </div>
+  </Announcement>
 {/if}
 
 <header>
@@ -77,20 +78,6 @@
 
 <!-- eslint-disable max-len -->
 <style lang="scss">
-  .announcement {
-    padding: 0.8rem 1.6rem;
-    color: #fff;
-    background-color: #626262;
-    font-size: 0.9rem;
-    line-height: 1.4rem;
-    font-weight: 600;
-    text-align: center;
-
-    :global(a) {
-      color: #ccc;
-    }
-  }
-
   header {
     padding: 120px;
     color: #fff;
