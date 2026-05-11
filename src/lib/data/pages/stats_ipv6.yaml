@@ -10,18 +10,23 @@ ja:
     body: ''
     charts:
       - id: 3261177b-848d-4dd5-ba9b-e5aa8d5bd795
+        title: 視聴中平均通信速度の週次平均の推移 (直近 90 日)
         cache: null
         note: ''
       - id: bb2feff2-9af2-4f45-a763-d424636b157d
+        title: 視聴中平均通信速度の週次平均の推移 (2023)
         cache: -1
         note: ''
       - id: 0e2aad27-7f31-4e6c-9f0a-b260dcb18978
+        title: 視聴中平均通信速度の週次平均の推移 (2022)
         cache: -1
         note: ''
       - id: 8b495778-f0e5-481f-a0aa-ef02499ccacb
+        title: 視聴中平均通信速度の週次平均の推移 (2021)
         cache: -1
         note: ''
       - id: 335eafdf-d092-400a-9f28-ab6aef02e089
+        title: 視聴中平均通信速度の週次平均の推移 (2020)
         cache: -1
         note: ''
   hourly_qoe:
@@ -29,18 +34,23 @@ ja:
     body: ''
     charts:
       - id: c573a784-d058-48d1-abcc-59e881dc0452
+        title: IPv4/v6 の時間帯別 QoE  (直近 90 日)
         cache: null
         note: ''
       - id: f5db8bcf-a654-4bb5-91a6-178fa8e48c88
+        hidden: true # チャート読み込み不可
         cache: -1
         note: ''
       - id: 094406b7-8ee1-4adc-baaa-87ab8ae94ab2
+        hidden: true # チャート読み込み不可
         cache: -1
         note: ''
       - id: 1c8bd543-5025-4a1c-a0c4-632794370647
+        hidden: true # チャート読み込み不可
         cache: -1
         note: ''
       - id: 4f1a4d67-2dcd-48c7-a498-4c1377e95791
+        hidden: true # チャート読み込み不可
         cache: -1
         note: ''
   weekly_qoe:
@@ -48,17 +58,22 @@ ja:
     body: ''
     charts:
       - id: 67843807-1cfe-4e1b-bc82-cad9de90b1e0
+        title: QoE の週次平均の推移 (直近 90 日)
         cache: null
         note: ''
       - id: 70232518-7494-4e79-a45a-2a90824c1aad
+        hidden: true # チャート読み込み不可
         cache: -1
         note: ''
       - id: 8f4e7e12-5654-4de5-bbb9-8bb038ee4c7b
+        hidden: true # チャート読み込み不可
         cache: -1
         note: ''
       - id: 7bb0bb7a-5a5d-4d81-8bd7-3185164f12c5
+        hidden: true # チャート読み込み不可
         cache: -1
         note: ''
       - id: 8d424c94-7813-45e3-a09e-8a88548e1827
+        hidden: true # チャート読み込み不可
         cache: -1
         note: ''

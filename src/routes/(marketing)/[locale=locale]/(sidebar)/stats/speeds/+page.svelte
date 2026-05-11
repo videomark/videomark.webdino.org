@@ -2,7 +2,7 @@
   import { _, json } from 'svelte-i18n';
   import Header from '$lib/components/marketing/header.svelte';
   import MetaTags from '$lib/components/marketing/meta-tags.svelte';
-  import MongoCharts from '$lib/components/marketing/mongo-charts.svelte';
+  import MongoChartImages from '$lib/components/marketing/mongo-chart-images.svelte';
   import Section from '$lib/components/marketing/section.svelte';
   import { parse } from '$lib/services/util/markdown';
 </script>
@@ -11,17 +11,17 @@
 
 <Header>
   <h1>{$_('pages.stats_speeds.intro.heading')}</h1>
-  {@html parse($_('pages.stats_speeds.body', { default: '' }))}
+  {@html parse($_('pages.stats_speeds.intro.body', { default: '' }))}
 </Header>
 
 <Section>
   <h2>{$_('pages.stats_speeds.throughput.heading')}</h2>
   {@html parse($_('pages.stats_speeds.throughput.body', { default: '' }))}
-  <MongoCharts src={'pages.stats_speeds.throughput.charts'} />
+  <MongoChartImages src={'pages.stats_speeds.throughput.charts'} />
 </Section>
 
 <Section>
   <h2>{$_('pages.stats_speeds.response_times.heading')}</h2>
   {@html parse($_('pages.stats_speeds.response_times.body', { default: '' }))}
-  <MongoCharts src={'pages.stats_speeds.response_times.charts'} />
+  <MongoChartImages src={'pages.stats_speeds.response_times.charts'} />
 </Section>
