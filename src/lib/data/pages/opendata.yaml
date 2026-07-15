@@ -4,7 +4,7 @@ ja:
     pageDescription: Web VideoMark で収集された計測ログのオープンデータをダウンロードできます。
   intro:
     heading: オープンデータ
-    body: ''
+    body: 本ページで公開しているオープンデータは、2026 年 7 月 4 日の更新を最後に更新を停止いたしました。
   download:
     heading: ダウンロード
     body: Web VideoMark で収集された計測ログは、プライバシーなどに考慮した処理をした上で月ごとに分けたアーカイブファイルと、そのログデータを計測単位で整理し MongoDB での分析用コレクションとして整理したデータを公開しています。有志のインターネット計測ボランティアによって集められた調査ログを分析・活用されたい方は [Google Drive](https://drive.google.com/drive/folders/1sx6TVH3QiFzUrzHf2HtgIWy16fmpNWXP) からダウンロードしてください。

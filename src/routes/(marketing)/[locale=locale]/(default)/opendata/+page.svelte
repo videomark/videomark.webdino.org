@@ -10,6 +10,7 @@
 
 <Header>
   <h1>{$_('pages.opendata.intro.heading')}</h1>
+  {@html parse($_('pages.opendata.intro.body'))}
 </Header>
 
 <Section>
