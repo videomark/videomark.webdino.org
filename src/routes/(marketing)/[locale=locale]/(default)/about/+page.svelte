@@ -1,5 +1,6 @@
 <script>
   import { _, json } from 'svelte-i18n';
+  import Announcement from '$lib/components/marketing/announcement.svelte';
   import Header from '$lib/components/marketing/header.svelte';
   import MetaTags from '$lib/components/marketing/meta-tags.svelte';
   import Section from '$lib/components/marketing/section.svelte';
@@ -7,6 +8,10 @@
 </script>
 
 <MetaTags meta={$json('pages.about.meta')} />
+
+<Announcement>
+  {$_('pages.about.archive_notice')}
+</Announcement>
 
 <Header>
   <h1>{$_('pages.about.intro.heading')}</h1>
