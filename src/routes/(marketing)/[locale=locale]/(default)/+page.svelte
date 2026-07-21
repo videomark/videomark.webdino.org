@@ -61,21 +61,6 @@
   </Grid>
 </Section>
 
-<Section accent={1}>
-  <h2>{$_('pages.home.about.heading')}</h2>
-  <Grid>
-    <GridItem>
-      <img src={$_('pages.home.about.image.src')} alt={$_('pages.home.about.image.alt')} />
-    </GridItem>
-    <GridItem>
-      {@html parse($_('pages.home.about.body'))}
-      <p class="centered">
-        <Button href="/{locale}/about">{$_('pages.home.about.more')}</Button>
-      </p>
-    </GridItem>
-  </Grid>
-</Section>
-
 <!-- eslint-disable max-len -->
 <style lang="scss">
   header {

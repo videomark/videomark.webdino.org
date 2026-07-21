@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { _, json } from 'svelte-i18n';
+  import Announcement from '$lib/components/marketing/announcement.svelte';
   import Article from '$lib/components/marketing/article.svelte';
   import FaqBody from '$lib/components/marketing/faq-body.svelte';
   import FaqToc from '$lib/components/marketing/faq-toc.svelte';
@@ -35,6 +36,9 @@
 </Sidebar>
 
 <main>
+  <Announcement>
+    {$_('pages.faq.archive_notice')}
+  </Announcement>
   <Article>
     <h1>{$_('pages.faq.intro.heading')}</h1>
     <FaqBody {categories} {targetId} />
