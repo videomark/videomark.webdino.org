@@ -40,17 +40,17 @@
   </ResponsiveImage> -->
 </Section>
 
-<Section>
+<Section accent={2}>
   <h2>{$_('pages.about.history.heading')}</h2>
   {@html parse($_('pages.about.history.body'))}
 </Section>
 
-<Section accent={2} id="qoe">
+<Section id="qoe">
   <h2>{$_('pages.about.qoe.heading')}</h2>
   {@html parse($_('pages.about.qoe.body'))}
 </Section>
 
-<Section>
+<Section accent={2}>
   <h2>{$_('pages.about.corporate.heading')}</h2>
   {@html parse($_('pages.about.corporate.body'))}
 </Section>
